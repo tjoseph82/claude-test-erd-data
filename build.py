@@ -109,6 +109,13 @@ def safe_int(v):
         return None
 
 
+def resolve_link(val):
+    """Extract first value from an Airtable linked-record field (list of IDs)."""
+    if isinstance(val, list):
+        return val[0] if val else ""
+    return val or ""
+
+
 # ─── PROCESS DATA ───
 def process(tables):
     emg = tables["emergencies"]
@@ -118,45 +125,94 @@ def process(tables):
     fs_data = tables["first_service"]
     perf = tables["offer_perf"]
     countries = tables["countries"]
+    partners_data = tables["partners"]
+    indicators_data = tables["indicators"]
 
-    # ── DIAGNOSTIC: dump sample field names ──
+    # ── DIAGNOSTIC: dump field names from ALL tables ──
     print("\n── DIAGNOSTICS ──")
-    print(f"  Emergencies: {len(emg)} records")
-    if emg:
-        print(f"  Emergency field names: {list(emg[0].keys())}")
-    print(f"  Classifications: {len(cls)} records")
-    if cls:
-        print(f"  Classification field names: {list(cls[0].keys())}")
-        sample_cls = cls[0]
-        print(f"  Sample classification: Class ID={sample_cls.get('Class ID','MISSING')}, "
-              f"Stance={sample_cls.get('Stance','MISSING')}, "
-              f"Classification Issued={sample_cls.get('Classification Issued','MISSING')}")
+    for tname, tdata in [
+        ("Emergencies", emg), ("Classifications", cls), ("Offerings", eos),
+        ("Reach_EO", reach), ("First_Service", fs_data), ("Offer_Perf", perf),
+        ("Partners", partners_data), ("Indicators", indicators_data),
+        ("Countries", countries),
+    ]:
+        print(f"  {tname}: {len(tdata)} records")
+        if tdata:
+            print(f"    Fields: {list(tdata[0].keys())}")
 
     # Build lookups
     country_map = {c["_id"]: c.get("Country", "") for c in countries}
     eo_map = {e["_id"]: e.get("Emergency Intervention Name", "") for e in eos}
 
-    # Group classifications by Class ID, FY-filtered
-    # NOTE: "Classification Issued" does not exist in this Airtable.
-    # Use "FY New Classification" if available, otherwise fall back to
-    # "Expiration Date" minus ~6 months, or skip FY filtering on classifications
-    # and instead filter by the emergency's "Earliest Classification" date.
-    #
-    # Strategy: group ALL classifications by Class ID (no FY filter here),
-    # then FY-filter at the emergency level using "Earliest Classification".
+    # Also build reverse map: EO name lookup by any linked record
+    eo_name_map = {}
+    for e in eos:
+        name = e.get("Emergency Intervention Name", "")
+        eo_name_map[e["_id"]] = name
+
+    # Group classifications by Class ID (no FY filter here —
+    # FY-filter at emergency level using "Earliest Classification").
     class_by_eid = defaultdict(list)
+    # Also build a map from classification record ID → Class ID
+    classrec_to_classid = {}
     for c in cls:
         cid = c.get("Class ID", "")
         if cid:
             class_by_eid[cid].append(c)
+            classrec_to_classid[c["_id"]] = cid
 
-    print(f"\n  Classifications grouped by Class ID: {len(class_by_eid)} unique IDs (no FY filter — filtering at emergency level)")
+    print(f"\n  Classifications grouped by Class ID: {len(class_by_eid)} unique IDs")
+
+    # ── Build indexes for related tables ──
+    # Index reach, first_service, offer_perf by classification record ID
+    # AND by Class ID (human-readable) to handle both link types
+    def build_index_by_classification(records, cls_field="Classification"):
+        """Index records by classification record ID and by Class ID."""
+        by_classrec = defaultdict(list)  # key: classification record ID
+        by_classid = defaultdict(list)   # key: Class ID like "SS281"
+        for r in records:
+            link_val = r.get(cls_field, "")
+            linked_ids = link_val if isinstance(link_val, list) else ([link_val] if link_val else [])
+            for lid in linked_ids:
+                by_classrec[lid].append(r)
+                # Also map to Class ID if we know the mapping
+                mapped_cid = classrec_to_classid.get(lid)
+                if mapped_cid:
+                    by_classid[mapped_cid].append(r)
+        return by_classrec, by_classid
+
+    reach_by_rec, reach_by_cid = build_index_by_classification(reach)
+    fs_by_rec, fs_by_cid = build_index_by_classification(fs_data)
+    perf_by_rec, perf_by_cid = build_index_by_classification(perf)
+    partner_by_rec, partner_by_cid = build_index_by_classification(partners_data)
+    ind_by_rec, ind_by_cid = build_index_by_classification(indicators_data)
+
+    # Diagnostic: show how many records got indexed
+    print(f"\n  Reach indexed: {len(reach_by_rec)} by record ID, {len(reach_by_cid)} by Class ID")
+    print(f"  First_Service indexed: {len(fs_by_rec)} by record ID, {len(fs_by_cid)} by Class ID")
+    print(f"  Offer_Perf indexed: {len(perf_by_rec)} by record ID, {len(perf_by_cid)} by Class ID")
+    print(f"  Partners indexed: {len(partner_by_rec)} by record ID, {len(partner_by_cid)} by Class ID")
+    print(f"  Indicators indexed: {len(ind_by_rec)} by record ID, {len(ind_by_cid)} by Class ID")
+
+    # Show sample linking data
+    if reach:
+        sample = reach[0]
+        print(f"\n  Sample reach record Classification field: {sample.get('Classification', 'MISSING')}")
+        print(f"  Sample reach record all fields: {list(sample.keys())}")
+    if fs_data:
+        sample = fs_data[0]
+        print(f"  Sample first_service Classification field: {sample.get('Classification', 'MISSING')}")
+    if perf:
+        sample = perf[0]
+        print(f"  Sample offer_perf Classification field: {sample.get('Classification', 'MISSING')}")
 
     stance_rank = {"Red": 4, "Orange": 3, "Yellow": 2, "White": 1}
 
     # ── Build orange/red emergency records ──
     result = []
     debug_counts = {"no_eid": 0, "no_classifications": 0, "not_orange_red": 0, "wrong_fy": 0, "matched": 0}
+    debug_program_data = {"reach_matched": 0, "fs_matched": 0, "perf_matched": 0}
+
     for e in emg:
         eid = e.get("Classification ID", "")
         if not eid:
@@ -229,15 +285,82 @@ def process(tables):
         if isinstance(country_name, list) and country_name:
             country_name = country_map.get(country_name[0], str(country_name[0]))
 
+        # ── Collect related records using BOTH record-ID and Class-ID matching ──
+        class_rec_ids = [c["_id"] for c in classifications]
+
+        # Gather related reach records
+        related_reach = []
+        for crid in class_rec_ids:
+            related_reach.extend(reach_by_rec.get(crid, []))
+        if not related_reach:
+            # Fallback: try matching by Class ID
+            related_reach = reach_by_cid.get(eid, [])
+        # Deduplicate by record ID
+        seen_ids = set()
+        unique_reach = []
+        for r in related_reach:
+            rid = r.get("_id", id(r))
+            if rid not in seen_ids:
+                seen_ids.add(rid)
+                unique_reach.append(r)
+        related_reach = unique_reach
+
+        if related_reach:
+            debug_program_data["reach_matched"] += 1
+
+        # Gather related first_service records
+        related_fs = []
+        for crid in class_rec_ids:
+            related_fs.extend(fs_by_rec.get(crid, []))
+        if not related_fs:
+            related_fs = fs_by_cid.get(eid, [])
+        seen_ids = set()
+        unique_fs = []
+        for r in related_fs:
+            rid = r.get("_id", id(r))
+            if rid not in seen_ids:
+                seen_ids.add(rid)
+                unique_fs.append(r)
+        related_fs = unique_fs
+
+        if related_fs:
+            debug_program_data["fs_matched"] += 1
+
+        # Gather related offer_perf records
+        related_perf = []
+        for crid in class_rec_ids:
+            related_perf.extend(perf_by_rec.get(crid, []))
+        if not related_perf:
+            related_perf = perf_by_cid.get(eid, [])
+        seen_ids = set()
+        unique_perf = []
+        for r in related_perf:
+            rid = r.get("_id", id(r))
+            if rid not in seen_ids:
+                seen_ids.add(rid)
+                unique_perf.append(r)
+        related_perf = unique_perf
+
+        if related_perf:
+            debug_program_data["perf_matched"] += 1
+
+        # Gather related partner records
+        related_partners = []
+        for crid in class_rec_ids:
+            related_partners.extend(partner_by_rec.get(crid, []))
+        if not related_partners:
+            related_partners = partner_by_cid.get(eid, [])
+
+        # Gather related indicator records
+        related_indicators = []
+        for crid in class_rec_ids:
+            related_indicators.extend(ind_by_rec.get(crid, []))
+        if not related_indicators:
+            related_indicators = ind_by_cid.get(eid, [])
+
         # ── Reach by month ──
-        class_ids = [c["_id"] for c in classifications]
         monthly = defaultdict(lambda: {"irc": 0, "partner": 0})
-        for r in reach:
-            rcls = r.get("Classification", "")
-            if isinstance(rcls, list):
-                rcls = rcls[0] if rcls else ""
-            if rcls not in class_ids:
-                continue
+        for r in related_reach:
             rd = parse_date(r.get("Reported Date"))
             if not rd:
                 continue
@@ -258,15 +381,8 @@ def process(tables):
 
         # ── Reach by offering ──
         off_reach = defaultdict(lambda: {"r": 0, "t": 0})
-        for r in reach:
-            rcls = r.get("Classification", "")
-            if isinstance(rcls, list):
-                rcls = rcls[0] if rcls else ""
-            if rcls not in class_ids:
-                continue
-            eo_id = r.get("Intervention List", "")
-            if isinstance(eo_id, list):
-                eo_id = eo_id[0] if eo_id else ""
+        for r in related_reach:
+            eo_id = resolve_link(r.get("Intervention List", ""))
             eo_name = eo_map.get(eo_id, eo_id)
             val = safe_float(r.get("Reach reported")) or 0
             tgt = safe_float(r.get("Target")) or 0
@@ -280,15 +396,8 @@ def process(tables):
 
         # ── First service by offering ──
         fs_list = []
-        for f in fs_data:
-            fcls = f.get("Classification", "")
-            if isinstance(fcls, list):
-                fcls = fcls[0] if fcls else ""
-            if fcls not in class_ids:
-                continue
-            eo_id = f.get("Emergency Offering", "")
-            if isinstance(eo_id, list):
-                eo_id = eo_id[0] if eo_id else ""
+        for f in related_fs:
+            eo_id = resolve_link(f.get("Emergency Offering", ""))
             fs_list.append(
                 {
                     "o": eo_map.get(eo_id, eo_id),
@@ -298,15 +407,8 @@ def process(tables):
 
         # ── Offering review ──
         or_list = []
-        for p in perf:
-            pcls = p.get("Classification", "")
-            if isinstance(pcls, list):
-                pcls = pcls[0] if pcls else ""
-            if pcls not in class_ids:
-                continue
-            eo_id = p.get("Emergency Offering", "")
-            if isinstance(eo_id, list):
-                eo_id = eo_id[0] if eo_id else ""
+        for p in related_perf:
+            eo_id = resolve_link(p.get("Emergency Offering", ""))
             or_list.append(
                 {
                     "o": eo_map.get(eo_id, eo_id),
@@ -314,6 +416,30 @@ def process(tables):
                     "d": fmt_date(p.get("Date Assessed")) or "",
                 }
             )
+
+        # ── Partner data ──
+        pd_list = []
+        for p in related_partners:
+            eo_id = resolve_link(p.get("Emergency Offering", "") or p.get("Offering", ""))
+            pd_list.append({
+                "partner": p.get("Partner Name", "") or p.get("Partner", "") or p.get("Name", ""),
+                "offering": eo_map.get(eo_id, eo_id),
+                "en": p.get("Existing or New", "") or p.get("Existing/New", ""),
+                "disb": fmt_date(p.get("Date of First Disbursement") or p.get("First Disbursement")),
+                "fs": fmt_date(p.get("Date of First Service") or p.get("First Service")),
+                "fd": fmt_date(p.get("Funding Delivery") or p.get("Date of Funding Delivery")),
+            })
+
+        # ── Quality indicators ──
+        qi_list = []
+        for i in related_indicators:
+            eo_id = resolve_link(i.get("Emergency Offering", "") or i.get("Offering", ""))
+            qi_list.append({
+                "o": eo_map.get(eo_id, eo_id),
+                "v": i.get("Reported Value", "") or i.get("Value", ""),
+                "t": i.get("Target", "") or i.get("Target Value", ""),
+                "d": fmt_date(i.get("Date Entered") or i.get("Date")),
+            })
 
         # Emergency type from latest classification
         e_type = max_stance.get("Emergency Type", "")
@@ -362,8 +488,8 @@ def process(tables):
             "rbo": rbo,
             "fs": fs_list,
             "or": or_list,
-            "pd": [],
-            "qi": [],
+            "pd": pd_list,
+            "qi": qi_list,
         }
         result.append(rec)
 
@@ -374,7 +500,23 @@ def process(tables):
     print(f"    Not Orange/Red: {debug_counts['not_orange_red']}")
     print(f"    MATCHED (Orange/Red): {debug_counts['matched']}")
 
-    # Show sample data if nothing matched
+    print(f"\n  Program data matching (out of {debug_counts['matched']} emergencies):")
+    print(f"    With reach data: {debug_program_data['reach_matched']}")
+    print(f"    With first_service data: {debug_program_data['fs_matched']}")
+    print(f"    With offer_perf data: {debug_program_data['perf_matched']}")
+
+    # Show sample data for debugging
+    if debug_counts["matched"] > 0:
+        sample_e = result[0] if result else None
+        if sample_e:
+            print(f"\n  Sample matched emergency '{sample_e['id']}':")
+            print(f"    rbm entries: {len(sample_e['rbm'])}")
+            print(f"    rbo entries: {len(sample_e['rbo'])}")
+            print(f"    fs entries: {len(sample_e['fs'])}")
+            print(f"    or entries: {len(sample_e['or'])}")
+            print(f"    pd entries: {len(sample_e['pd'])}")
+            print(f"    qi entries: {len(sample_e['qi'])}")
+
     if debug_counts["matched"] == 0 and emg:
         sample_eids = [e.get("Classification ID", "EMPTY") for e in emg[:5]]
         sample_class_ids = list(class_by_eid.keys())[:5]
@@ -403,11 +545,28 @@ def process(tables):
     }
 
     # ── Count EO implementations ──
+    # Count from first_service data AND from reach data for completeness
     eo_counts = {}
+    # From first service records
     for e in result:
         for f in e["fs"]:
             name = f["o"]
             eo_counts[name] = eo_counts.get(name, 0) + 1
+    # If no fs data, fall back to counting unique EOs from reach data
+    if not eo_counts:
+        for e in result:
+            seen_eos = set()
+            for r in e["rbo"]:
+                name = r["n"]
+                if name and name not in seen_eos:
+                    seen_eos.add(name)
+                    eo_counts[name] = eo_counts.get(name, 0) + 1
+    # If still empty, count from classification-level data
+    if not eo_counts:
+        for e in result:
+            for o in e["or"]:
+                name = o["o"]
+                eo_counts[name] = eo_counts.get(name, 0) + 1
 
     return result, avgs, eo_counts
 
@@ -426,6 +585,7 @@ if __name__ == "__main__":
         f"PlanSub={avgs['planSub']}d, PlanApproval={avgs['planApproval']}d, "
         f"Client={avgs['client']}d"
     )
+    print(f"  EO Counts: {json.dumps(eo_counts)}")
 
     # ── Write JSON output ──
     now = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
