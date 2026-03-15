@@ -119,28 +119,68 @@ def process(tables):
     perf = tables["offer_perf"]
     countries = tables["countries"]
 
+    # ── DIAGNOSTIC: dump sample field names ──
+    print("\n── DIAGNOSTICS ──")
+    print(f"  Emergencies: {len(emg)} records")
+    if emg:
+        print(f"  Emergency field names: {list(emg[0].keys())}")
+    print(f"  Classifications: {len(cls)} records")
+    if cls:
+        print(f"  Classification field names: {list(cls[0].keys())}")
+        sample_cls = cls[0]
+        print(f"  Sample classification: Class ID={sample_cls.get('Class ID','MISSING')}, "
+              f"Stance={sample_cls.get('Stance','MISSING')}, "
+              f"Classification Issued={sample_cls.get('Classification Issued','MISSING')}")
+
     # Build lookups
     country_map = {c["_id"]: c.get("Country", "") for c in countries}
     eo_map = {e["_id"]: e.get("Emergency Intervention Name", "") for e in eos}
 
     # Group classifications by Class ID, FY-filtered
     class_by_eid = defaultdict(list)
+    fy_debug = {"matched": 0, "no_cid": 0, "wrong_fy": 0, "no_date": 0}
     for c in cls:
         cid = c.get("Class ID", "")
-        fy = fiscal_year(c.get("Classification Issued"))
-        if cid and fy == FISCAL_YEAR:
+        date_val = c.get("Classification Issued")
+        fy = fiscal_year(date_val)
+        if not cid:
+            fy_debug["no_cid"] += 1
+        elif fy is None:
+            fy_debug["no_date"] += 1
+        elif fy != FISCAL_YEAR:
+            fy_debug["wrong_fy"] += 1
+        else:
+            fy_debug["matched"] += 1
             class_by_eid[cid].append(c)
+
+    print(f"\n  Classification filtering (FY={FISCAL_YEAR}):")
+    print(f"    Matched FY: {fy_debug['matched']}")
+    print(f"    Wrong FY: {fy_debug['wrong_fy']}")
+    print(f"    No Class ID: {fy_debug['no_cid']}")
+    print(f"    No date: {fy_debug['no_date']}")
+    print(f"    Unique Class IDs after filter: {len(class_by_eid)}")
+
+    # Show sample FY values if nothing matched
+    if fy_debug["matched"] == 0 and cls:
+        sample_fys = set()
+        for c in cls[:20]:
+            d = c.get("Classification Issued")
+            sample_fys.add(f"{d} -> FY{fiscal_year(d)}")
+        print(f"    Sample dates/FYs: {list(sample_fys)[:5]}")
 
     stance_rank = {"Red": 4, "Orange": 3, "Yellow": 2, "White": 1}
 
     # ── Build orange/red emergency records ──
     result = []
+    debug_counts = {"no_eid": 0, "no_classifications": 0, "not_orange_red": 0, "matched": 0}
     for e in emg:
         eid = e.get("Classification ID", "")
         if not eid:
+            debug_counts["no_eid"] += 1
             continue
         classifications = class_by_eid.get(eid, [])
         if not classifications:
+            debug_counts["no_classifications"] += 1
             continue
 
         # Max stance
@@ -151,7 +191,9 @@ def process(tables):
         )
         stance = max_stance.get("Stance", "")
         if stance not in ("Orange", "Red"):
+            debug_counts["not_orange_red"] += 1
             continue
+        debug_counts["matched"] += 1
 
         # Earliest classification date
         dates = [parse_date(c.get("Classification Issued")) for c in classifications]
@@ -335,6 +377,20 @@ def process(tables):
             "qi": [],
         }
         result.append(rec)
+
+    print(f"\n  Emergency filtering:")
+    print(f"    No Classification ID: {debug_counts['no_eid']}")
+    print(f"    No matching classifications: {debug_counts['no_classifications']}")
+    print(f"    Not Orange/Red: {debug_counts['not_orange_red']}")
+    print(f"    MATCHED (Orange/Red): {debug_counts['matched']}")
+
+    # Show sample emergency Classification IDs if nothing matched
+    if debug_counts["matched"] == 0 and emg:
+        sample_eids = [e.get("Classification ID", "EMPTY") for e in emg[:5]]
+        sample_class_ids = list(class_by_eid.keys())[:5]
+        print(f"    Sample emergency Classification IDs: {sample_eids}")
+        print(f"    Sample class_by_eid keys: {sample_class_ids}")
+    print("── END DIAGNOSTICS ──\n")
 
     # Sort: Red first, then Orange, then by earliest classification
     result.sort(
