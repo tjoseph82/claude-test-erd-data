@@ -1,0 +1,13 @@
+{
+  "lastUpdated": "2026-03-15T03:03:55Z",
+  "fiscalYear": 2026,
+  "averages": {
+    "decision": 0,
+    "msna": 0,
+    "planSub": 0,
+    "planApproval": 0,
+    "client": 0
+  },
+  "eoCounts": {},
+  "emergencies": []
+}
