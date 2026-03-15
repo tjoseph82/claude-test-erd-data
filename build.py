@@ -137,42 +137,26 @@ def process(tables):
     eo_map = {e["_id"]: e.get("Emergency Intervention Name", "") for e in eos}
 
     # Group classifications by Class ID, FY-filtered
+    # NOTE: "Classification Issued" does not exist in this Airtable.
+    # Use "FY New Classification" if available, otherwise fall back to
+    # "Expiration Date" minus ~6 months, or skip FY filtering on classifications
+    # and instead filter by the emergency's "Earliest Classification" date.
+    #
+    # Strategy: group ALL classifications by Class ID (no FY filter here),
+    # then FY-filter at the emergency level using "Earliest Classification".
     class_by_eid = defaultdict(list)
-    fy_debug = {"matched": 0, "no_cid": 0, "wrong_fy": 0, "no_date": 0}
     for c in cls:
         cid = c.get("Class ID", "")
-        date_val = c.get("Classification Issued")
-        fy = fiscal_year(date_val)
-        if not cid:
-            fy_debug["no_cid"] += 1
-        elif fy is None:
-            fy_debug["no_date"] += 1
-        elif fy != FISCAL_YEAR:
-            fy_debug["wrong_fy"] += 1
-        else:
-            fy_debug["matched"] += 1
+        if cid:
             class_by_eid[cid].append(c)
 
-    print(f"\n  Classification filtering (FY={FISCAL_YEAR}):")
-    print(f"    Matched FY: {fy_debug['matched']}")
-    print(f"    Wrong FY: {fy_debug['wrong_fy']}")
-    print(f"    No Class ID: {fy_debug['no_cid']}")
-    print(f"    No date: {fy_debug['no_date']}")
-    print(f"    Unique Class IDs after filter: {len(class_by_eid)}")
-
-    # Show sample FY values if nothing matched
-    if fy_debug["matched"] == 0 and cls:
-        sample_fys = set()
-        for c in cls[:20]:
-            d = c.get("Classification Issued")
-            sample_fys.add(f"{d} -> FY{fiscal_year(d)}")
-        print(f"    Sample dates/FYs: {list(sample_fys)[:5]}")
+    print(f"\n  Classifications grouped by Class ID: {len(class_by_eid)} unique IDs (no FY filter — filtering at emergency level)")
 
     stance_rank = {"Red": 4, "Orange": 3, "Yellow": 2, "White": 1}
 
     # ── Build orange/red emergency records ──
     result = []
-    debug_counts = {"no_eid": 0, "no_classifications": 0, "not_orange_red": 0, "matched": 0}
+    debug_counts = {"no_eid": 0, "no_classifications": 0, "not_orange_red": 0, "wrong_fy": 0, "matched": 0}
     for e in emg:
         eid = e.get("Classification ID", "")
         if not eid:
@@ -181,6 +165,13 @@ def process(tables):
         classifications = class_by_eid.get(eid, [])
         if not classifications:
             debug_counts["no_classifications"] += 1
+            continue
+
+        # FY filter using emergency-level "Earliest Classification" or "Start Date"
+        earliest_date_str = e.get("Earliest Classification") or e.get("Start Date")
+        fy = fiscal_year(earliest_date_str)
+        if fy != FISCAL_YEAR:
+            debug_counts["wrong_fy"] += 1
             continue
 
         # Max stance
@@ -196,9 +187,7 @@ def process(tables):
         debug_counts["matched"] += 1
 
         # Earliest classification date
-        dates = [parse_date(c.get("Classification Issued")) for c in classifications]
-        dates = [d for d in dates if d]
-        earliest = min(dates) if dates else None
+        earliest = parse_date(earliest_date_str)
 
         affected = safe_int(e.get("Number affected"))
         budget = safe_float(e.get("Response Budget"))
@@ -381,15 +370,18 @@ def process(tables):
     print(f"\n  Emergency filtering:")
     print(f"    No Classification ID: {debug_counts['no_eid']}")
     print(f"    No matching classifications: {debug_counts['no_classifications']}")
+    print(f"    Wrong FY: {debug_counts['wrong_fy']}")
     print(f"    Not Orange/Red: {debug_counts['not_orange_red']}")
     print(f"    MATCHED (Orange/Red): {debug_counts['matched']}")
 
-    # Show sample emergency Classification IDs if nothing matched
+    # Show sample data if nothing matched
     if debug_counts["matched"] == 0 and emg:
         sample_eids = [e.get("Classification ID", "EMPTY") for e in emg[:5]]
         sample_class_ids = list(class_by_eid.keys())[:5]
+        sample_dates = [(e.get("Classification ID",""), e.get("Earliest Classification","NO_FIELD"), e.get("Start Date","NO_FIELD")) for e in emg[:5]]
         print(f"    Sample emergency Classification IDs: {sample_eids}")
         print(f"    Sample class_by_eid keys: {sample_class_ids}")
+        print(f"    Sample emergency dates (ID, Earliest Classification, Start Date): {sample_dates}")
     print("── END DIAGNOSTICS ──\n")
 
     # Sort: Red first, then Orange, then by earliest classification
