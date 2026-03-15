@@ -3,6 +3,12 @@ build.py — Fetches data from Airtable and writes dashboard_data.json.
 Run manually or via GitHub Actions every 3 hours.
 
 Required environment variable: AIRTABLE_PAT (your Airtable Personal Access Token)
+
+Data model (from PowerBI):
+  Emergency_Query1 is the central fact table.
+  Related tables link via Classification → Emergency._airtableRecordId
+  (NOT to the Classifications table — "Classification" is a misnomer in Airtable).
+  Classifications link via Class ID → Emergency.Classification ID.
 """
 
 import os, json, sys
@@ -13,15 +19,22 @@ import requests
 # ─── CONFIG ───
 BASE_ID = "app3O6viECRoBLOfS"
 TABLES = {
-    "emergencies":    "tblCzxMs64dcC52l1",
-    "classifications":"tbldDg7nKtafXOPhE",
-    "countries":      "tbl9hnLQsbdcW1rS2",
-    "offerings":      "tblcat24vc9WLDZ9G",
-    "reach_eo":       "tblx3jU3LKJWSmJnK",
-    "partners":       "tblP8MRA7ztZ46Hgh",
-    "indicators":     "tbljY9cyeL2LFWSWL",
-    "first_service":  "tblXm51F54U9jfgNQ",
-    "offer_perf":     "tblPi5jbvnl9op3OW",
+    # Core tables (already fetched)
+    "emergencies":       "tblCzxMs64dcC52l1",
+    "classifications":   "tbldDg7nKtafXOPhE",
+    "countries":         "tbl9hnLQsbdcW1rS2",
+    "offerings":         "tblcat24vc9WLDZ9G",
+    "reach_eo":          "tblx3jU3LKJWSmJnK",
+    "partners":          "tblP8MRA7ztZ46Hgh",
+    "indicators":        "tbljY9cyeL2LFWSWL",
+    "first_service":     "tblXm51F54U9jfgNQ",
+    "offer_perf":        "tblPi5jbvnl9op3OW",
+    # Additional tables discovered from PowerBI model
+    "reach_sub":         "tblx3jU3LKJWSmJnK",  # placeholder — update with real ID
+    "indicator_report":  "tbljY9cyeL2LFWSWL",  # placeholder — update with real ID
+    "subsector_perf":    "tblPi5jbvnl9op3OW",  # placeholder — update with real ID
+    "interventions":     "tblcat24vc9WLDZ9G",  # placeholder — update with real ID
+    "subsectors":        "tbl9hnLQsbdcW1rS2",  # placeholder — update with real ID
 }
 PAT = os.environ.get("AIRTABLE_PAT", "")
 if not PAT:
@@ -55,11 +68,18 @@ def fetch_table(table_id):
 
 
 def fetch_all():
-    """Fetch all tables."""
+    """Fetch all tables (deduplicating by table ID)."""
     tables = {}
+    fetched_ids = {}
     for name, tid in TABLES.items():
+        if tid in fetched_ids:
+            # Same table ID already fetched under another name — reuse it
+            tables[name] = tables[fetched_ids[tid]]
+            print(f"  {name}: reusing {fetched_ids[tid]} ({len(tables[name])} records)")
+            continue
         print(f"  Fetching {name}...")
         tables[name] = fetch_table(tid)
+        fetched_ids[tid] = name
         print(f"    → {len(tables[name])} records")
     return tables
 
@@ -128,93 +148,78 @@ def process(tables):
     partners_data = tables["partners"]
     indicators_data = tables["indicators"]
 
-    # ── DIAGNOSTIC: dump field names from ALL tables ──
+    # ── DIAGNOSTIC: dump field names from key tables ──
     print("\n── DIAGNOSTICS ──")
     for tname, tdata in [
         ("Emergencies", emg), ("Classifications", cls), ("Offerings", eos),
         ("Reach_EO", reach), ("First_Service", fs_data), ("Offer_Perf", perf),
         ("Partners", partners_data), ("Indicators", indicators_data),
-        ("Countries", countries),
     ]:
         print(f"  {tname}: {len(tdata)} records")
         if tdata:
             print(f"    Fields: {list(tdata[0].keys())}")
 
-    # Build lookups
+    # ── Build lookups ──
     country_map = {c["_id"]: c.get("Country", "") for c in countries}
     eo_map = {e["_id"]: e.get("Emergency Intervention Name", "") for e in eos}
 
-    # Also build reverse map: EO name lookup by any linked record
-    eo_name_map = {}
-    for e in eos:
-        name = e.get("Emergency Intervention Name", "")
-        eo_name_map[e["_id"]] = name
-
-    # Group classifications by Class ID (no FY filter here —
-    # FY-filter at emergency level using "Earliest Classification").
+    # ── Group classifications by Class ID ──
+    # Classifications link to emergencies via: Class ID → Emergency.Classification ID
     class_by_eid = defaultdict(list)
-    # Also build a map from classification record ID → Class ID
-    classrec_to_classid = {}
     for c in cls:
         cid = c.get("Class ID", "")
         if cid:
             class_by_eid[cid].append(c)
-            classrec_to_classid[c["_id"]] = cid
 
     print(f"\n  Classifications grouped by Class ID: {len(class_by_eid)} unique IDs")
 
-    # ── Build indexes for related tables ──
-    # Index reach, first_service, offer_perf by classification record ID
-    # AND by Class ID (human-readable) to handle both link types
-    def build_index_by_classification(records, cls_field="Classification"):
-        """Index records by classification record ID and by Class ID."""
-        by_classrec = defaultdict(list)  # key: classification record ID
-        by_classid = defaultdict(list)   # key: Class ID like "SS281"
+    # ── KEY INSIGHT from PowerBI model: ──
+    # Related tables (reach, first_service, partners, offer_perf, indicator_report)
+    # link via their "Classification" field to Emergency._airtableRecordId (the
+    # emergency's Airtable record ID), NOT to classification record IDs.
+    #
+    # So we must index these tables by the EMERGENCY record ID.
+
+    def build_index_by_emergency(records, link_field="Classification"):
+        """Index records by emergency _airtableRecordId (via the 'Classification' link field)."""
+        by_emg = defaultdict(list)
         for r in records:
-            link_val = r.get(cls_field, "")
+            link_val = r.get(link_field, "")
             linked_ids = link_val if isinstance(link_val, list) else ([link_val] if link_val else [])
             for lid in linked_ids:
-                by_classrec[lid].append(r)
-                # Also map to Class ID if we know the mapping
-                mapped_cid = classrec_to_classid.get(lid)
-                if mapped_cid:
-                    by_classid[mapped_cid].append(r)
-        return by_classrec, by_classid
+                by_emg[lid].append(r)
+        return by_emg
 
-    reach_by_rec, reach_by_cid = build_index_by_classification(reach)
-    fs_by_rec, fs_by_cid = build_index_by_classification(fs_data)
-    perf_by_rec, perf_by_cid = build_index_by_classification(perf)
-    partner_by_rec, partner_by_cid = build_index_by_classification(partners_data)
-    ind_by_rec, ind_by_cid = build_index_by_classification(indicators_data)
+    reach_by_emg = build_index_by_emergency(reach)
+    fs_by_emg = build_index_by_emergency(fs_data)
+    perf_by_emg = build_index_by_emergency(perf)
+    partner_by_emg = build_index_by_emergency(partners_data)
+    indicator_by_emg = build_index_by_emergency(indicators_data)
 
-    # Diagnostic: show how many records got indexed
-    print(f"\n  Reach indexed: {len(reach_by_rec)} by record ID, {len(reach_by_cid)} by Class ID")
-    print(f"  First_Service indexed: {len(fs_by_rec)} by record ID, {len(fs_by_cid)} by Class ID")
-    print(f"  Offer_Perf indexed: {len(perf_by_rec)} by record ID, {len(perf_by_cid)} by Class ID")
-    print(f"  Partners indexed: {len(partner_by_rec)} by record ID, {len(partner_by_cid)} by Class ID")
-    print(f"  Indicators indexed: {len(ind_by_rec)} by record ID, {len(ind_by_cid)} by Class ID")
+    print(f"\n  Reach indexed by emergency ID: {len(reach_by_emg)} emergencies with reach data")
+    print(f"  First_Service indexed: {len(fs_by_emg)} emergencies with FS data")
+    print(f"  Offer_Perf indexed: {len(perf_by_emg)} emergencies with perf data")
+    print(f"  Partners indexed: {len(partner_by_emg)} emergencies with partner data")
+    print(f"  Indicators indexed: {len(indicator_by_emg)} emergencies with indicator data")
 
-    # Show sample linking data
+    # Show sample linking data for verification
     if reach:
         sample = reach[0]
-        print(f"\n  Sample reach record Classification field: {sample.get('Classification', 'MISSING')}")
-        print(f"  Sample reach record all fields: {list(sample.keys())}")
-    if fs_data:
-        sample = fs_data[0]
-        print(f"  Sample first_service Classification field: {sample.get('Classification', 'MISSING')}")
-    if perf:
-        sample = perf[0]
-        print(f"  Sample offer_perf Classification field: {sample.get('Classification', 'MISSING')}")
+        print(f"\n  Sample reach 'Classification' field value: {sample.get('Classification', 'MISSING')}")
+    if emg:
+        sample = emg[0]
+        print(f"  Sample emergency '_id' (record ID): {sample.get('_id', 'MISSING')}")
 
     stance_rank = {"Red": 4, "Orange": 3, "Yellow": 2, "White": 1}
 
     # ── Build orange/red emergency records ──
     result = []
     debug_counts = {"no_eid": 0, "no_classifications": 0, "not_orange_red": 0, "wrong_fy": 0, "matched": 0}
-    debug_program_data = {"reach_matched": 0, "fs_matched": 0, "perf_matched": 0}
+    debug_program_data = {"reach": 0, "fs": 0, "perf": 0, "partner": 0, "indicator": 0}
 
     for e in emg:
         eid = e.get("Classification ID", "")
+        emg_record_id = e.get("_id", "")  # Airtable record ID — used for program data linking
         if not eid:
             debug_counts["no_eid"] += 1
             continue
@@ -250,14 +255,24 @@ def process(tables):
         gap = safe_float(e.get("Gap in Funding"))
         crf = safe_float(e.get("CRF Allocation"))
         funding = safe_float(e.get("Funding Secured"))
+        appeal = safe_float(e.get("Appeal Allocation"))
         pct_reached = safe_float(e.get("% of total affected reached"))
         target = safe_int(e.get("Response Target"))
-        total_reach = safe_int(e.get("Total cumulative reach"))
+        total_reach_raw = e.get("Total cumulative reach")
+        total_reach = safe_int(total_reach_raw)
         pct_funded = safe_float(e.get("% of Response Plan Budget Funded"))
+        pct_prep = safe_float(e.get("% of Preparedness Checklist Completed"))
+        total_in_op_area = safe_int(e.get("Total Affected Population in IRC Operational Areas"))
+        reach_6mo_class = safe_int(e.get("Total Number Reached 6 months from classification"))
+        reach_6mo_svc = safe_int(e.get("Total Reach 6 months after first client served"))
+        pct_10_target_6mo = safe_float(e.get("% of 10% target reached 6 months from first service"))
+        pct_reach_op_area = safe_float(e.get("% reach of total affected in operational area"))
+        ten_pct_affected = safe_float(e.get("10% of number affected"))
 
         earliest_str = earliest.strftime("%Y-%m-%d") if earliest else None
         d_decision = days_between(earliest_str, e.get("Date of Decision to respond"))
         d_msna = days_between(earliest_str, e.get("Date of MSNA Completion"))
+        d_msna_start = days_between(earliest_str, e.get("Date of MSNA Data Collection Started"))
         d_plan_sub = days_between(
             earliest_str, e.get("Date of MSNA and Response Plan Submission")
         )
@@ -265,19 +280,21 @@ def process(tables):
             earliest_str, e.get("Date of Response plan approval (by ERMT)")
         )
         d_client = safe_float(e.get("Days from First Orange Red to First Client"))
+        d_disb_to_sig = safe_float(e.get("Average Time from disbursement to agreement signature"))
+        d_sig_to_receipt = safe_float(e.get("Average Time from agreement signature to partner receipt of funds"))
 
         # SAP criteria
         sap = {
             "plan": e.get("Response plan with justification for subsector", ""),
             "learning": e.get("Learning exercise meets minimum requirements", ""),
             "feedback": e.get("Functioning Feedback Mechanism", ""),
-            "feedbackTime": e.get(
-                "Feedback responded to within expected timeframe", ""
-            ),
+            "feedbackTime": e.get("Feedback responded to within expected timeframe", ""),
             "safeguarding": e.get("80% of  Safeguarding Standards Met", ""),
-            "partners": e.get(
-                "50% of Partners participating in learning exercise", ""
-            ),
+            "partners": e.get("50% of Partners participating in learning exercise", ""),
+            "indicators80": e.get("80% of indicators on track", ""),
+            "sequenced": e.get("Response plan with sequenced emergency outcome programming", ""),
+            "msnaCompleted": e.get("Was an MSNA completed?", ""),
+            "localSystems": e.get("Analysis of local systems and capacities", ""),
         }
 
         # Resolve country name
@@ -285,78 +302,18 @@ def process(tables):
         if isinstance(country_name, list) and country_name:
             country_name = country_map.get(country_name[0], str(country_name[0]))
 
-        # ── Collect related records using BOTH record-ID and Class-ID matching ──
-        class_rec_ids = [c["_id"] for c in classifications]
+        # ── Collect related records via emergency record ID ──
+        related_reach = reach_by_emg.get(emg_record_id, [])
+        related_fs = fs_by_emg.get(emg_record_id, [])
+        related_perf = perf_by_emg.get(emg_record_id, [])
+        related_partners = partner_by_emg.get(emg_record_id, [])
+        related_indicators = indicator_by_emg.get(emg_record_id, [])
 
-        # Gather related reach records
-        related_reach = []
-        for crid in class_rec_ids:
-            related_reach.extend(reach_by_rec.get(crid, []))
-        if not related_reach:
-            # Fallback: try matching by Class ID
-            related_reach = reach_by_cid.get(eid, [])
-        # Deduplicate by record ID
-        seen_ids = set()
-        unique_reach = []
-        for r in related_reach:
-            rid = r.get("_id", id(r))
-            if rid not in seen_ids:
-                seen_ids.add(rid)
-                unique_reach.append(r)
-        related_reach = unique_reach
-
-        if related_reach:
-            debug_program_data["reach_matched"] += 1
-
-        # Gather related first_service records
-        related_fs = []
-        for crid in class_rec_ids:
-            related_fs.extend(fs_by_rec.get(crid, []))
-        if not related_fs:
-            related_fs = fs_by_cid.get(eid, [])
-        seen_ids = set()
-        unique_fs = []
-        for r in related_fs:
-            rid = r.get("_id", id(r))
-            if rid not in seen_ids:
-                seen_ids.add(rid)
-                unique_fs.append(r)
-        related_fs = unique_fs
-
-        if related_fs:
-            debug_program_data["fs_matched"] += 1
-
-        # Gather related offer_perf records
-        related_perf = []
-        for crid in class_rec_ids:
-            related_perf.extend(perf_by_rec.get(crid, []))
-        if not related_perf:
-            related_perf = perf_by_cid.get(eid, [])
-        seen_ids = set()
-        unique_perf = []
-        for r in related_perf:
-            rid = r.get("_id", id(r))
-            if rid not in seen_ids:
-                seen_ids.add(rid)
-                unique_perf.append(r)
-        related_perf = unique_perf
-
-        if related_perf:
-            debug_program_data["perf_matched"] += 1
-
-        # Gather related partner records
-        related_partners = []
-        for crid in class_rec_ids:
-            related_partners.extend(partner_by_rec.get(crid, []))
-        if not related_partners:
-            related_partners = partner_by_cid.get(eid, [])
-
-        # Gather related indicator records
-        related_indicators = []
-        for crid in class_rec_ids:
-            related_indicators.extend(ind_by_rec.get(crid, []))
-        if not related_indicators:
-            related_indicators = ind_by_cid.get(eid, [])
+        if related_reach: debug_program_data["reach"] += 1
+        if related_fs: debug_program_data["fs"] += 1
+        if related_perf: debug_program_data["perf"] += 1
+        if related_partners: debug_program_data["partner"] += 1
+        if related_indicators: debug_program_data["indicator"] += 1
 
         # ── Reach by month ──
         monthly = defaultdict(lambda: {"irc": 0, "partner": 0})
@@ -398,91 +355,110 @@ def process(tables):
         fs_list = []
         for f in related_fs:
             eo_id = resolve_link(f.get("Emergency Offering", ""))
-            fs_list.append(
-                {
-                    "o": eo_map.get(eo_id, eo_id),
-                    "d": fmt_date(f.get("Date of First Service")) or "—",
-                }
-            )
+            fs_list.append({
+                "o": eo_map.get(eo_id, eo_id),
+                "d": fmt_date(f.get("Date of First Service")) or "—",
+                "type": f.get("Service type", "") or "",
+            })
 
-        # ── Offering review ──
+        # ── Offering review / performance ──
         or_list = []
         for p in related_perf:
             eo_id = resolve_link(p.get("Emergency Offering", ""))
-            or_list.append(
-                {
-                    "o": eo_map.get(eo_id, eo_id),
-                    "q": p.get("Quality Assessment", ""),
-                    "d": fmt_date(p.get("Date Assessed")) or "",
-                }
-            )
+            or_list.append({
+                "o": eo_map.get(eo_id, eo_id),
+                "q": p.get("Quality Assessment", ""),
+                "d": fmt_date(p.get("Date Assessed")) or "",
+            })
 
         # ── Partner data ──
         pd_list = []
         for p in related_partners:
-            eo_id = resolve_link(p.get("Emergency Offering", "") or p.get("Offering", ""))
+            eo_id = resolve_link(p.get("Emergency Offering Implemented", ""))
             pd_list.append({
-                "partner": p.get("Partner Name", "") or p.get("Partner", "") or p.get("Name", ""),
+                "partner": p.get("Partner", ""),
                 "offering": eo_map.get(eo_id, eo_id),
-                "en": p.get("Existing or New", "") or p.get("Existing/New", ""),
-                "disb": fmt_date(p.get("Date of First Disbursement") or p.get("First Disbursement")),
-                "fs": fmt_date(p.get("Date of First Service") or p.get("First Service")),
-                "fd": fmt_date(p.get("Funding Delivery") or p.get("Date of Funding Delivery")),
+                "en": p.get("Existing Partner or New Partner", ""),
+                "disb": fmt_date(p.get("Date of first disbursement")),
+                "fs": fmt_date(p.get("Date of First service")),
+                "fd": fmt_date(p.get("Funding delivery date")),
+                "agreement": fmt_date(p.get("Date Partnership Agreement signed or updated")),
+                "disbToSig": p.get("Time from disbursement to agreement signature", ""),
+                "sigToReceipt": p.get("Time from partnership agreement signature to partner recipt of funds", ""),
             })
 
-        # ── Quality indicators ──
+        # ── Quality indicators / indicator reporting ──
         qi_list = []
         for i in related_indicators:
-            eo_id = resolve_link(i.get("Emergency Offering", "") or i.get("Offering", ""))
+            ind_id = resolve_link(i.get("Indicator", ""))
             qi_list.append({
-                "o": eo_map.get(eo_id, eo_id),
-                "v": i.get("Reported Value", "") or i.get("Value", ""),
-                "t": i.get("Target", "") or i.get("Target Value", ""),
-                "d": fmt_date(i.get("Date Entered") or i.get("Date")),
+                "o": i.get("Name", "") or ind_id,
+                "v": i.get("Data Value", ""),
+                "t": i.get("Target", ""),
+                "d": fmt_date(i.get("Reporting Date")),
             })
 
         # Emergency type from latest classification
         e_type = max_stance.get("Emergency Type", "")
+        severity = max_stance.get("Severity", "")
+        region = max_stance.get("IRC Region", "")
 
         rec = {
             "id": eid,
+            "emgRecordId": emg_record_id,
             "country": country_name or eid[:2],
+            "region": region,
             "stance": stance,
+            "severity": severity,
             "details": e.get("Emergency_Details", "") or "",
             "affected": affected,
             "budget": budget,
             "gap": gap,
             "crf": crf,
+            "appeal": appeal,
             "reached": (
-                round(pct_reached * 100, 2)
-                if pct_reached
-                else (
-                    safe_float(e.get("% reached")) if e.get("% reached") else None
-                )
+                round(pct_reached * 100, 2) if pct_reached
+                else (safe_float(e.get("% reached")) if e.get("% reached") else None)
             ),
             "daysClient": int(d_client) if d_client is not None else None,
             "daysDecision": d_decision,
             "daysMSNA": d_msna,
+            "daysMSNAStart": d_msna_start,
             "daysPlanSub": d_plan_sub,
             "daysPlanApproval": d_plan_app,
+            "avgDisbToSig": round(d_disb_to_sig, 1) if d_disb_to_sig is not None else None,
+            "avgSigToReceipt": round(d_sig_to_receipt, 1) if d_sig_to_receipt is not None else None,
             "fundingSecured": funding,
             "target": target,
             "totalReach": total_reach,
+            "totalInOpArea": total_in_op_area,
+            "reach6moClass": reach_6mo_class,
+            "reach6moSvc": reach_6mo_svc,
+            "pct10Target6mo": round(pct_10_target_6mo * 100, 1) if pct_10_target_6mo else None,
+            "pctReachOpArea": round(pct_reach_op_area * 100, 2) if pct_reach_op_area else None,
+            "tenPctAffected": ten_pct_affected,
+            "pctPrep": round(pct_prep * 100, 1) if pct_prep else None,
             "dateClassified": fmt_date(earliest_str) or "",
             "dateDecision": fmt_date(e.get("Date of Decision to respond")),
+            "dateMSNAStart": fmt_date(e.get("Date of MSNA Data Collection Started")),
             "dateMSNA": fmt_date(e.get("Date of MSNA Completion")),
-            "datePlanSub": fmt_date(
-                e.get("Date of MSNA and Response Plan Submission")
-            ),
-            "datePlanApproval": fmt_date(
-                e.get("Date of Response plan approval (by ERMT)")
-            ),
+            "datePlanSub": fmt_date(e.get("Date of MSNA and Response Plan Submission")),
+            "datePlanApproval": fmt_date(e.get("Date of Response plan approval (by ERMT)")),
             "dateFirstClient": fmt_date(e.get("Date of First Client Served")),
-            "decision": e.get("Response Decision", "")
-            or e.get("Response Decision (Max)", ""),
+            "dateFirstCash": fmt_date(e.get("Date of First Cash Distribution")),
+            "date6moMark": fmt_date(e.get("6 Month Reporting Mark")),
+            "date3moMark": fmt_date(e.get("3 Month Mark")),
+            "dateLastReach": fmt_date(e.get("Last Updated Reach")),
+            "decision": e.get("Response Decision", "") or e.get("Response Decision (Max)", ""),
+            "ermtDecision": e.get("ERMT Response Decision", ""),
             "type": e_type,
             "pctFunded": round(pct_funded * 100, 1) if pct_funded else None,
             "link": e.get("Response Plan Link", "") or None,
+            "firstServiceType": e.get("First Service Type", ""),
+            "newOrExisting": e.get("New Location Or Existing", ""),
+            "sapStartTriggered": e.get("SAP Reporting Start Triggered", ""),
+            "sapMidTriggered": e.get("SAP Reporting Midpoint triggered", ""),
+            "sapEndTriggered": e.get("SAP Reporting End triggered", ""),
             "sap": sap,
             "rbm": rbm,
             "rbo": rbo,
@@ -501,29 +477,19 @@ def process(tables):
     print(f"    MATCHED (Orange/Red): {debug_counts['matched']}")
 
     print(f"\n  Program data matching (out of {debug_counts['matched']} emergencies):")
-    print(f"    With reach data: {debug_program_data['reach_matched']}")
-    print(f"    With first_service data: {debug_program_data['fs_matched']}")
-    print(f"    With offer_perf data: {debug_program_data['perf_matched']}")
+    print(f"    With reach data: {debug_program_data['reach']}")
+    print(f"    With first_service data: {debug_program_data['fs']}")
+    print(f"    With offer_perf data: {debug_program_data['perf']}")
+    print(f"    With partner data: {debug_program_data['partner']}")
+    print(f"    With indicator data: {debug_program_data['indicator']}")
 
-    # Show sample data for debugging
-    if debug_counts["matched"] > 0:
-        sample_e = result[0] if result else None
-        if sample_e:
-            print(f"\n  Sample matched emergency '{sample_e['id']}':")
-            print(f"    rbm entries: {len(sample_e['rbm'])}")
-            print(f"    rbo entries: {len(sample_e['rbo'])}")
-            print(f"    fs entries: {len(sample_e['fs'])}")
-            print(f"    or entries: {len(sample_e['or'])}")
-            print(f"    pd entries: {len(sample_e['pd'])}")
-            print(f"    qi entries: {len(sample_e['qi'])}")
+    # Show sample matched emergency
+    if result:
+        s = result[0]
+        print(f"\n  Sample emergency '{s['id']}' ({s['country']}):")
+        print(f"    rbm={len(s['rbm'])}, rbo={len(s['rbo'])}, fs={len(s['fs'])}, "
+              f"or={len(s['or'])}, pd={len(s['pd'])}, qi={len(s['qi'])}")
 
-    if debug_counts["matched"] == 0 and emg:
-        sample_eids = [e.get("Classification ID", "EMPTY") for e in emg[:5]]
-        sample_class_ids = list(class_by_eid.keys())[:5]
-        sample_dates = [(e.get("Classification ID",""), e.get("Earliest Classification","NO_FIELD"), e.get("Start Date","NO_FIELD")) for e in emg[:5]]
-        print(f"    Sample emergency Classification IDs: {sample_eids}")
-        print(f"    Sample class_by_eid keys: {sample_class_ids}")
-        print(f"    Sample emergency dates (ID, Earliest Classification, Start Date): {sample_dates}")
     print("── END DIAGNOSTICS ──\n")
 
     # Sort: Red first, then Orange, then by earliest classification
@@ -545,28 +511,29 @@ def process(tables):
     }
 
     # ── Count EO implementations ──
-    # Count from first_service data AND from reach data for completeness
     eo_counts = {}
-    # From first service records
+    # Count from first_service (most reliable source)
     for e in result:
         for f in e["fs"]:
             name = f["o"]
-            eo_counts[name] = eo_counts.get(name, 0) + 1
-    # If no fs data, fall back to counting unique EOs from reach data
+            if name:
+                eo_counts[name] = eo_counts.get(name, 0) + 1
+    # Fallback: count from reach-by-offering if no FS data
     if not eo_counts:
         for e in result:
-            seen_eos = set()
+            seen = set()
             for r in e["rbo"]:
                 name = r["n"]
-                if name and name not in seen_eos:
-                    seen_eos.add(name)
+                if name and name not in seen:
+                    seen.add(name)
                     eo_counts[name] = eo_counts.get(name, 0) + 1
-    # If still empty, count from classification-level data
+    # Last fallback: count from offering performance
     if not eo_counts:
         for e in result:
             for o in e["or"]:
                 name = o["o"]
-                eo_counts[name] = eo_counts.get(name, 0) + 1
+                if name:
+                    eo_counts[name] = eo_counts.get(name, 0) + 1
 
     return result, avgs, eo_counts
 
@@ -577,14 +544,10 @@ if __name__ == "__main__":
     tables = fetch_all()
     print("Processing data...")
     emergencies, avgs, eo_counts = process(tables)
-    print(
-        f"  Found {len(emergencies)} Orange/Red emergencies"
-    )
-    print(
-        f"  Averages: Decision={avgs['decision']}d, MSNA={avgs['msna']}d, "
-        f"PlanSub={avgs['planSub']}d, PlanApproval={avgs['planApproval']}d, "
-        f"Client={avgs['client']}d"
-    )
+    print(f"  Found {len(emergencies)} Orange/Red emergencies")
+    print(f"  Averages: Decision={avgs['decision']}d, MSNA={avgs['msna']}d, "
+          f"PlanSub={avgs['planSub']}d, PlanApproval={avgs['planApproval']}d, "
+          f"Client={avgs['client']}d")
     print(f"  EO Counts: {json.dumps(eo_counts)}")
 
     # ── Write JSON output ──
@@ -600,7 +563,4 @@ if __name__ == "__main__":
     with open("dashboard_data.json", "w") as f:
         json.dump(output, f, indent=2, default=str)
 
-    print(
-        f"Done! dashboard_data.json written "
-        f"({os.path.getsize('dashboard_data.json'):,} bytes)"
-    )
+    print(f"Done! dashboard_data.json written ({os.path.getsize('dashboard_data.json'):,} bytes)")
