@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-15T04:03:32Z",
+  "lastUpdated": "2026-03-15T05:16:39Z",
   "fiscalYear": 2026,
   "averages": {
     "decision": 18,
@@ -8,12 +8,21 @@
     "planApproval": 42,
     "client": 35
   },
-  "eoCounts": {},
+  "eoCounts": {
+    "*Emergency Basic Needs and Food Security": 4,
+    "*Emergency PHC": 3,
+    "*Focused MHPSS Interventions": 3,
+    "Community WASH": 2,
+    "*Community Management of Acute Malnutrition": 2
+  },
   "emergencies": [
     {
       "id": "AF494",
+      "emgRecordId": "recndfoN55bWDSzdP",
       "country": "Afghanistan",
+      "region": "Asia",
       "stance": "Red",
+      "severity": 10,
       "details": [
         "About 4.7 million people are experiencing emergency, or IPC Phase 4, levels of food insecurity across Afghanistan. Food insecurity is compounded by a weak, contracting economy, declining remittances following the return of over 2.5 million people from Iran and Pakistan in 2025, and recent earthquakes that have further strained food stocks and livelihoods."
       ],
@@ -21,44 +30,99 @@
       "budget": 2200000.0,
       "gap": 1000000.0,
       "crf": 1000000.0,
+      "appeal": null,
       "reached": 0.17,
       "daysClient": 53,
       "daysDecision": 3,
       "daysMSNA": 7,
+      "daysMSNAStart": 2,
       "daysPlanSub": 10,
       "daysPlanApproval": 18,
+      "avgDisbToSig": null,
+      "avgSigToReceipt": null,
       "fundingSecured": 1200000.0,
       "target": 61150,
       "totalReach": 7719,
+      "totalInOpArea": 602060,
+      "reach6moClass": 7719,
+      "reach6moSvc": 7719,
+      "pct10Target6mo": 1.7,
+      "pctReachOpArea": 1.28,
+      "tenPctAffected": 466400.0,
+      "pctPrep": null,
       "dateClassified": "Dec 19, 2025",
       "dateDecision": "Dec 22, 2025",
+      "dateMSNAStart": "Dec 21, 2025",
       "dateMSNA": "Dec 26, 2025",
       "datePlanSub": "Dec 29, 2025",
       "datePlanApproval": "Jan 06, 2026",
       "dateFirstClient": null,
+      "dateFirstCash": "Feb 10, 2026",
+      "date6moMark": "Jun 18, 2026",
+      "date3moMark": "Mar 18, 2026",
+      "dateLastReach": "Mar 09, 2026",
       "decision": "Direct Implementation",
+      "ermtDecision": "Direct Implementation",
       "type": "Food insecurity",
       "pctFunded": null,
       "link": "https://rescue.box.com/s/oi79y2gwrslpjnzsd2h7q8w1b4dgft8l",
+      "firstServiceType": [
+        "recrIdLWM9DETcg8p"
+      ],
+      "newOrExisting": "",
+      "sapStartTriggered": true,
+      "sapMidTriggered": "",
+      "sapEndTriggered": "",
       "sap": {
         "plan": "Yes",
         "learning": "Pending",
         "feedback": "Yes",
         "feedbackTime": "Pending",
         "safeguarding": "Pending",
-        "partners": "Pending"
+        "partners": "Pending",
+        "indicators80": "Pending",
+        "sequenced": "",
+        "msnaCompleted": "Yes - Includes primary data collection",
+        "localSystems": ""
       },
-      "rbm": [],
-      "rbo": [],
-      "fs": [],
-      "or": [],
+      "rbm": [
+        {
+          "m": "Feb 2026",
+          "i": 7719,
+          "p": 0
+        }
+      ],
+      "rbo": [
+        {
+          "n": "*Emergency Basic Needs and Food Security",
+          "r": 7719,
+          "t": 23310
+        }
+      ],
+      "fs": [
+        {
+          "o": "*Emergency Basic Needs and Food Security",
+          "d": "Feb 10, 2026",
+          "type": "Multipurpose Cash Assistance "
+        }
+      ],
+      "or": [
+        {
+          "o": "*Emergency Basic Needs and Food Security",
+          "q": "Pending TA review",
+          "d": ""
+        }
+      ],
       "pd": [],
       "qi": []
     },
     {
       "id": "IR507",
+      "emgRecordId": "recql0qR6BuWFgKvx",
       "country": "Iran (Islamic Republic of)",
+      "region": "Asia",
       "stance": "Red",
+      "severity": 9,
       "details": [
         "US and Israeli airstrikes on Iran have killed over 1,000 people and displaced millions. Most of those displaced are from Tehran and are heading to the north of the country. Information coming out of Iran is limited and this classification will be update accordingly. Please note, related impacts in other countries will be classified separately."
       ],
@@ -66,32 +130,58 @@
       "budget": null,
       "gap": null,
       "crf": null,
+      "appeal": null,
       "reached": null,
       "daysClient": null,
       "daysDecision": 0,
       "daysMSNA": null,
+      "daysMSNAStart": null,
       "daysPlanSub": null,
       "daysPlanApproval": null,
+      "avgDisbToSig": null,
+      "avgSigToReceipt": null,
       "fundingSecured": null,
       "target": null,
       "totalReach": null,
+      "totalInOpArea": null,
+      "reach6moClass": null,
+      "reach6moSvc": null,
+      "pct10Target6mo": null,
+      "pctReachOpArea": null,
+      "tenPctAffected": 256000.0,
+      "pctPrep": null,
       "dateClassified": "Mar 04, 2026",
       "dateDecision": "Mar 04, 2026",
+      "dateMSNAStart": null,
       "dateMSNA": null,
       "datePlanSub": null,
       "datePlanApproval": null,
       "dateFirstClient": null,
+      "dateFirstCash": null,
+      "date6moMark": "Sep 03, 2026",
+      "date3moMark": "Jun 03, 2026",
+      "dateLastReach": null,
       "decision": "Partner Implementation",
+      "ermtDecision": "Partner Implementation",
       "type": "Conflict",
       "pctFunded": null,
       "link": null,
+      "firstServiceType": "",
+      "newOrExisting": "",
+      "sapStartTriggered": true,
+      "sapMidTriggered": "",
+      "sapEndTriggered": "",
       "sap": {
         "plan": "Pending",
         "learning": "Pending",
         "feedback": "Pending",
         "feedbackTime": "Pending",
         "safeguarding": "Pending",
-        "partners": "Pending"
+        "partners": "Pending",
+        "indicators80": "Pending",
+        "sequenced": "",
+        "msnaCompleted": "Pending",
+        "localSystems": ""
       },
       "rbm": [],
       "rbo": [],
@@ -102,8 +192,11 @@
     },
     {
       "id": "HT479",
+      "emgRecordId": "recXdvbAFBRKaeNyF",
       "country": "Haiti",
+      "region": "LatAm",
       "stance": "Red",
+      "severity": 9,
       "details": [
         "Non-state armed group activity has constrained food systems in Haiti, where more than 1.8 million people (1 million people within Port au Prince, and the Artibonite, Ouest, and Centre departments) face Emergency (IPC 4) levels of food insecurity. Further deterioration is expected in the coming months"
       ],
@@ -111,44 +204,134 @@
       "budget": 8864256.0,
       "gap": 8064256.0,
       "crf": 800000.0,
+      "appeal": null,
       "reached": 3.42,
       "daysClient": 78,
       "daysDecision": 52,
       "daysMSNA": 51,
+      "daysMSNAStart": 42,
       "daysPlanSub": 57,
       "daysPlanApproval": 71,
+      "avgDisbToSig": null,
+      "avgSigToReceipt": null,
       "fundingSecured": 800000.0,
       "target": 130170,
       "totalReach": 64856,
+      "totalInOpArea": 671023,
+      "reach6moClass": 64856,
+      "reach6moSvc": 64856,
+      "pct10Target6mo": 34.2,
+      "pctReachOpArea": 9.67,
+      "tenPctAffected": 189500.0,
+      "pctPrep": null,
       "dateClassified": "Oct 27, 2025",
       "dateDecision": "Dec 18, 2025",
+      "dateMSNAStart": "Dec 08, 2025",
       "dateMSNA": "Dec 17, 2025",
       "datePlanSub": "Dec 23, 2025",
       "datePlanApproval": "Jan 06, 2026",
       "dateFirstClient": "Dec 01, 2025",
+      "dateFirstCash": null,
+      "date6moMark": "Apr 26, 2026",
+      "date3moMark": "Jan 26, 2026",
+      "dateLastReach": "Mar 11, 2026",
       "decision": "Partner Implementation",
+      "ermtDecision": "Partner Implementation",
       "type": "Food Insecurity",
       "pctFunded": null,
       "link": "https://rescue.box.com/s/vvzocn1hspjbga5lod1oefdzb01enkyv",
+      "firstServiceType": [
+        "recLJ6kixUP5DVKw5"
+      ],
+      "newOrExisting": "",
+      "sapStartTriggered": true,
+      "sapMidTriggered": true,
+      "sapEndTriggered": true,
       "sap": {
         "plan": "Yes",
         "learning": "Pending",
         "feedback": "Yes",
         "feedbackTime": "Pending",
         "safeguarding": "Pending",
-        "partners": "Pending"
+        "partners": "Pending",
+        "indicators80": "Not Applicable",
+        "sequenced": "No",
+        "msnaCompleted": "Yes - Includes primary data collection",
+        "localSystems": "Not Applicable"
       },
-      "rbm": [],
-      "rbo": [],
-      "fs": [],
-      "or": [],
+      "rbm": [
+        {
+          "m": "Jan 2026",
+          "i": 0,
+          "p": 24566
+        },
+        {
+          "m": "Feb 2026",
+          "i": 0,
+          "p": 37514
+        },
+        {
+          "m": "Dec 2025",
+          "i": 0,
+          "p": 3585
+        }
+      ],
+      "rbo": [
+        {
+          "n": "*Focused MHPSS Interventions",
+          "r": 875,
+          "t": 2050
+        },
+        {
+          "n": "Community WASH",
+          "r": 7621,
+          "t": 18000
+        },
+        {
+          "n": "Community Risk Mitigation and Access",
+          "r": 50499,
+          "t": 26500
+        },
+        {
+          "n": "*Emergency PHC",
+          "r": 6670,
+          "t": 75000
+        },
+        {
+          "n": "*Emergency Basic Needs and Food Security",
+          "r": 0,
+          "t": 6670
+        }
+      ],
+      "fs": [
+        {
+          "o": "*Emergency PHC",
+          "d": "Jan 30, 2026",
+          "type": "Outpantient consultations"
+        },
+        {
+          "o": "*Focused MHPSS Interventions",
+          "d": "Jan 13, 2026",
+          "type": "Individual Psychosocial Support (PSS)"
+        }
+      ],
+      "or": [
+        {
+          "o": "*Focused MHPSS Interventions",
+          "q": "Pending TA review",
+          "d": ""
+        }
+      ],
       "pd": [],
       "qi": []
     },
     {
       "id": "SD480",
+      "emgRecordId": "recs3r86ftqbV7COC",
       "country": "Sudan",
+      "region": "East Africa",
       "stance": "Red",
+      "severity": 6,
       "details": [
         "Amid extreme violence in El Fasher by the Rapid Support Forces (RSF), over 100,000 civilians have been displaced to nearby, with estimates of 60,000 people killed. The city has been besieged for nearly two years causing catastrophic levels of food insecurity among the affected population. Many civilians remain trapped in El Fasher with no access to aid or missing, and those who have managed to escape to safety have reported mass killings and sexual violence. Please note, this classification has increased due to updates to the classification system as well as new data that has been released."
       ],
@@ -156,44 +339,92 @@
       "budget": null,
       "gap": null,
       "crf": null,
+      "appeal": null,
       "reached": 6.16,
       "daysClient": 0,
       "daysDecision": 0,
       "daysMSNA": null,
+      "daysMSNAStart": null,
       "daysPlanSub": null,
       "daysPlanApproval": null,
+      "avgDisbToSig": null,
+      "avgSigToReceipt": null,
       "fundingSecured": null,
       "target": 30000,
       "totalReach": 18477,
+      "totalInOpArea": 127162,
+      "reach6moClass": 18477,
+      "reach6moSvc": null,
+      "pct10Target6mo": null,
+      "pctReachOpArea": 14.53,
+      "tenPctAffected": 30000.0,
+      "pctPrep": null,
       "dateClassified": "Oct 27, 2025",
       "dateDecision": "Oct 27, 2025",
+      "dateMSNAStart": null,
       "dateMSNA": null,
       "datePlanSub": null,
       "datePlanApproval": null,
       "dateFirstClient": "Oct 27, 2025",
+      "dateFirstCash": null,
+      "date6moMark": "Apr 26, 2026",
+      "date3moMark": "Jan 26, 2026",
+      "dateLastReach": "Mar 12, 2026",
       "decision": "Direct and Partner Implementation",
+      "ermtDecision": "Direct and Partner Implementation",
       "type": "Conflict",
       "pctFunded": null,
       "link": null,
+      "firstServiceType": [
+        "rec2i4vMqr8LTBZUT"
+      ],
+      "newOrExisting": "",
+      "sapStartTriggered": true,
+      "sapMidTriggered": true,
+      "sapEndTriggered": true,
       "sap": {
         "plan": "No",
         "learning": "Not Applicable",
         "feedback": "Yes",
         "feedbackTime": "Pending",
         "safeguarding": "Pending",
-        "partners": "Not Applicable"
+        "partners": "Not Applicable",
+        "indicators80": "",
+        "sequenced": "",
+        "msnaCompleted": "Not applicable",
+        "localSystems": ""
       },
       "rbm": [],
       "rbo": [],
-      "fs": [],
-      "or": [],
+      "fs": [
+        {
+          "o": "Community WASH",
+          "d": "Oct 27, 2025",
+          "type": "Water trucking"
+        },
+        {
+          "o": "*Emergency PHC",
+          "d": "Oct 27, 2025",
+          "type": "Outpantient consultations"
+        }
+      ],
+      "or": [
+        {
+          "o": "*Emergency PHC",
+          "q": "Pending TA review",
+          "d": ""
+        }
+      ],
       "pd": [],
       "qi": []
     },
     {
       "id": "CD490",
+      "emgRecordId": "reckdR6guoVRKQCgp",
       "country": "Democratic Republic of the Congo",
+      "region": "Central Africa",
       "stance": "Orange",
+      "severity": 7,
       "details": [
         "Fighting between the Rwandan-backed armed group M23 and the Congolese armed forces (FARDC) has escalated in South Kivu, displacing over 1 million people since October. Fighting has been heaviest in Uvira, Walungu, Fizi, and Mwenga territories, within South Kivu, in the eastern DRC"
       ],
@@ -201,44 +432,144 @@
       "budget": 4000000.0,
       "gap": 3563000.0,
       "crf": 437000.0,
+      "appeal": null,
       "reached": 1.64,
       "daysClient": 48,
       "daysDecision": 1,
       "daysMSNA": 10,
+      "daysMSNAStart": 4,
       "daysPlanSub": 13,
       "daysPlanApproval": 30,
+      "avgDisbToSig": null,
+      "avgSigToReceipt": null,
       "fundingSecured": 437000.0,
       "target": 43320,
       "totalReach": 6736,
+      "totalInOpArea": 56074,
+      "reach6moClass": 6736,
+      "reach6moSvc": 6736,
+      "pct10Target6mo": 16.4,
+      "pctReachOpArea": 12.01,
+      "tenPctAffected": 41135.5,
+      "pctPrep": null,
       "dateClassified": "Dec 09, 2025",
       "dateDecision": "Dec 10, 2025",
+      "dateMSNAStart": "Dec 13, 2025",
       "dateMSNA": "Dec 19, 2025",
       "datePlanSub": "Dec 22, 2025",
       "datePlanApproval": "Jan 08, 2026",
       "dateFirstClient": null,
+      "dateFirstCash": null,
+      "date6moMark": "Jun 08, 2026",
+      "date3moMark": "Mar 08, 2026",
+      "dateLastReach": "Mar 13, 2026",
       "decision": "Direct and Partner Implementation",
+      "ermtDecision": "Direct and Partner Implementation",
       "type": "Conflict",
       "pctFunded": null,
       "link": "https://rescue.box.com/s/p1gym292lub590srt3xkfxb7l1niko6i",
+      "firstServiceType": [
+        "recLJ6kixUP5DVKw5"
+      ],
+      "newOrExisting": "",
+      "sapStartTriggered": true,
+      "sapMidTriggered": true,
+      "sapEndTriggered": true,
       "sap": {
         "plan": "Yes",
         "learning": "Not Applicable",
         "feedback": "Yes",
         "feedbackTime": "Pending",
         "safeguarding": "Pending",
-        "partners": "Not Applicable"
+        "partners": "Not Applicable",
+        "indicators80": "Pending",
+        "sequenced": "",
+        "msnaCompleted": "Yes - Includes primary data collection",
+        "localSystems": ""
       },
-      "rbm": [],
-      "rbo": [],
-      "fs": [],
-      "or": [],
+      "rbm": [
+        {
+          "m": "Feb 2026",
+          "i": 16394,
+          "p": 0
+        },
+        {
+          "m": "Jan 2026",
+          "i": 12,
+          "p": 0
+        }
+      ],
+      "rbo": [
+        {
+          "n": "Community WASH",
+          "r": 7197,
+          "t": 23280
+        },
+        {
+          "n": "*Focused MHPSS Interventions",
+          "r": 88,
+          "t": 240
+        },
+        {
+          "n": "*Connected Learning in Crisis",
+          "r": 1682,
+          "t": 2000
+        },
+        {
+          "n": "Community Risk Mitigation and Access",
+          "r": 7439,
+          "t": 22430
+        }
+      ],
+      "fs": [
+        {
+          "o": "*Focused MHPSS Interventions",
+          "d": "Jan 26, 2026",
+          "type": "Individual Psychosocial Support (PSS)"
+        }
+      ],
+      "or": [
+        {
+          "o": "*Emergency Basic Needs and Food Security",
+          "q": "Pending TA review",
+          "d": ""
+        },
+        {
+          "o": "Responsive Information Services",
+          "q": "Pending TA review",
+          "d": ""
+        },
+        {
+          "o": "*Social Work in Emergencies",
+          "q": "Pending TA review",
+          "d": ""
+        },
+        {
+          "o": "*Safe Play and Learning Spaces",
+          "q": "Pending TA review",
+          "d": ""
+        },
+        {
+          "o": "*Outbreak Prevention and Response",
+          "q": "Pending TA review",
+          "d": ""
+        },
+        {
+          "o": "*Connected Learning in Crisis",
+          "q": "Pending TA review",
+          "d": ""
+        }
+      ],
       "pd": [],
       "qi": []
     },
     {
       "id": "SS498",
+      "emgRecordId": "recBCzedH5p2zhqV7",
       "country": "South Sudan",
+      "region": "East Africa",
       "stance": "Orange",
+      "severity": 6,
       "details": [
         "Renewed fighting between the South Sudanese military (SSPDF) and their main opposition group, the Sudan's Peoples Liberation Army in Opposition (SPLA-iO), has displaced over 290,000 people in South Sudan's Jonglei, Upper Nile, and Unity states. Further clashes are expected as the SSPDF has ordered civilians and NGOs to evacuate opposition held territory as they prepare to retake the area."
       ],
@@ -246,32 +577,58 @@
       "budget": 2000000.0,
       "gap": 1650000.0,
       "crf": 350000.0,
+      "appeal": null,
       "reached": null,
       "daysClient": null,
       "daysDecision": 13,
       "daysMSNA": null,
+      "daysMSNAStart": null,
       "daysPlanSub": 43,
       "daysPlanApproval": 43,
+      "avgDisbToSig": null,
+      "avgSigToReceipt": null,
       "fundingSecured": 350000.0,
       "target": 184000,
       "totalReach": null,
+      "totalInOpArea": null,
+      "reach6moClass": null,
+      "reach6moSvc": null,
+      "pct10Target6mo": null,
+      "pctReachOpArea": null,
+      "tenPctAffected": 23000.0,
+      "pctPrep": null,
       "dateClassified": "Jan 27, 2026",
       "dateDecision": "Feb 09, 2026",
+      "dateMSNAStart": null,
       "dateMSNA": null,
       "datePlanSub": "Mar 11, 2026",
       "datePlanApproval": "Mar 11, 2026",
       "dateFirstClient": null,
+      "dateFirstCash": null,
+      "date6moMark": "Jul 26, 2026",
+      "date3moMark": "Apr 26, 2026",
+      "dateLastReach": null,
       "decision": "Direct and Partner Implementation",
+      "ermtDecision": "Direct and Partner Implementation",
       "type": "Conflict",
       "pctFunded": null,
       "link": "https://rescue.app.box.com/s/mt3wmipcnt3jii88yvhnygge5iiy7tvr",
+      "firstServiceType": "",
+      "newOrExisting": "",
+      "sapStartTriggered": true,
+      "sapMidTriggered": "",
+      "sapEndTriggered": "",
       "sap": {
         "plan": "Yes",
         "learning": "Not Applicable",
         "feedback": "Pending",
         "feedbackTime": "Pending",
         "safeguarding": "Pending",
-        "partners": "Not Applicable"
+        "partners": "Not Applicable",
+        "indicators80": "Pending",
+        "sequenced": "",
+        "msnaCompleted": "Pending",
+        "localSystems": ""
       },
       "rbm": [],
       "rbo": [],
@@ -282,8 +639,11 @@
     },
     {
       "id": "LB504",
+      "emgRecordId": "recGmYjyUtzYnjObl",
       "country": "Lebanon",
+      "region": "MENA",
       "stance": "Orange",
+      "severity": 7,
       "details": [
         "The US-led conflict against Iran has expanded to include airstrikes in Lebanon. Following the strikes on Iran, Hezbollah launched a series of missiles at Israel. In response, Israel is carrying out airstrikes across Lebanon that have displaced at least 815,000 people, with more expected following evacuation orders, and killed over 630. The situation is changing rapidly, and this classification will be updated accordingly."
       ],
@@ -291,44 +651,98 @@
       "budget": 2000000.0,
       "gap": 1400000.0,
       "crf": 600000.0,
+      "appeal": null,
       "reached": 1.46,
       "daysClient": 2,
       "daysDecision": 2,
       "daysMSNA": null,
+      "daysMSNAStart": null,
       "daysPlanSub": 4,
       "daysPlanApproval": 5,
+      "avgDisbToSig": null,
+      "avgSigToReceipt": null,
       "fundingSecured": 600000.0,
       "target": 30000,
       "totalReach": 4368,
+      "totalInOpArea": null,
+      "reach6moClass": 4368,
+      "reach6moSvc": 4368,
+      "pct10Target6mo": 14.6,
+      "pctReachOpArea": null,
+      "tenPctAffected": 30000.0,
+      "pctPrep": null,
       "dateClassified": "Mar 02, 2026",
       "dateDecision": "Mar 04, 2026",
+      "dateMSNAStart": null,
       "dateMSNA": null,
       "datePlanSub": "Mar 06, 2026",
       "datePlanApproval": "Mar 07, 2026",
       "dateFirstClient": null,
+      "dateFirstCash": "Mar 06, 2026",
+      "date6moMark": "Sep 03, 2026",
+      "date3moMark": "Jun 03, 2026",
+      "dateLastReach": "Mar 13, 2026",
       "decision": "Direct and Partner Implementation",
+      "ermtDecision": "Direct and Partner Implementation",
       "type": "Conflict",
       "pctFunded": null,
       "link": "https://rescue.app.box.com/s/mfm5ciky0661um5kfjbrdy0iji569jxw",
+      "firstServiceType": [
+        "recrIdLWM9DETcg8p"
+      ],
+      "newOrExisting": "",
+      "sapStartTriggered": true,
+      "sapMidTriggered": "",
+      "sapEndTriggered": "",
       "sap": {
         "plan": "Yes",
         "learning": "Not Applicable",
         "feedback": "Pending",
         "feedbackTime": "Pending",
         "safeguarding": "Pending",
-        "partners": "Not Applicable"
+        "partners": "Not Applicable",
+        "indicators80": "Pending",
+        "sequenced": "",
+        "msnaCompleted": "No",
+        "localSystems": ""
       },
-      "rbm": [],
-      "rbo": [],
-      "fs": [],
+      "rbm": [
+        {
+          "m": "Mar 2026",
+          "i": 0,
+          "p": 4368
+        }
+      ],
+      "rbo": [
+        {
+          "n": "*Emergency Basic Needs and Food Security",
+          "r": 4368,
+          "t": null
+        }
+      ],
+      "fs": [
+        {
+          "o": "*Emergency Basic Needs and Food Security",
+          "d": "Mar 06, 2026",
+          "type": "Core relief item distribution"
+        },
+        {
+          "o": "*Focused MHPSS Interventions",
+          "d": "Mar 11, 2026",
+          "type": "Community based PSS Support"
+        }
+      ],
       "or": [],
       "pd": [],
       "qi": []
     },
     {
       "id": "SS483",
+      "emgRecordId": "recr311Z76FOvMsyu",
       "country": "South Sudan",
+      "region": "East Africa",
       "stance": "Orange",
+      "severity": 8,
       "details": [
         "South Sudan is facing high levels of food insecurity, with 27,856 people experiencing catastrophic or IPC5 levels of food insecurity, and more than 1.2 million people in emergency or IPC4 levels. Nearly half of the population is facing IPC 3 or higher food insecurity. This is driven largely by localized conflict, civil insecurity, and widespread flooding that has impacted agricultural lands and food production."
       ],
@@ -336,44 +750,154 @@
       "budget": 2000000.0,
       "gap": 1400000.0,
       "crf": 600000.0,
+      "appeal": null,
       "reached": 2.1,
       "daysClient": 25,
       "daysDecision": 4,
       "daysMSNA": 5,
+      "daysMSNAStart": 1,
       "daysPlanSub": 13,
       "daysPlanApproval": 20,
+      "avgDisbToSig": null,
+      "avgSigToReceipt": null,
       "fundingSecured": 600000.0,
       "target": 159210,
       "totalReach": 27814,
+      "totalInOpArea": 652825,
+      "reach6moClass": 27814,
+      "reach6moSvc": 27814,
+      "pct10Target6mo": 21.0,
+      "pctReachOpArea": 4.26,
+      "tenPctAffected": 132294.2,
+      "pctPrep": null,
       "dateClassified": "Nov 06, 2025",
       "dateDecision": "Nov 10, 2025",
+      "dateMSNAStart": "Nov 07, 2025",
       "dateMSNA": "Nov 11, 2025",
       "datePlanSub": "Nov 19, 2025",
       "datePlanApproval": "Nov 26, 2025",
       "dateFirstClient": null,
+      "dateFirstCash": "Feb 15, 2026",
+      "date6moMark": "May 05, 2026",
+      "date3moMark": "Feb 05, 2026",
+      "dateLastReach": "Mar 12, 2026",
       "decision": "Direct and Partner Implementation",
+      "ermtDecision": "Direct and Partner Implementation",
       "type": "Food Insecurity",
       "pctFunded": null,
       "link": "https://rescue.app.box.com/s/elcqgz57j1z0bpbca3k52awwvsk0ees6",
+      "firstServiceType": [
+        "rec2i4vMqr8LTBZUT"
+      ],
+      "newOrExisting": "",
+      "sapStartTriggered": true,
+      "sapMidTriggered": true,
+      "sapEndTriggered": true,
       "sap": {
         "plan": "Yes",
         "learning": "Not Applicable",
         "feedback": "Yes",
         "feedbackTime": "Pending",
         "safeguarding": "Pending",
-        "partners": "Not Applicable"
+        "partners": "Not Applicable",
+        "indicators80": "",
+        "sequenced": "",
+        "msnaCompleted": "Yes - Includes primary data collection",
+        "localSystems": ""
       },
-      "rbm": [],
-      "rbo": [],
-      "fs": [],
-      "or": [],
+      "rbm": [
+        {
+          "m": "Feb 2026",
+          "i": 7679,
+          "p": 6719
+        },
+        {
+          "m": "Jan 2026",
+          "i": 3444,
+          "p": 5557
+        },
+        {
+          "m": "Dec 2025",
+          "i": 644,
+          "p": 3976
+        }
+      ],
+      "rbo": [
+        {
+          "n": "*Emergency Basic Needs and Food Security",
+          "r": 2088,
+          "t": 2088
+        },
+        {
+          "n": "*Emergency PHC",
+          "r": 15978,
+          "t": 12560
+        },
+        {
+          "n": "*Community Management of Acute Malnutrition",
+          "r": 9953,
+          "t": 14716
+        }
+      ],
+      "fs": [
+        {
+          "o": "*Emergency Basic Needs and Food Security",
+          "d": "Feb 15, 2026",
+          "type": "Multipurpose Cash Assistance "
+        },
+        {
+          "o": "*Community Management of Acute Malnutrition",
+          "d": "Dec 08, 2025",
+          "type": "Mass screenings for acute malnutrition"
+        },
+        {
+          "o": "*Emergency PHC",
+          "d": "Dec 01, 2025",
+          "type": "Outpantient consultations"
+        }
+      ],
+      "or": [
+        {
+          "o": "*Community Management of Acute Malnutrition",
+          "q": "Pending TA review",
+          "d": ""
+        },
+        {
+          "o": "*Emergency PHC",
+          "q": "Pending TA review",
+          "d": ""
+        },
+        {
+          "o": "*MISP for SRH",
+          "q": "Pending TA review",
+          "d": ""
+        },
+        {
+          "o": "*Emergency Basic Needs and Food Security",
+          "q": "Pending TA review",
+          "d": ""
+        },
+        {
+          "o": "*Emergency PHC",
+          "q": "Pending TA review",
+          "d": ""
+        },
+        {
+          "o": "*Emergency PHC",
+          "q": "Pending TA review",
+          "d": ""
+        }
+      ],
       "pd": [],
       "qi": []
     },
     {
       "id": "SO486",
+      "emgRecordId": "recmqpSp1ETUeW8CM",
       "country": "Somalia",
+      "region": "East Africa",
       "stance": "Orange",
+      "severity": 7,
       "details": [
         "4.6 million affected by drought and nearly half a million displaced, as worsening conditions drive a near doubling of people facing acute food insecurity to 6.5 million, while acute malnutrition rises for a second consecutive year, with over 1.8 million children affected."
       ],
@@ -381,44 +905,149 @@
       "budget": 2062500.0,
       "gap": 62500.0,
       "crf": 900000.0,
+      "appeal": 1800000.0,
       "reached": 4.91,
       "daysClient": 41,
       "daysDecision": 10,
       "daysMSNA": 23,
+      "daysMSNAStart": 19,
       "daysPlanSub": 25,
       "daysPlanApproval": 27,
+      "avgDisbToSig": null,
+      "avgSigToReceipt": null,
       "fundingSecured": 2000000.0,
       "target": 90000,
       "totalReach": 45220,
+      "totalInOpArea": 585000,
+      "reach6moClass": 45220,
+      "reach6moSvc": 45220,
+      "pct10Target6mo": 49.1,
+      "pctReachOpArea": 7.73,
+      "tenPctAffected": 92116.8,
+      "pctPrep": null,
       "dateClassified": "Nov 11, 2025",
       "dateDecision": "Nov 21, 2025",
+      "dateMSNAStart": "Nov 30, 2025",
       "dateMSNA": "Dec 04, 2025",
       "datePlanSub": "Dec 06, 2025",
       "datePlanApproval": "Dec 08, 2025",
       "dateFirstClient": "Dec 22, 2025",
+      "dateFirstCash": "Dec 24, 2025",
+      "date6moMark": "May 10, 2026",
+      "date3moMark": "Feb 10, 2026",
+      "dateLastReach": "Mar 09, 2026",
       "decision": "Direct and Partner Implementation",
+      "ermtDecision": "Direct and Partner Implementation",
       "type": "Food insecurity",
       "pctFunded": null,
       "link": "https://rescue.app.box.com/s/nkl40h6bc8b2dz548moraabs20qr6tld",
+      "firstServiceType": [
+        "reco84FIXPbXfXJm6"
+      ],
+      "newOrExisting": "",
+      "sapStartTriggered": true,
+      "sapMidTriggered": true,
+      "sapEndTriggered": true,
       "sap": {
         "plan": "Yes",
         "learning": "Not Applicable",
         "feedback": "Yes",
         "feedbackTime": "Yes",
         "safeguarding": "Pending",
-        "partners": "Not Applicable"
+        "partners": "Not Applicable",
+        "indicators80": "Reporting Period Not Met",
+        "sequenced": "",
+        "msnaCompleted": "Yes - Includes primary data collection",
+        "localSystems": ""
       },
-      "rbm": [],
-      "rbo": [],
-      "fs": [],
-      "or": [],
+      "rbm": [
+        {
+          "m": "Jan 2026",
+          "i": 22940,
+          "p": 0
+        },
+        {
+          "m": "Dec 2025",
+          "i": 19761,
+          "p": 0
+        },
+        {
+          "m": "Feb 2026",
+          "i": 30704,
+          "p": 0
+        }
+      ],
+      "rbo": [
+        {
+          "n": "*Emergency Basic Needs and Food Security",
+          "r": 26190,
+          "t": 19680
+        },
+        {
+          "n": "Community WASH",
+          "r": 42112,
+          "t": 40000
+        },
+        {
+          "n": "*Community Management of Acute Malnutrition",
+          "r": 5103,
+          "t": 4120
+        }
+      ],
+      "fs": [
+        {
+          "o": "Community WASH",
+          "d": "Dec 29, 2025",
+          "type": "WASH NFIs Distribution"
+        },
+        {
+          "o": "*Community Management of Acute Malnutrition",
+          "d": "Dec 22, 2025",
+          "type": "Mass screenings for acute malnutrition"
+        },
+        {
+          "o": "*Emergency Basic Needs and Food Security",
+          "d": "Dec 24, 2025",
+          "type": "Multipurpose Cash Assistance "
+        }
+      ],
+      "or": [
+        {
+          "o": "*Community Management of Acute Malnutrition",
+          "q": "Pending TA review",
+          "d": ""
+        },
+        {
+          "o": "*Infant and young child feeding",
+          "q": "Pending TA review",
+          "d": ""
+        },
+        {
+          "o": "*Infant and young child feeding",
+          "q": "Pending TA review",
+          "d": ""
+        },
+        {
+          "o": "Community WASH",
+          "q": "Pending TA review",
+          "d": ""
+        },
+        {
+          "o": "*Emergency Basic Needs and Food Security",
+          "q": "Pending TA review",
+          "d": ""
+        }
+      ],
       "pd": [],
       "qi": []
     },
     {
       "id": "SD481",
+      "emgRecordId": "recMrZ6AJTrHMoznc",
       "country": "Sudan",
+      "region": "East Africa",
       "stance": "Orange",
+      "severity": 7,
       "details": [
         "The Rapid Support Forces (RSF) have launched a major offensive in the Kordofan states in recent weeks, resulting in the displacement of nearly 900,000 people and violent attacks against the civilian population. Furthermore, the RSF has besieged cities such as Dilling in South Kordofan, totally cutting off the population from humanitarian assistance."
       ],
@@ -426,32 +1055,58 @@
       "budget": 1000000.0,
       "gap": 700000.0,
       "crf": 300000.0,
+      "appeal": null,
       "reached": null,
       "daysClient": null,
       "daysDecision": 91,
       "daysMSNA": null,
+      "daysMSNAStart": null,
       "daysPlanSub": 110,
       "daysPlanApproval": 119,
+      "avgDisbToSig": null,
+      "avgSigToReceipt": null,
       "fundingSecured": 300000.0,
       "target": null,
       "totalReach": null,
+      "totalInOpArea": null,
+      "reach6moClass": null,
+      "reach6moSvc": null,
+      "pct10Target6mo": null,
+      "pctReachOpArea": null,
+      "tenPctAffected": 89340.3,
+      "pctPrep": null,
       "dateClassified": "Oct 30, 2025",
       "dateDecision": "Jan 29, 2026",
+      "dateMSNAStart": null,
       "dateMSNA": null,
       "datePlanSub": "Feb 17, 2026",
       "datePlanApproval": "Feb 26, 2026",
       "dateFirstClient": null,
+      "dateFirstCash": null,
+      "date6moMark": "Jul 12, 2026",
+      "date3moMark": "Apr 12, 2026",
+      "dateLastReach": null,
       "decision": "Direct Implementation",
+      "ermtDecision": "Direct Implementation",
       "type": "Conflict",
       "pctFunded": null,
       "link": "https://rescue.app.box.com/s/vyk83pas8wurtpl66359sbdou4qu9irx",
+      "firstServiceType": "",
+      "newOrExisting": "",
+      "sapStartTriggered": true,
+      "sapMidTriggered": "",
+      "sapEndTriggered": "",
       "sap": {
         "plan": "Yes",
         "learning": "Not Applicable",
         "feedback": "Pending",
         "feedbackTime": "Pending",
         "safeguarding": "Pending",
-        "partners": "Not Applicable"
+        "partners": "Not Applicable",
+        "indicators80": "",
+        "sequenced": "",
+        "msnaCompleted": "Yes - Secondary Data only",
+        "localSystems": ""
       },
       "rbm": [],
       "rbo": [],
