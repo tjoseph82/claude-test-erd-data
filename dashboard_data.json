@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-15T21:17:30Z",
+  "lastUpdated": "2026-03-16T01:12:56Z",
   "fiscalYear": 2026,
   "averages": {
     "decision": 18,
@@ -647,12 +647,12 @@
       "details": [
         "The US-led conflict against Iran has expanded to include airstrikes in Lebanon. Following the strikes on Iran, Hezbollah launched a series of missiles at Israel. In response, Israel is carrying out airstrikes across Lebanon that have displaced at least 815,000 people, with more expected following evacuation orders, and killed over 630. The situation is changing rapidly, and this classification will be updated accordingly."
       ],
-      "affected": 300000,
-      "budget": 2000000.0,
-      "gap": 1400000.0,
+      "affected": 1000000,
+      "budget": 4000000.0,
+      "gap": 3400000.0,
       "crf": 600000.0,
       "appeal": null,
-      "reached": 1.46,
+      "reached": 0.44,
       "daysClient": 2,
       "daysDecision": 2,
       "daysMSNA": null,
@@ -662,14 +662,14 @@
       "avgDisbToSig": null,
       "avgSigToReceipt": null,
       "fundingSecured": 600000.0,
-      "target": 30000,
+      "target": 100000,
       "totalReach": 4368,
       "totalInOpArea": null,
       "reach6moClass": 4368,
       "reach6moSvc": 4368,
-      "pct10Target6mo": 14.6,
+      "pct10Target6mo": 4.4,
       "pctReachOpArea": null,
-      "tenPctAffected": 30000.0,
+      "tenPctAffected": 100000.0,
       "pctPrep": null,
       "dateClassified": "Mar 02, 2026",
       "dateDecision": "Mar 04, 2026",
@@ -686,7 +686,7 @@
       "ermtDecision": "Direct and Partner Implementation",
       "type": "Conflict",
       "pctFunded": null,
-      "link": "https://rescue.app.box.com/s/mfm5ciky0661um5kfjbrdy0iji569jxw",
+      "link": "https://rescue.app.box.com/s/8bn30y9o467ov6ya8k92y8n4a8fs4m9c",
       "firstServiceType": [
         "recrIdLWM9DETcg8p"
       ],
