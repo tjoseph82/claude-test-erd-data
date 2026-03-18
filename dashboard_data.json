@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-18T18:42:29Z",
+  "lastUpdated": "2026-03-18T21:24:37Z",
   "fiscalYear": 2026,
   "averages": {
     "decision": 18,
@@ -10,8 +10,8 @@
   },
   "eoCounts": {
     "*Emergency Basic Needs and Food Security": 4,
-    "*Emergency PHC": 3,
     "*Focused MHPSS Interventions": 3,
+    "*Emergency PHC": 3,
     "Community WASH": 2,
     "*Community Management of Acute Malnutrition": 2
   },
@@ -113,6 +113,105 @@
           "d": ""
         }
       ],
+      "pd": [],
+      "qi": []
+    },
+    {
+      "id": "LB504",
+      "emgRecordId": "recGmYjyUtzYnjObl",
+      "country": "Lebanon",
+      "region": "MENA",
+      "stance": "Red",
+      "severity": 10,
+      "details": [
+        "The US-led conflict against Iran has expanded to include airstrikes in Lebanon. Following the strikes on Iran, Hezbollah launched a series of missiles at Israel. In response, Israel is carrying out airstrikes across the country and began a ground invasion in the south. Over 1.2 million people have been displaced, with over 2000 injured and nearly 100 killed."
+      ],
+      "affected": 1000000,
+      "budget": 4000000.0,
+      "gap": 3400000.0,
+      "crf": 600000.0,
+      "appeal": null,
+      "reached": 0.44,
+      "daysClient": 2,
+      "daysDecision": 2,
+      "daysMSNA": null,
+      "daysMSNAStart": null,
+      "daysPlanSub": 4,
+      "daysPlanApproval": 5,
+      "avgDisbToSig": null,
+      "avgSigToReceipt": null,
+      "fundingSecured": 600000.0,
+      "target": 100000,
+      "totalReach": 4368,
+      "totalInOpArea": null,
+      "reach6moClass": 4368,
+      "reach6moSvc": 4368,
+      "pct10Target6mo": 4.4,
+      "pctReachOpArea": null,
+      "tenPctAffected": 100000.0,
+      "pctPrep": null,
+      "dateClassified": "Mar 02, 2026",
+      "dateDecision": "Mar 04, 2026",
+      "dateMSNAStart": null,
+      "dateMSNA": null,
+      "datePlanSub": "Mar 06, 2026",
+      "datePlanApproval": "Mar 07, 2026",
+      "dateFirstClient": null,
+      "dateFirstCash": "Mar 06, 2026",
+      "date6moMark": "Sep 03, 2026",
+      "date3moMark": "Jun 03, 2026",
+      "dateLastReach": "Mar 13, 2026",
+      "decision": "Direct and Partner Implementation",
+      "ermtDecision": "Direct and Partner Implementation",
+      "type": "Conflict",
+      "pctFunded": null,
+      "link": "https://rescue.app.box.com/s/8bn30y9o467ov6ya8k92y8n4a8fs4m9c",
+      "firstServiceType": [
+        "recrIdLWM9DETcg8p"
+      ],
+      "newOrExisting": "",
+      "sapStartTriggered": true,
+      "sapMidTriggered": "",
+      "sapEndTriggered": "",
+      "sap": {
+        "plan": "Yes",
+        "learning": "Not Applicable",
+        "feedback": "Pending",
+        "feedbackTime": "Pending",
+        "safeguarding": "Pending",
+        "partners": "Not Applicable",
+        "indicators80": "Pending",
+        "sequenced": "",
+        "msnaCompleted": "No",
+        "localSystems": ""
+      },
+      "rbm": [
+        {
+          "m": "Mar 2026",
+          "i": 0,
+          "p": 4368
+        }
+      ],
+      "rbo": [
+        {
+          "n": "*Emergency Basic Needs and Food Security",
+          "r": 4368,
+          "t": null
+        }
+      ],
+      "fs": [
+        {
+          "o": "*Emergency Basic Needs and Food Security",
+          "d": "Mar 06, 2026",
+          "type": "Core relief item distribution"
+        },
+        {
+          "o": "*Focused MHPSS Interventions",
+          "d": "Mar 11, 2026",
+          "type": "Community based PSS Support"
+        }
+      ],
+      "or": [],
       "pd": [],
       "qi": []
     },
@@ -633,105 +732,6 @@
       "rbm": [],
       "rbo": [],
       "fs": [],
-      "or": [],
-      "pd": [],
-      "qi": []
-    },
-    {
-      "id": "LB504",
-      "emgRecordId": "recGmYjyUtzYnjObl",
-      "country": "Lebanon",
-      "region": "MENA",
-      "stance": "Orange",
-      "severity": 7,
-      "details": [
-        "The US-led conflict against Iran has expanded to include airstrikes in Lebanon. Following the strikes on Iran, Hezbollah launched a series of missiles at Israel. In response, Israel is carrying out airstrikes across Lebanon that have displaced at least 815,000 people, with more expected following evacuation orders, and killed over 630. The situation is changing rapidly, and this classification will be updated accordingly."
-      ],
-      "affected": 1000000,
-      "budget": 4000000.0,
-      "gap": 3400000.0,
-      "crf": 600000.0,
-      "appeal": null,
-      "reached": 0.44,
-      "daysClient": 2,
-      "daysDecision": 2,
-      "daysMSNA": null,
-      "daysMSNAStart": null,
-      "daysPlanSub": 4,
-      "daysPlanApproval": 5,
-      "avgDisbToSig": null,
-      "avgSigToReceipt": null,
-      "fundingSecured": 600000.0,
-      "target": 100000,
-      "totalReach": 4368,
-      "totalInOpArea": null,
-      "reach6moClass": 4368,
-      "reach6moSvc": 4368,
-      "pct10Target6mo": 4.4,
-      "pctReachOpArea": null,
-      "tenPctAffected": 100000.0,
-      "pctPrep": null,
-      "dateClassified": "Mar 02, 2026",
-      "dateDecision": "Mar 04, 2026",
-      "dateMSNAStart": null,
-      "dateMSNA": null,
-      "datePlanSub": "Mar 06, 2026",
-      "datePlanApproval": "Mar 07, 2026",
-      "dateFirstClient": null,
-      "dateFirstCash": "Mar 06, 2026",
-      "date6moMark": "Sep 03, 2026",
-      "date3moMark": "Jun 03, 2026",
-      "dateLastReach": "Mar 13, 2026",
-      "decision": "Direct and Partner Implementation",
-      "ermtDecision": "Direct and Partner Implementation",
-      "type": "Conflict",
-      "pctFunded": null,
-      "link": "https://rescue.app.box.com/s/8bn30y9o467ov6ya8k92y8n4a8fs4m9c",
-      "firstServiceType": [
-        "recrIdLWM9DETcg8p"
-      ],
-      "newOrExisting": "",
-      "sapStartTriggered": true,
-      "sapMidTriggered": "",
-      "sapEndTriggered": "",
-      "sap": {
-        "plan": "Yes",
-        "learning": "Not Applicable",
-        "feedback": "Pending",
-        "feedbackTime": "Pending",
-        "safeguarding": "Pending",
-        "partners": "Not Applicable",
-        "indicators80": "Pending",
-        "sequenced": "",
-        "msnaCompleted": "No",
-        "localSystems": ""
-      },
-      "rbm": [
-        {
-          "m": "Mar 2026",
-          "i": 0,
-          "p": 4368
-        }
-      ],
-      "rbo": [
-        {
-          "n": "*Emergency Basic Needs and Food Security",
-          "r": 4368,
-          "t": null
-        }
-      ],
-      "fs": [
-        {
-          "o": "*Emergency Basic Needs and Food Security",
-          "d": "Mar 06, 2026",
-          "type": "Core relief item distribution"
-        },
-        {
-          "o": "*Focused MHPSS Interventions",
-          "d": "Mar 11, 2026",
-          "type": "Community based PSS Support"
-        }
-      ],
       "or": [],
       "pd": [],
       "qi": []
