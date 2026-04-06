@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-06T12:42:52Z",
+  "lastUpdated": "2026-04-06T15:36:11Z",
   "fiscalYear": 2026,
   "averages": {
     "decision": 18,
@@ -109,7 +109,7 @@
       "or": [
         {
           "o": "*Emergency Basic Needs and Food Security",
-          "q": "Pending TA review",
+          "q": "Planned Offering Pending Implementation",
           "d": ""
         }
       ],
@@ -417,7 +417,7 @@
       "or": [
         {
           "o": "*Focused MHPSS Interventions",
-          "q": "Pending TA review",
+          "q": "Planned Offering Pending Implementation",
           "d": ""
         }
       ],
@@ -510,7 +510,7 @@
       "or": [
         {
           "o": "*Emergency PHC",
-          "q": "Pending TA review",
+          "q": "Planned Offering Pending Implementation",
           "d": ""
         }
       ],
@@ -630,32 +630,32 @@
       "or": [
         {
           "o": "*Emergency Basic Needs and Food Security",
-          "q": "Pending TA review",
+          "q": "Planned Offering Pending Implementation",
           "d": ""
         },
         {
           "o": "Responsive Information Services",
-          "q": "Pending TA review",
+          "q": "Planned Offering Pending Implementation",
           "d": ""
         },
         {
           "o": "*Social Work in Emergencies",
-          "q": "Pending TA review",
+          "q": "Planned Offering Pending Implementation",
           "d": ""
         },
         {
           "o": "*Safe Play and Learning Spaces",
-          "q": "Pending TA review",
+          "q": "Planned Offering Pending Implementation",
           "d": ""
         },
         {
           "o": "*Outbreak Prevention and Response",
-          "q": "Pending TA review",
+          "q": "Planned Offering Pending Implementation",
           "d": ""
         },
         {
           "o": "*Connected Learning in Crisis",
-          "q": "Pending TA review",
+          "q": "Planned Offering Pending Implementation",
           "d": ""
         }
       ],
@@ -859,32 +859,32 @@
       "or": [
         {
           "o": "*Community Management of Acute Malnutrition",
-          "q": "Pending TA review",
+          "q": "Planned Offering Pending Implementation",
           "d": ""
         },
         {
           "o": "*Emergency PHC",
-          "q": "Pending TA review",
+          "q": "Planned Offering Pending Implementation",
           "d": ""
         },
         {
           "o": "*MISP for SRH",
-          "q": "Pending TA review",
+          "q": "Planned Offering Pending Implementation",
           "d": ""
         },
         {
           "o": "*Emergency Basic Needs and Food Security",
-          "q": "Pending TA review",
+          "q": "Planned Offering Pending Implementation",
           "d": ""
         },
         {
           "o": "*Emergency PHC",
-          "q": "Pending TA review",
+          "q": "Planned Offering Pending Implementation",
           "d": ""
         },
         {
           "o": "*Emergency PHC",
-          "q": "Pending TA review",
+          "q": "Planned Offering Pending Implementation",
           "d": ""
         }
       ],
@@ -1014,27 +1014,27 @@
       "or": [
         {
           "o": "*Community Management of Acute Malnutrition",
-          "q": "Pending TA review",
+          "q": "Planned Offering Pending Implementation",
           "d": ""
         },
         {
           "o": "*Infant and young child feeding",
-          "q": "Pending TA review",
+          "q": "Planned Offering Pending Implementation",
           "d": ""
         },
         {
           "o": "*Infant and young child feeding",
-          "q": "Pending TA review",
+          "q": "Planned Offering Pending Implementation",
           "d": ""
         },
         {
           "o": "Community WASH",
-          "q": "Pending TA review",
+          "q": "Planned Offering Pending Implementation",
           "d": ""
         },
         {
           "o": "*Emergency Basic Needs and Food Security",
-          "q": "Pending TA review",
+          "q": "Planned Offering Pending Implementation",
           "d": ""
         }
       ],
