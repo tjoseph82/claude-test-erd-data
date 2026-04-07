@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-07T16:03:02Z",
+  "lastUpdated": "2026-04-07T18:44:27Z",
   "fiscalYear": 2026,
   "averages": {
     "decision": 18,
@@ -32,7 +32,7 @@
       "gap": 1000000.0,
       "crf": 1000000.0,
       "appeal": null,
-      "reached": 0.17,
+      "reached": 0.19,
       "daysClient": 53,
       "daysDecision": 3,
       "daysMSNA": 7,
@@ -43,12 +43,12 @@
       "avgSigToReceipt": null,
       "fundingSecured": 1200000.0,
       "target": 61150,
-      "totalReach": 7719,
+      "totalReach": 9073,
       "totalInOpArea": 602060,
-      "reach6moClass": 7719,
-      "reach6moSvc": 7719,
-      "pct10Target6mo": 1.7,
-      "pctReachOpArea": 1.28,
+      "reach6moClass": 9073,
+      "reach6moSvc": 9073,
+      "pct10Target6mo": 1.9,
+      "pctReachOpArea": 1.51,
       "tenPctAffected": 466400.0,
       "pctPrep": null,
       "dateClassified": "Dec 19, 2025",
@@ -61,7 +61,7 @@
       "dateFirstCash": "Feb 10, 2026",
       "date6moMark": "Jun 18, 2026",
       "date3moMark": "Mar 18, 2026",
-      "dateLastReach": "Mar 09, 2026",
+      "dateLastReach": "Apr 07, 2026",
       "decision": "Direct Implementation",
       "ermtDecision": "Direct Implementation",
       "type": "Food insecurity",
@@ -91,12 +91,17 @@
           "m": "Feb 2026",
           "i": 7719,
           "p": 0
+        },
+        {
+          "m": "Mar 2026",
+          "i": 1354,
+          "p": 0
         }
       ],
       "rbo": [
         {
           "n": "*Emergency Basic Needs and Food Security",
-          "r": 7719,
+          "r": 9073,
           "t": 23310
         }
       ],
@@ -351,7 +356,7 @@
         "plan": "Yes",
         "learning": "Pending",
         "feedback": "Yes",
-        "feedbackTime": "Pending",
+        "feedbackTime": "Yes",
         "safeguarding": "Pending",
         "partners": "Pending",
         "indicators80": "Not Applicable",
@@ -363,17 +368,17 @@
         {
           "m": "Jan 2026",
           "i": 0,
-          "p": 24566
+          "p": 24390
         },
         {
           "m": "Mar 2026",
           "i": 0,
-          "p": 35654
+          "p": 36181
         },
         {
           "m": "Feb 2026",
           "i": 0,
-          "p": 37514
+          "p": 43994
         },
         {
           "m": "Dec 2025",
@@ -384,7 +389,7 @@
       "rbo": [
         {
           "n": "*Focused MHPSS Interventions",
-          "r": 875,
+          "r": 1402,
           "t": 2050
         },
         {
@@ -399,7 +404,7 @@
         },
         {
           "n": "*Emergency PHC",
-          "r": 6670,
+          "r": 12974,
           "t": 75000
         },
         {
