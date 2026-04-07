@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-07T12:52:58Z",
+  "lastUpdated": "2026-04-07T16:03:02Z",
   "fiscalYear": 2026,
   "averages": {
     "decision": 18,
@@ -12,8 +12,9 @@
     "*Emergency Basic Needs and Food Security": 4,
     "*Focused MHPSS Interventions": 3,
     "*Emergency PHC": 3,
-    "Community WASH": 2,
-    "*Community Management of Acute Malnutrition": 2
+    "Community WASH": 4,
+    "*Community Management of Acute Malnutrition": 3,
+    "*Social Work in Emergencies": 1
   },
   "emergencies": [
     {
@@ -304,7 +305,7 @@
       "gap": 8064256.0,
       "crf": 800000.0,
       "appeal": null,
-      "reached": 3.42,
+      "reached": 5.64,
       "daysClient": 78,
       "daysDecision": 52,
       "daysMSNA": 51,
@@ -315,12 +316,12 @@
       "avgSigToReceipt": null,
       "fundingSecured": 800000.0,
       "target": 130170,
-      "totalReach": 64856,
+      "totalReach": 106814,
       "totalInOpArea": 671023,
-      "reach6moClass": 64856,
-      "reach6moSvc": 64856,
-      "pct10Target6mo": 34.2,
-      "pctReachOpArea": 9.67,
+      "reach6moClass": 106814,
+      "reach6moSvc": 106814,
+      "pct10Target6mo": 56.4,
+      "pctReachOpArea": 15.92,
       "tenPctAffected": 189500.0,
       "pctPrep": null,
       "dateClassified": "Oct 27, 2025",
@@ -333,7 +334,7 @@
       "dateFirstCash": null,
       "date6moMark": "Apr 26, 2026",
       "date3moMark": "Jan 26, 2026",
-      "dateLastReach": "Mar 11, 2026",
+      "dateLastReach": "Apr 07, 2026",
       "decision": "Partner Implementation",
       "ermtDecision": "Partner Implementation",
       "type": "Food Insecurity",
@@ -365,6 +366,11 @@
           "p": 24566
         },
         {
+          "m": "Mar 2026",
+          "i": 0,
+          "p": 35654
+        },
+        {
           "m": "Feb 2026",
           "i": 0,
           "p": 37514
@@ -382,14 +388,14 @@
           "t": 2050
         },
         {
-          "n": "Community WASH",
-          "r": 7621,
-          "t": 18000
+          "n": "Community Risk Mitigation and Access",
+          "r": 75583,
+          "t": 26500
         },
         {
-          "n": "Community Risk Mitigation and Access",
-          "r": 50499,
-          "t": 26500
+          "n": "Community WASH",
+          "r": 13045,
+          "t": 18000
         },
         {
           "n": "*Emergency PHC",
@@ -398,7 +404,7 @@
         },
         {
           "n": "*Emergency Basic Needs and Food Security",
-          "r": 0,
+          "r": 5146,
           "t": 6670
         }
       ],
@@ -921,7 +927,7 @@
       "avgDisbToSig": null,
       "avgSigToReceipt": null,
       "fundingSecured": 2000000.0,
-      "target": 90000,
+      "target": 200000,
       "totalReach": 74159,
       "totalInOpArea": 585000,
       "reach6moClass": 74159,
@@ -967,6 +973,11 @@
       },
       "rbm": [
         {
+          "m": "Mar 2026",
+          "i": 18550,
+          "p": 0
+        },
+        {
           "m": "Jan 2026",
           "i": 22940,
           "p": 0
@@ -984,19 +995,19 @@
       ],
       "rbo": [
         {
+          "n": "*Community Management of Acute Malnutrition",
+          "r": 5909,
+          "t": 4120
+        },
+        {
           "n": "*Emergency Basic Needs and Food Security",
           "r": 26190,
           "t": 19680
         },
         {
           "n": "Community WASH",
-          "r": 42112,
+          "r": 59856,
           "t": 40000
-        },
-        {
-          "n": "*Community Management of Acute Malnutrition",
-          "r": 5103,
-          "t": 4120
         }
       ],
       "fs": [
@@ -1006,9 +1017,29 @@
           "type": "WASH NFIs Distribution"
         },
         {
+          "o": "Community WASH",
+          "d": "Jan 21, 2026",
+          "type": "Rehabilitation of borehole"
+        },
+        {
           "o": "*Community Management of Acute Malnutrition",
           "d": "Dec 22, 2025",
           "type": "Mass screenings for acute malnutrition"
+        },
+        {
+          "o": "*Community Management of Acute Malnutrition",
+          "d": "Dec 22, 2025",
+          "type": "Uncomplicated SAM"
+        },
+        {
+          "o": "Community WASH",
+          "d": "Dec 24, 2025",
+          "type": "hygiene promotion "
+        },
+        {
+          "o": "*Social Work in Emergencies",
+          "d": "Feb 10, 2026",
+          "type": "dignity kits distribution"
         },
         {
           "o": "*Emergency Basic Needs and Food Security",
@@ -1023,7 +1054,17 @@
           "d": ""
         },
         {
+          "o": "Community WASH",
+          "q": "Planned Offering Pending Implementation",
+          "d": ""
+        },
+        {
           "o": "*Infant and young child feeding",
+          "q": "Planned Offering Pending Implementation",
+          "d": ""
+        },
+        {
+          "o": "*Community Management of Acute Malnutrition",
           "q": "Planned Offering Pending Implementation",
           "d": ""
         },
@@ -1038,7 +1079,17 @@
           "d": ""
         },
         {
+          "o": "Community WASH",
+          "q": "Planned Offering Pending Implementation",
+          "d": ""
+        },
+        {
           "o": "*Emergency Basic Needs and Food Security",
+          "q": "Planned Offering Pending Implementation",
+          "d": ""
+        },
+        {
+          "o": "Community WASH",
           "q": "Planned Offering Pending Implementation",
           "d": ""
         }
