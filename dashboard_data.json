@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-07T21:33:24Z",
+  "lastUpdated": "2026-04-08T01:15:08Z",
   "fiscalYear": 2026,
   "averages": {
     "decision": 18,
@@ -438,7 +438,20 @@
         }
       ],
       "pd": [],
-      "qi": []
+      "qi": [
+        {
+          "o": "HT479-\"At least 80% of HH surveyed where the primary caregiver can name\n  at least 3 out of 5 of the critical times for handwashing\"-October-2025",
+          "v": 76,
+          "t": "",
+          "d": "Oct 01, 2025"
+        },
+        {
+          "o": "HT479-\"NEW % of patient consultations\n  correctly perscribed antibiotics\u00a0\"-August-2025",
+          "v": 43,
+          "t": "",
+          "d": "Aug 01, 2025"
+        }
+      ]
     },
     {
       "id": "SD480",
