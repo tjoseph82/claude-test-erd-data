@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-08T09:57:23Z",
+  "lastUpdated": "2026-04-08T12:52:58Z",
   "fiscalYear": 2026,
   "averages": {
     "decision": 18,
@@ -181,11 +181,11 @@
       "sapEndTriggered": "",
       "sap": {
         "plan": "Yes",
-        "learning": "Not Applicable",
+        "learning": "Pending",
         "feedback": "Yes",
         "feedbackTime": "Pending",
         "safeguarding": "Pending",
-        "partners": "Not Applicable",
+        "partners": "Pending",
         "indicators80": "Pending",
         "sequenced": "",
         "msnaCompleted": "Yes - Includes primary data collection",
@@ -934,7 +934,7 @@
       "budget": 2062500.0,
       "gap": 62500.0,
       "crf": 900000.0,
-      "appeal": 1800000.0,
+      "appeal": null,
       "reached": 8.05,
       "daysClient": 41,
       "daysDecision": 10,
