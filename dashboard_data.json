@@ -1,17 +1,17 @@
 {
-  "lastUpdated": "2026-04-10T07:13:24Z",
+  "lastUpdated": "2026-04-10T09:58:59Z",
   "fiscalYear": 2026,
   "averages": {
     "decision": 18,
     "msna": 20,
     "planSub": 34,
     "planApproval": 42,
-    "client": 35
+    "client": 31
   },
   "eoCounts": {
     "*Emergency Basic Needs and Food Security": 4,
     "*Focused MHPSS Interventions": 3,
-    "*Emergency PHC": 3,
+    "*Emergency PHC": 4,
     "Community WASH": 4,
     "*Community Management of Acute Malnutrition": 3,
     "*Social Work in Emergencies": 1
@@ -1131,7 +1131,7 @@
       "crf": 300000.0,
       "appeal": null,
       "reached": null,
-      "daysClient": null,
+      "daysClient": 0,
       "daysDecision": 91,
       "daysMSNA": null,
       "daysMSNAStart": null,
@@ -1165,7 +1165,9 @@
       "type": "Conflict",
       "pctFunded": null,
       "link": "https://rescue.app.box.com/s/vyk83pas8wurtpl66359sbdou4qu9irx",
-      "firstServiceType": "",
+      "firstServiceType": [
+        "rec2i4vMqr8LTBZUT"
+      ],
       "newOrExisting": "",
       "sapStartTriggered": true,
       "sapMidTriggered": "",
@@ -1184,7 +1186,13 @@
       },
       "rbm": [],
       "rbo": [],
-      "fs": [],
+      "fs": [
+        {
+          "o": "*Emergency PHC",
+          "d": "Jan 13, 2026",
+          "type": ""
+        }
+      ],
       "or": [],
       "pd": [],
       "qi": []
