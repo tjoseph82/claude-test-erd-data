@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-13T12:56:40Z",
+  "lastUpdated": "2026-04-13T16:04:36Z",
   "fiscalYear": 2026,
   "averages": {
     "decision": 18,
@@ -468,7 +468,7 @@
       "gap": null,
       "crf": null,
       "appeal": null,
-      "reached": 6.16,
+      "reached": 7.28,
       "daysClient": 0,
       "daysDecision": 0,
       "daysMSNA": null,
@@ -479,12 +479,12 @@
       "avgSigToReceipt": null,
       "fundingSecured": null,
       "target": 30000,
-      "totalReach": 18477,
+      "totalReach": 21845,
       "totalInOpArea": 127162,
-      "reach6moClass": 18477,
-      "reach6moSvc": null,
-      "pct10Target6mo": null,
-      "pctReachOpArea": 14.53,
+      "reach6moClass": 21845,
+      "reach6moSvc": 21845,
+      "pct10Target6mo": 72.8,
+      "pctReachOpArea": 17.18,
       "tenPctAffected": 30000.0,
       "pctPrep": null,
       "dateClassified": "Oct 27, 2025",
@@ -497,7 +497,7 @@
       "dateFirstCash": null,
       "date6moMark": "Apr 26, 2026",
       "date3moMark": "Jan 26, 2026",
-      "dateLastReach": "Mar 12, 2026",
+      "dateLastReach": "Apr 13, 2026",
       "decision": "Direct and Partner Implementation",
       "ermtDecision": "Direct and Partner Implementation",
       "type": "Conflict",
@@ -617,8 +617,13 @@
       },
       "rbm": [
         {
+          "m": "Mar 2026",
+          "i": 7336,
+          "p": 0
+        },
+        {
           "m": "Feb 2026",
-          "i": 16394,
+          "i": 14130,
           "p": 0
         },
         {
@@ -630,23 +635,23 @@
       "rbo": [
         {
           "n": "Community WASH",
-          "r": 7197,
+          "r": 4933,
           "t": 23280
         },
         {
+          "n": "Community Risk Mitigation and Access",
+          "r": 14206,
+          "t": 22430
+        },
+        {
           "n": "*Focused MHPSS Interventions",
-          "r": 88,
+          "r": 339,
           "t": 240
         },
         {
           "n": "*Connected Learning in Crisis",
-          "r": 1682,
+          "r": 2000,
           "t": 2000
-        },
-        {
-          "n": "Community Risk Mitigation and Access",
-          "r": 7439,
-          "t": 22430
         }
       ],
       "fs": [
@@ -1187,7 +1192,7 @@
       "rbm": [
         {
           "m": "Mar 2026",
-          "i": 190468,
+          "i": 191028,
           "p": 0
         }
       ],
@@ -1195,17 +1200,27 @@
         {
           "n": "*Social Work in Emergencies",
           "r": 14709,
-          "t": null
+          "t": 17112
+        },
+        {
+          "n": "*Focused MHPSS Interventions",
+          "r": 44,
+          "t": 173
+        },
+        {
+          "n": "*MISP for SRH",
+          "r": 516,
+          "t": 838
         },
         {
           "n": "*Emergency PHC",
           "r": 167607,
-          "t": null
+          "t": 446702
         },
         {
           "n": "Community WASH",
           "r": 8152,
-          "t": null
+          "t": 19995
         }
       ],
       "fs": [
