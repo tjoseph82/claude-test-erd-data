@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-14T12:56:44Z",
+  "lastUpdated": "2026-04-14T15:59:52Z",
   "fiscalYear": 2026,
   "averages": {
     "decision": 18,
@@ -12,8 +12,8 @@
     "*Emergency Basic Needs and Food Security": 4,
     "*Focused MHPSS Interventions": 3,
     "*Emergency PHC": 4,
-    "Community WASH": 4,
-    "*Community Management of Acute Malnutrition": 3,
+    "Community WASH": 2,
+    "*Community Management of Acute Malnutrition": 2,
     "*Social Work in Emergencies": 1
   },
   "emergencies": [
@@ -78,7 +78,7 @@
         "plan": "Yes",
         "learning": "In progress",
         "feedback": "Yes",
-        "feedbackTime": "Pending",
+        "feedbackTime": "Yes",
         "safeguarding": "Pending",
         "partners": "Pending",
         "indicators80": "Pending",
@@ -514,7 +514,7 @@
         "plan": "No",
         "learning": "Not Applicable",
         "feedback": "Yes",
-        "feedbackTime": "Pending",
+        "feedbackTime": "Yes",
         "safeguarding": "Pending",
         "partners": "Not Applicable",
         "indicators80": "",
@@ -785,7 +785,7 @@
       "gap": 1400000.0,
       "crf": 600000.0,
       "appeal": null,
-      "reached": 2.1,
+      "reached": 2.83,
       "daysClient": 25,
       "daysDecision": 4,
       "daysMSNA": 5,
@@ -796,12 +796,12 @@
       "avgSigToReceipt": null,
       "fundingSecured": 600000.0,
       "target": 159210,
-      "totalReach": 27814,
+      "totalReach": 37374,
       "totalInOpArea": 652825,
-      "reach6moClass": 27814,
-      "reach6moSvc": 27814,
-      "pct10Target6mo": 21.0,
-      "pctReachOpArea": 4.26,
+      "reach6moClass": 37374,
+      "reach6moSvc": 37374,
+      "pct10Target6mo": 28.3,
+      "pctReachOpArea": 5.72,
       "tenPctAffected": 132294.2,
       "pctPrep": null,
       "dateClassified": "Nov 06, 2025",
@@ -814,7 +814,7 @@
       "dateFirstCash": "Feb 15, 2026",
       "date6moMark": "May 05, 2026",
       "date3moMark": "Feb 05, 2026",
-      "dateLastReach": "Mar 12, 2026",
+      "dateLastReach": "Apr 14, 2026",
       "decision": "Direct and Partner Implementation",
       "ermtDecision": "Direct and Partner Implementation",
       "type": "Food Insecurity",
@@ -831,7 +831,7 @@
         "plan": "Yes",
         "learning": "Not Applicable",
         "feedback": "Yes",
-        "feedbackTime": "Pending",
+        "feedbackTime": "Yes",
         "safeguarding": "Pending",
         "partners": "Not Applicable",
         "indicators80": "",
@@ -841,9 +841,9 @@
       },
       "rbm": [
         {
-          "m": "Feb 2026",
-          "i": 7679,
-          "p": 6719
+          "m": "Mar 2026",
+          "i": 2088,
+          "p": 9079
         },
         {
           "m": "Jan 2026",
@@ -854,6 +854,11 @@
           "m": "Dec 2025",
           "i": 644,
           "p": 3976
+        },
+        {
+          "m": "Feb 2026",
+          "i": 5591,
+          "p": 6719
         }
       ],
       "rbo": [
@@ -863,14 +868,14 @@
           "t": 2088
         },
         {
-          "n": "*Emergency PHC",
-          "r": 15978,
-          "t": 12560
+          "n": "*Community Management of Acute Malnutrition",
+          "r": 14263,
+          "t": 14716
         },
         {
-          "n": "*Community Management of Acute Malnutrition",
-          "r": 9953,
-          "t": 14716
+          "n": "*Emergency PHC",
+          "r": 20747,
+          "t": 12560
         }
       ],
       "fs": [
@@ -1025,21 +1030,6 @@
       ],
       "fs": [
         {
-          "o": "Community WASH",
-          "d": "Dec 29, 2025",
-          "type": "WASH NFIs Distribution"
-        },
-        {
-          "o": "Community WASH",
-          "d": "Jan 21, 2026",
-          "type": "Rehabilitation of borehole"
-        },
-        {
-          "o": "*Community Management of Acute Malnutrition",
-          "d": "Dec 22, 2025",
-          "type": "Mass screenings for acute malnutrition"
-        },
-        {
           "o": "*Community Management of Acute Malnutrition",
           "d": "Dec 22, 2025",
           "type": "Uncomplicated SAM"
@@ -1098,8 +1088,8 @@
       "affected": 893403,
       "budget": 1000000.0,
       "gap": 700000.0,
-      "crf": 300000.0,
-      "appeal": null,
+      "crf": null,
+      "appeal": 300000.0,
       "reached": 19.67,
       "daysClient": 0,
       "daysDecision": 91,
@@ -1110,7 +1100,7 @@
       "avgDisbToSig": null,
       "avgSigToReceipt": null,
       "fundingSecured": 300000.0,
-      "target": null,
+      "target": 89340,
       "totalReach": 175759,
       "totalInOpArea": 472000,
       "reach6moClass": 175759,
