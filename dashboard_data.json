@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-14T10:05:18Z",
+  "lastUpdated": "2026-04-14T12:56:44Z",
   "fiscalYear": 2026,
   "averages": {
     "decision": 18,
@@ -428,7 +428,7 @@
       "or": [
         {
           "o": "*Connected Learning in Crisis",
-          "q": "On Track",
+          "q": "Planned Offering Pending Implementation",
           "d": "Nov 12, 2025"
         },
         {
@@ -897,22 +897,12 @@
           "d": ""
         },
         {
-          "o": "*Emergency PHC",
-          "q": "Planned Offering Pending Implementation",
-          "d": ""
-        },
-        {
           "o": "*MISP for SRH",
           "q": "Planned Offering Pending Implementation",
           "d": ""
         },
         {
           "o": "*Emergency Basic Needs and Food Security",
-          "q": "Planned Offering Pending Implementation",
-          "d": ""
-        },
-        {
-          "o": "*Emergency PHC",
           "q": "Planned Offering Pending Implementation",
           "d": ""
         },
@@ -1077,27 +1067,7 @@
           "d": ""
         },
         {
-          "o": "Community WASH",
-          "q": "Planned Offering Pending Implementation",
-          "d": ""
-        },
-        {
           "o": "*Infant and young child feeding",
-          "q": "Planned Offering Pending Implementation",
-          "d": ""
-        },
-        {
-          "o": "*Community Management of Acute Malnutrition",
-          "q": "Planned Offering Pending Implementation",
-          "d": ""
-        },
-        {
-          "o": "*Infant and young child feeding",
-          "q": "Planned Offering Pending Implementation",
-          "d": ""
-        },
-        {
-          "o": "Community WASH",
           "q": "Planned Offering Pending Implementation",
           "d": ""
         },
@@ -1108,11 +1078,6 @@
         },
         {
           "o": "*Emergency Basic Needs and Food Security",
-          "q": "Planned Offering Pending Implementation",
-          "d": ""
-        },
-        {
-          "o": "Community WASH",
           "q": "Planned Offering Pending Implementation",
           "d": ""
         }
