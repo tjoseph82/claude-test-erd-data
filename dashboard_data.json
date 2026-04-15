@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-15T07:16:06Z",
+  "lastUpdated": "2026-04-15T10:06:05Z",
   "fiscalYear": 2026,
   "averages": {
     "decision": 18,
@@ -561,7 +561,7 @@
       "gap": 3563000.0,
       "crf": 437000.0,
       "appeal": null,
-      "reached": 1.64,
+      "reached": 1.78,
       "daysClient": 48,
       "daysDecision": 1,
       "daysMSNA": 10,
@@ -572,12 +572,12 @@
       "avgSigToReceipt": null,
       "fundingSecured": 437000.0,
       "target": 43320,
-      "totalReach": 6736,
+      "totalReach": 7335,
       "totalInOpArea": 56074,
-      "reach6moClass": 6736,
-      "reach6moSvc": 6736,
-      "pct10Target6mo": 16.4,
-      "pctReachOpArea": 12.01,
+      "reach6moClass": 7335,
+      "reach6moSvc": 7335,
+      "pct10Target6mo": 17.8,
+      "pctReachOpArea": 13.08,
       "tenPctAffected": 41135.5,
       "pctPrep": null,
       "dateClassified": "Dec 09, 2025",
@@ -590,7 +590,7 @@
       "dateFirstCash": null,
       "date6moMark": "Jun 08, 2026",
       "date3moMark": "Mar 08, 2026",
-      "dateLastReach": "Mar 13, 2026",
+      "dateLastReach": "Apr 15, 2026",
       "decision": "Direct and Partner Implementation",
       "ermtDecision": "Direct and Partner Implementation",
       "type": "Conflict",
@@ -711,7 +711,7 @@
       "gap": 1650000.0,
       "crf": 350000.0,
       "appeal": null,
-      "reached": null,
+      "reached": 2.47,
       "daysClient": null,
       "daysDecision": 13,
       "daysMSNA": null,
@@ -722,11 +722,11 @@
       "avgSigToReceipt": null,
       "fundingSecured": 350000.0,
       "target": 184000,
-      "totalReach": null,
+      "totalReach": 5678,
       "totalInOpArea": null,
-      "reach6moClass": null,
-      "reach6moSvc": null,
-      "pct10Target6mo": null,
+      "reach6moClass": 5678,
+      "reach6moSvc": 5678,
+      "pct10Target6mo": 24.7,
       "pctReachOpArea": null,
       "tenPctAffected": 23000.0,
       "pctPrep": null,
@@ -740,7 +740,7 @@
       "dateFirstCash": null,
       "date6moMark": "Jul 26, 2026",
       "date3moMark": "Apr 26, 2026",
-      "dateLastReach": null,
+      "dateLastReach": "Apr 15, 2026",
       "decision": "Direct and Partner Implementation",
       "ermtDecision": "Direct and Partner Implementation",
       "type": "Conflict",
@@ -763,8 +763,30 @@
         "msnaCompleted": "Pending",
         "localSystems": ""
       },
-      "rbm": [],
-      "rbo": [],
+      "rbm": [
+        {
+          "m": "Mar 2026",
+          "i": 0,
+          "p": 5209
+        }
+      ],
+      "rbo": [
+        {
+          "n": "",
+          "r": 0,
+          "t": null
+        },
+        {
+          "n": "Community Risk Mitigation and Access",
+          "r": 375,
+          "t": 2600
+        },
+        {
+          "n": "*Focused MHPSS Interventions",
+          "r": 4834,
+          "t": 5000
+        }
+      ],
       "fs": [],
       "or": [],
       "pd": [],
@@ -785,7 +807,7 @@
       "gap": 1400000.0,
       "crf": 600000.0,
       "appeal": null,
-      "reached": 2.83,
+      "reached": 3.28,
       "daysClient": 25,
       "daysDecision": 4,
       "daysMSNA": 5,
@@ -796,12 +818,12 @@
       "avgSigToReceipt": null,
       "fundingSecured": 600000.0,
       "target": 159210,
-      "totalReach": 37374,
+      "totalReach": 43337,
       "totalInOpArea": 652825,
-      "reach6moClass": 37374,
-      "reach6moSvc": 37374,
-      "pct10Target6mo": 28.3,
-      "pctReachOpArea": 5.72,
+      "reach6moClass": 43337,
+      "reach6moSvc": 43337,
+      "pct10Target6mo": 32.8,
+      "pctReachOpArea": 6.64,
       "tenPctAffected": 132294.2,
       "pctPrep": null,
       "dateClassified": "Nov 06, 2025",
@@ -814,7 +836,7 @@
       "dateFirstCash": "Feb 15, 2026",
       "date6moMark": "May 05, 2026",
       "date3moMark": "Feb 05, 2026",
-      "dateLastReach": "Apr 14, 2026",
+      "dateLastReach": "Apr 15, 2026",
       "decision": "Direct and Partner Implementation",
       "ermtDecision": "Direct and Partner Implementation",
       "type": "Food Insecurity",
@@ -842,23 +864,23 @@
       "rbm": [
         {
           "m": "Mar 2026",
-          "i": 2088,
+          "i": 11643,
           "p": 9079
         },
         {
+          "m": "Feb 2026",
+          "i": 8198,
+          "p": 6719
+        },
+        {
           "m": "Jan 2026",
-          "i": 3444,
+          "i": 5889,
           "p": 5557
         },
         {
           "m": "Dec 2025",
-          "i": 644,
+          "i": 1539,
           "p": 3976
-        },
-        {
-          "m": "Feb 2026",
-          "i": 5591,
-          "p": 6719
         }
       ],
       "rbo": [
@@ -869,12 +891,12 @@
         },
         {
           "n": "*Community Management of Acute Malnutrition",
-          "r": 14263,
+          "r": 27671,
           "t": 14716
         },
         {
           "n": "*Emergency PHC",
-          "r": 20747,
+          "r": 22841,
           "t": 12560
         }
       ],
