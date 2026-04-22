@@ -1,18 +1,19 @@
 {
-  "lastUpdated": "2026-04-22T07:17:56Z",
+  "lastUpdated": "2026-04-22T10:08:58Z",
   "fiscalYear": 2026,
   "averages": {
     "decision": 18,
     "msna": 32,
     "planSub": 34,
     "planApproval": 42,
-    "client": 31
+    "client": 33
   },
   "eoCounts": {
     "*Emergency Basic Needs and Food Security": 4,
     "*Focused MHPSS Interventions": 3,
     "*Emergency PHC": 4,
     "Community WASH": 2,
+    "*MISP for SRH": 1,
     "*Community Management of Acute Malnutrition": 2,
     "*Social Work in Emergencies": 1
   },
@@ -712,7 +713,7 @@
       "crf": 350000.0,
       "appeal": null,
       "reached": 2.47,
-      "daysClient": null,
+      "daysClient": 52,
       "daysDecision": 13,
       "daysMSNA": null,
       "daysMSNAStart": null,
@@ -746,7 +747,9 @@
       "type": "Conflict",
       "pctFunded": null,
       "link": "https://rescue.app.box.com/s/mt3wmipcnt3jii88yvhnygge5iiy7tvr",
-      "firstServiceType": "",
+      "firstServiceType": [
+        "recPph5Z5vlTl5mlR"
+      ],
       "newOrExisting": "",
       "sapStartTriggered": true,
       "sapMidTriggered": "",
@@ -782,7 +785,13 @@
           "t": 5000
         }
       ],
-      "fs": [],
+      "fs": [
+        {
+          "o": "*MISP for SRH",
+          "d": "Mar 20, 2026",
+          "type": "Antenatal Care (ANC) consultations"
+        }
+      ],
       "or": [],
       "pd": [],
       "qi": []
@@ -837,9 +846,7 @@
       "type": "Food Insecurity",
       "pctFunded": null,
       "link": "https://rescue.app.box.com/s/elcqgz57j1z0bpbca3k52awwvsk0ees6",
-      "firstServiceType": [
-        "rec2i4vMqr8LTBZUT"
-      ],
+      "firstServiceType": "",
       "newOrExisting": "",
       "sapStartTriggered": true,
       "sapMidTriggered": true,
@@ -885,6 +892,11 @@
           "t": 2088
         },
         {
+          "n": "",
+          "r": 0,
+          "t": null
+        },
+        {
           "n": "*Community Management of Acute Malnutrition",
           "r": 27671,
           "t": 14716
@@ -896,6 +908,11 @@
         }
       ],
       "fs": [
+        {
+          "o": "",
+          "d": "\u2014",
+          "type": ""
+        },
         {
           "o": "*Emergency Basic Needs and Food Security",
           "d": "Mar 02, 2026",
@@ -915,6 +932,16 @@
       "or": [
         {
           "o": "*Community Management of Acute Malnutrition",
+          "q": "Planned Offering Pending Implementation",
+          "d": ""
+        },
+        {
+          "o": "",
+          "q": "Planned Offering Pending Implementation",
+          "d": ""
+        },
+        {
+          "o": "",
           "q": "Planned Offering Pending Implementation",
           "d": ""
         },
