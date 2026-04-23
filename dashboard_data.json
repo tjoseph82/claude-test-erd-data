@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-23T12:56:08Z",
+  "lastUpdated": "2026-04-23T16:24:07Z",
   "fiscalYear": 2026,
   "averages": {
     "decision": 18,
@@ -846,7 +846,9 @@
       "type": "Food Insecurity",
       "pctFunded": null,
       "link": "https://rescue.app.box.com/s/elcqgz57j1z0bpbca3k52awwvsk0ees6",
-      "firstServiceType": "",
+      "firstServiceType": [
+        "rec2i4vMqr8LTBZUT"
+      ],
       "newOrExisting": "",
       "sapStartTriggered": true,
       "sapMidTriggered": true,
@@ -903,11 +905,6 @@
         }
       ],
       "fs": [
-        {
-          "o": "",
-          "d": "\u2014",
-          "type": ""
-        },
         {
           "o": "*Emergency Basic Needs and Food Security",
           "d": "Mar 02, 2026",
