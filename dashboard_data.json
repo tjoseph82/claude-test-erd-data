@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-23T10:12:29Z",
+  "lastUpdated": "2026-04-23T12:56:08Z",
   "fiscalYear": 2026,
   "averages": {
     "decision": 18,
@@ -890,11 +890,6 @@
           "n": "*Emergency Basic Needs and Food Security",
           "r": 2088,
           "t": 2088
-        },
-        {
-          "n": "",
-          "r": 0,
-          "t": null
         },
         {
           "n": "*Community Management of Acute Malnutrition",
