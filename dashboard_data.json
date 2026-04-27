@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-27T13:13:29Z",
+  "lastUpdated": "2026-04-27T16:17:25Z",
   "fiscalYear": 2026,
   "averages": {
     "decision": 18,
@@ -9,7 +9,7 @@
     "client": 33
   },
   "eoCounts": {
-    "*Emergency Basic Needs and Food Security": 4,
+    "*Emergency Basic Needs and Food Security": 5,
     "*Focused MHPSS Interventions": 3,
     "*Emergency PHC": 4,
     "Community WASH": 2,
@@ -337,7 +337,7 @@
       "datePlanSub": "Dec 23, 2025",
       "datePlanApproval": "Jan 06, 2026",
       "dateFirstClient": "Dec 01, 2025",
-      "dateFirstCash": null,
+      "dateFirstCash": "Mar 14, 2026",
       "date6moMark": "Apr 26, 2026",
       "date3moMark": "Jan 26, 2026",
       "dateLastReach": "Apr 07, 2026",
@@ -389,6 +389,11 @@
       ],
       "rbo": [
         {
+          "n": "",
+          "r": 0,
+          "t": null
+        },
+        {
           "n": "*Focused MHPSS Interventions",
           "r": 1402,
           "t": 2050
@@ -424,6 +429,11 @@
           "o": "*Focused MHPSS Interventions",
           "d": "Jan 13, 2026",
           "type": "Individual Psychosocial Support (PSS)"
+        },
+        {
+          "o": "*Emergency Basic Needs and Food Security",
+          "d": "Mar 14, 2026",
+          "type": "Multipurpose Cash Assistance "
         }
       ],
       "or": [
@@ -433,7 +443,17 @@
           "d": "Nov 12, 2025"
         },
         {
+          "o": "",
+          "q": "Planned Offering Pending Implementation",
+          "d": ""
+        },
+        {
           "o": "*Focused MHPSS Interventions",
+          "q": "Planned Offering Pending Implementation",
+          "d": ""
+        },
+        {
+          "o": "",
           "q": "Planned Offering Pending Implementation",
           "d": ""
         }
