@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-01T12:51:08Z",
+  "lastUpdated": "2026-05-01T15:44:20Z",
   "fiscalYear": 2026,
   "averages": {
     "decision": 18,
@@ -131,7 +131,7 @@
       "stance": "Red",
       "severity": 10,
       "details": [
-        "The US-led conflict against Iran has expanded to include airstrikes in Lebanon. Following the strikes on Iran, Hezbollah launched a series of missiles at Israel. In response, Israel is carrying out airstrikes across the country and began a ground invasion in the south. Over 1.2 million people have been displaced, with over 2000 injured and nearly 100 killed."
+        "Israeli airstrikes and ground operations continue in Lebanon, despite the temporary ceasefire. At least 1.05 million people have been displaced since the start of the conflict in early March, with over 2,500 people killed and over 7,800 people injured."
       ],
       "affected": 1000000,
       "budget": 4000000.0,
