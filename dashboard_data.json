@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-06T13:24:56Z",
+  "lastUpdated": "2026-05-06T16:22:27Z",
   "fiscalYear": 2026,
   "averages": {
     "decision": 18,
@@ -230,7 +230,7 @@
       "stance": "Red",
       "severity": 9,
       "details": [
-        "US and Israeli airstrikes on Iran have killed over 1,000 people and displaced millions. Most of those displaced are from Tehran and are heading to the north of the country. Information coming out of Iran is limited and this classification will be update accordingly. Please note, related impacts in other countries will be classified separately."
+        "US and Israeli airstrikes on Iran have displaced millions of people throughout March and April. Despite the ceasefire, millions remain displaced and humanitarian needs are high. At least 32,000 people have been injured, while over 2,300 people were killed. Please note, related impacts in other countries will be classified separately."
       ],
       "affected": 2560000,
       "budget": null,
@@ -438,17 +438,7 @@
           "d": "Nov 12, 2025"
         },
         {
-          "o": "",
-          "q": "Planned Offering Pending Implementation",
-          "d": ""
-        },
-        {
           "o": "*Focused MHPSS Interventions",
-          "q": "Planned Offering Pending Implementation",
-          "d": ""
-        },
-        {
-          "o": "",
           "q": "Planned Offering Pending Implementation",
           "d": ""
         }
@@ -458,13 +448,13 @@
         {
           "o": "HT479-\"At least 80% of HH surveyed where the primary caregiver can name\n  at least 3 out of 5 of the critical times for handwashing\"-October-2025",
           "v": 76,
-          "t": "",
+          "t": 80,
           "d": "Oct 01, 2025"
         },
         {
           "o": "HT479-\"NEW % of patient consultations\n  correctly perscribed antibiotics\u00a0\"-August-2025",
           "v": 43,
-          "t": "",
+          "t": 60,
           "d": "Aug 01, 2025"
         }
       ]
@@ -607,7 +597,7 @@
       "or": [
         {
           "o": "*Emergency PHC",
-          "q": "Planned Offering Pending Implementation",
+          "q": "Support Recommended",
           "d": ""
         }
       ],
@@ -752,7 +742,7 @@
         },
         {
           "o": "*Outbreak Prevention and Response",
-          "q": "Planned Offering Pending Implementation",
+          "q": "On Track",
           "d": ""
         },
         {
@@ -859,13 +849,7 @@
           "type": "Antenatal Care (ANC) consultations"
         }
       ],
-      "or": [
-        {
-          "o": "",
-          "q": "Planned Offering Pending Implementation",
-          "d": ""
-        }
-      ],
+      "or": [],
       "pd": [],
       "qi": []
     },
@@ -1001,18 +985,8 @@
           "d": ""
         },
         {
-          "o": "",
-          "q": "Planned Offering Pending Implementation",
-          "d": ""
-        },
-        {
-          "o": "",
-          "q": "Planned Offering Pending Implementation",
-          "d": ""
-        },
-        {
           "o": "*MISP for SRH",
-          "q": "Planned Offering Pending Implementation",
+          "q": "Implementation Started Pending Data",
           "d": ""
         },
         {
