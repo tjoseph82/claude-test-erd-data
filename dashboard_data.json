@@ -1,17 +1,18 @@
 {
-  "lastUpdated": "2026-05-07T10:58:19Z",
+  "lastUpdated": "2026-05-07T13:24:07Z",
   "fiscalYear": 2026,
   "averages": {
     "decision": 18,
     "msna": 32,
     "planSub": 34,
     "planApproval": 42,
-    "client": 33
+    "client": 27
   },
   "eoCounts": {
     "*Emergency Basic Needs and Food Security": 5,
     "*Focused MHPSS Interventions": 3,
     "*Emergency PHC": 4,
+    "*Safe Play and Learning Spaces": 1,
     "Community WASH": 2,
     "*MISP for SRH": 1,
     "*Community Management of Acute Malnutrition": 2,
@@ -312,7 +313,7 @@
       "crf": 800000.0,
       "appeal": null,
       "reached": 5.64,
-      "daysClient": 78,
+      "daysClient": 23,
       "daysDecision": 52,
       "daysMSNA": 51,
       "daysMSNAStart": 42,
@@ -347,7 +348,7 @@
       "pctFunded": null,
       "link": "https://rescue.box.com/s/vvzocn1hspjbga5lod1oefdzb01enkyv",
       "firstServiceType": [
-        "recLJ6kixUP5DVKw5"
+        "recIRpOsNKwfgK9TW"
       ],
       "newOrExisting": "",
       "sapStartTriggered": true,
@@ -368,17 +369,17 @@
       "rbm": [
         {
           "m": "Jan 2026",
-          "i": 0,
+          "i": 4000,
           "p": 24390
         },
         {
           "m": "Mar 2026",
-          "i": 0,
+          "i": 5000,
           "p": 36181
         },
         {
           "m": "Feb 2026",
-          "i": 0,
+          "i": 4000,
           "p": 43994
         },
         {
@@ -388,6 +389,11 @@
         }
       ],
       "rbo": [
+        {
+          "n": "*Safe Play and Learning Spaces",
+          "r": 13000,
+          "t": 50000
+        },
         {
           "n": "*Focused MHPSS Interventions",
           "r": 1402,
@@ -426,6 +432,11 @@
           "type": "Individual Psychosocial Support (PSS)"
         },
         {
+          "o": "*Safe Play and Learning Spaces",
+          "d": "Nov 19, 2025",
+          "type": "SEL Activities"
+        },
+        {
           "o": "*Emergency Basic Needs and Food Security",
           "d": "Mar 14, 2026",
           "type": "Multipurpose Cash Assistance "
@@ -433,23 +444,40 @@
       ],
       "or": [
         {
-          "o": "*Connected Learning in Crisis",
+          "o": "Community WASH",
           "q": "Planned Offering Pending Implementation",
-          "d": "Nov 12, 2025"
+          "d": ""
         },
         {
           "o": "*Focused MHPSS Interventions",
           "q": "Planned Offering Pending Implementation",
           "d": ""
+        },
+        {
+          "o": "*Safe Play and Learning Spaces",
+          "q": "Support Recommended",
+          "d": "May 01, 2026"
         }
       ],
       "pd": [],
       "qi": [
         {
+          "o": "HT479-% of school-aged students enrolled in program whose score increases on a standard SEL assessment-May-2026",
+          "v": 50,
+          "t": 70,
+          "d": "May 01, 2026"
+        },
+        {
           "o": "HT479-\"At least 80% of HH surveyed where the primary caregiver can name\n  at least 3 out of 5 of the critical times for handwashing\"-October-2025",
           "v": 76,
           "t": 80,
           "d": "Oct 01, 2025"
+        },
+        {
+          "o": "HT479-% of teachers/facilitators in formal or non-formal learning settings who attend at least 80% of all in-service training sessions in the period-May-2026",
+          "v": 61,
+          "t": 80,
+          "d": "May 01, 2026"
         },
         {
           "o": "HT479-\"NEW % of patient consultations\n  correctly perscribed antibiotics\u00a0\"-August-2025",
