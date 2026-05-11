@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-11T14:19:40Z",
+  "lastUpdated": "2026-05-11T17:16:23Z",
   "fiscalYear": 2026,
   "averages": {
     "decision": 18,
@@ -134,12 +134,12 @@
       "details": [
         "Israeli airstrikes and ground operations continue in Lebanon, despite the temporary ceasefire. At least 1.05 million people have been displaced since the start of the conflict in early March, with over 2,500 people killed and over 7,800 people injured."
       ],
-      "affected": 1000000,
+      "affected": 1050000,
       "budget": 4000000.0,
       "gap": 3400000.0,
       "crf": 600000.0,
       "appeal": null,
-      "reached": 3.01,
+      "reached": 5.49,
       "daysClient": 2,
       "daysDecision": 2,
       "daysMSNA": 25,
@@ -150,13 +150,13 @@
       "avgSigToReceipt": null,
       "fundingSecured": 600000.0,
       "target": 100000,
-      "totalReach": 30129,
-      "totalInOpArea": null,
-      "reach6moClass": 30129,
-      "reach6moSvc": 30129,
+      "totalReach": 57603,
+      "totalInOpArea": 1050000,
+      "reach6moClass": 57603,
+      "reach6moSvc": 57603,
       "pct10Target6mo": null,
-      "pctReachOpArea": null,
-      "tenPctAffected": 100000.0,
+      "pctReachOpArea": 5.49,
+      "tenPctAffected": 105000.0,
       "pctPrep": null,
       "dateClassified": "Mar 02, 2026",
       "dateDecision": "Mar 04, 2026",
@@ -168,7 +168,7 @@
       "dateFirstCash": "Mar 06, 2026",
       "date6moMark": "Sep 03, 2026",
       "date3moMark": "Jun 03, 2026",
-      "dateLastReach": "May 06, 2026",
+      "dateLastReach": "May 11, 2026",
       "decision": "Direct and Partner Implementation",
       "ermtDecision": "Direct and Partner Implementation",
       "type": "Conflict",
@@ -195,16 +195,46 @@
       },
       "rbm": [
         {
+          "m": "Apr 2026",
+          "i": 0,
+          "p": 0
+        },
+        {
           "m": "Mar 2026",
-          "i": 4368,
+          "i": 9862,
           "p": 0
         }
       ],
       "rbo": [
         {
           "n": "*Emergency Basic Needs and Food Security",
-          "r": 4368,
+          "r": 6828,
+          "t": 9635
+        },
+        {
+          "n": "*Connected Learning in Crisis",
+          "r": 235,
           "t": null
+        },
+        {
+          "n": "*Emergency PHC",
+          "r": 811,
+          "t": 11180
+        },
+        {
+          "n": "*Social Work in Emergencies",
+          "r": 497,
+          "t": 1330
+        },
+        {
+          "n": "*Focused MHPSS Interventions",
+          "r": 247,
+          "t": 2460
+        },
+        {
+          "n": "Community Risk Mitigation and Access",
+          "r": 1244,
+          "t": 3510
         }
       ],
       "fs": [
@@ -368,31 +398,36 @@
       },
       "rbm": [
         {
+          "m": "Apr 2026",
+          "i": 0,
+          "p": 31104
+        },
+        {
           "m": "Jan 2026",
-          "i": 4000,
+          "i": 0,
           "p": 24390
         },
         {
           "m": "Mar 2026",
-          "i": 5000,
-          "p": 36181
+          "i": 0,
+          "p": 41926
         },
         {
           "m": "Feb 2026",
-          "i": 4000,
-          "p": 43994
+          "i": 0,
+          "p": 35608
         },
         {
           "m": "Dec 2025",
           "i": 0,
-          "p": 3585
+          "p": 3651
         }
       ],
       "rbo": [
         {
-          "n": "*Safe Play and Learning Spaces",
-          "r": 13000,
-          "t": 50000
+          "n": "*Emergency PHC",
+          "r": 13828,
+          "t": 75000
         },
         {
           "n": "*Focused MHPSS Interventions",
@@ -401,22 +436,17 @@
         },
         {
           "n": "Community Risk Mitigation and Access",
-          "r": 75583,
+          "r": 98718,
           "t": 26500
         },
         {
           "n": "Community WASH",
-          "r": 13045,
+          "r": 15876,
           "t": 18000
         },
         {
-          "n": "*Emergency PHC",
-          "r": 12974,
-          "t": 75000
-        },
-        {
           "n": "*Emergency Basic Needs and Food Security",
-          "r": 5146,
+          "r": 6855,
           "t": 6670
         }
       ],
