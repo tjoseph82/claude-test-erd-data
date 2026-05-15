@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-15T16:45:52Z",
+  "lastUpdated": "2026-05-15T19:13:02Z",
   "fiscalYear": 2026,
   "averages": {
     "decision": 18,
@@ -1050,9 +1050,9 @@
       "country": "Democratic Republic of the Congo",
       "region": "Central Africa",
       "stance": "Orange",
-      "severity": 6,
+      "severity": 7,
       "details": [
-        "The Africa Centers for Disease Control and Prevention (CDC) confirmed a new Ebola outbreak in Ituri province in the northeast of the DRC on 15 May. The outbreak is focused in and around Ituri's capital Bunia as well as the more remote, mining area of Mongbwalu. As of 15 May, 13 cases have been confirmed but there are 246 suspected cases and 65 reported deaths, suggesting the disease may have been spreading for some time before the outbreak was confirmed. Adding to concerns about this outbreak, Ituri is a highly conflict-affected province and it sits on DRC's borders with South Sudan and Uganda, raising the prospect of cross-border spread if this outbreak is not rapidly controlled. The Crisis Analysis team is working with Emergency Health and DRC colleagues to monitor the situation closely and will issue updated classifications as soon as new information becomes available."
+        "The Africa Centers for Disease Control and Prevention (CDC) confirmed a new Ebola outbreak in Ituri province in the northeast of the DRC on 15 May. The outbreak is focused in and around Ituri's capital Bunia as well as the more remote, mining area of Mongbwalu. As of 15 May, 13 cases have been confirmed but there are 246 suspected cases and 80 reported deaths, suggesting the disease may have been spreading for some time before the outbreak was confirmed. Adding to concerns about this outbreak, Ituri is a highly conflict-affected province and it sits on DRC's borders with South Sudan and Uganda, raising the prospect of cross-border spread if this outbreak is not rapidly controlled. The Crisis Analysis team is working with Emergency Health and DRC colleagues to monitor the situation closely and will issue updated classifications as soon as new information becomes available."
       ],
       "affected": 259,
       "budget": null,
