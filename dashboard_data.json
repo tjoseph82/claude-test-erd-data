@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-15T19:13:02Z",
+  "lastUpdated": "2026-05-15T21:46:20Z",
   "fiscalYear": 2026,
   "averages": {
     "decision": 18,
@@ -344,7 +344,7 @@
     {
       "id": "SD516",
       "emgRecordId": "recERuCgQ5emL4zVw",
-      "country": "SD",
+      "country": "Sudan",
       "region": "East Africa",
       "stance": "Red",
       "severity": 8,
@@ -393,7 +393,7 @@
       "link": null,
       "firstServiceType": "",
       "newOrExisting": "",
-      "sapStartTriggered": "",
+      "sapStartTriggered": true,
       "sapMidTriggered": "",
       "sapEndTriggered": "",
       "sap": {
