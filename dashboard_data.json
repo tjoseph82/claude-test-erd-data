@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-05-18T06:41:58Z",
+  "lastUpdated": "2026-05-18T12:19:00Z",
   "fiscalYear": 2026,
   "averages": {
-    "decision": 18,
+    "decision": 16,
     "msna": 32,
     "planSub": 34,
     "planApproval": 42,
@@ -143,7 +143,7 @@
       "gap": 3400000.0,
       "crf": 600000.0,
       "appeal": null,
-      "reached": 2.35,
+      "reached": 3.28,
       "daysClient": 2,
       "daysDecision": 2,
       "daysMSNA": 25,
@@ -154,12 +154,12 @@
       "avgSigToReceipt": null,
       "fundingSecured": 600000.0,
       "target": 100000,
-      "totalReach": 24716,
+      "totalReach": 34401,
       "totalInOpArea": 1050000,
-      "reach6moClass": 24716,
-      "reach6moSvc": 24716,
+      "reach6moClass": 34401,
+      "reach6moSvc": 34401,
       "pct10Target6mo": null,
-      "pctReachOpArea": 2.35,
+      "pctReachOpArea": 3.28,
       "tenPctAffected": 105000.0,
       "pctPrep": null,
       "dateClassified": "Mar 02, 2026",
@@ -172,7 +172,7 @@
       "dateFirstCash": "Mar 06, 2026",
       "date6moMark": "Sep 03, 2026",
       "date3moMark": "Jun 03, 2026",
-      "dateLastReach": "May 15, 2026",
+      "dateLastReach": "May 18, 2026",
       "decision": "Direct and Partner Implementation",
       "ermtDecision": "Direct and Partner Implementation",
       "type": "Conflict",
@@ -200,40 +200,40 @@
       "rbm": [
         {
           "m": "Apr 2026",
-          "i": 16127,
+          "i": 23672,
           "p": 0
         },
         {
           "m": "Mar 2026",
-          "i": 9490,
+          "i": 15425,
           "p": 0
         },
         {
           "m": "May 2026",
-          "i": 10046,
+          "i": 2541,
           "p": 0
         }
       ],
       "rbo": [
         {
           "n": "*Emergency Basic Needs and Food Security",
-          "r": 29408,
-          "t": 37383
+          "r": 29053,
+          "t": 39408
         },
         {
           "n": "*Emergency PHC",
-          "r": 3267,
+          "r": 3327,
           "t": 11180
         },
         {
           "n": "*Safe Play and Learning Spaces",
-          "r": 432,
+          "r": 6371,
           "t": null
         },
         {
           "n": "*MISP for SRH",
           "r": 111,
-          "t": null
+          "t": 420
         },
         {
           "n": "*Social Work in Emergencies",
@@ -241,13 +241,13 @@
           "t": 225
         },
         {
-          "n": "Responsive Information Services",
-          "r": 2031,
-          "t": 4270
+          "n": "Community Risk Mitigation and Access",
+          "r": 2166,
+          "t": 6210
         },
         {
           "n": "*Focused MHPSS Interventions",
-          "r": 406,
+          "r": 602,
           "t": 3090
         }
       ],
@@ -770,7 +770,7 @@
       "gap": 3563000.0,
       "crf": 437000.0,
       "appeal": null,
-      "reached": 6.41,
+      "reached": 6.75,
       "daysClient": 48,
       "daysDecision": 1,
       "daysMSNA": 10,
@@ -781,12 +781,12 @@
       "avgSigToReceipt": null,
       "fundingSecured": 437000.0,
       "target": 43320,
-      "totalReach": 26382,
+      "totalReach": 27762,
       "totalInOpArea": 56074,
-      "reach6moClass": 26382,
-      "reach6moSvc": 26382,
+      "reach6moClass": 27762,
+      "reach6moSvc": 27762,
       "pct10Target6mo": null,
-      "pctReachOpArea": 47.05,
+      "pctReachOpArea": 49.51,
       "tenPctAffected": 41135.5,
       "pctPrep": null,
       "dateClassified": "Dec 09, 2025",
@@ -799,7 +799,7 @@
       "dateFirstCash": null,
       "date6moMark": "Jun 08, 2026",
       "date3moMark": "Mar 08, 2026",
-      "dateLastReach": "May 13, 2026",
+      "dateLastReach": "May 18, 2026",
       "decision": "Direct and Partner Implementation",
       "ermtDecision": "Direct and Partner Implementation",
       "type": "Conflict",
@@ -827,30 +827,35 @@
       "rbm": [
         {
           "m": "Mar 2026",
-          "i": 15004,
-          "p": 0
+          "i": 21233,
+          "p": 348
         },
         {
           "m": "Apr 2026",
-          "i": 0,
-          "p": 0
+          "i": 9389,
+          "p": 55
         },
         {
           "m": "Feb 2026",
-          "i": 14130,
-          "p": 0
+          "i": 12411,
+          "p": 1682
         },
         {
           "m": "Jan 2026",
-          "i": 12,
-          "p": 0
+          "i": 14,
+          "p": 643
         }
       ],
       "rbo": [
         {
           "n": "Community WASH",
-          "r": 4933,
+          "r": 20809,
           "t": 23280
+        },
+        {
+          "n": "*Safe Play and Learning Spaces",
+          "r": 2728,
+          "t": 2140
         },
         {
           "n": "Community Risk Mitigation and Access",
@@ -858,14 +863,9 @@
           "t": 22430
         },
         {
-          "n": "*Safe Play and Learning Spaces",
-          "r": 2000,
-          "t": 2000
-        },
-        {
           "n": "*Focused MHPSS Interventions",
-          "r": 339,
-          "t": 240
+          "r": 364,
+          "t": 290
         }
       ],
       "fs": [
@@ -1061,7 +1061,7 @@
       "appeal": null,
       "reached": null,
       "daysClient": null,
-      "daysDecision": null,
+      "daysDecision": 0,
       "daysMSNA": null,
       "daysMSNAStart": null,
       "daysPlanSub": null,
@@ -1079,7 +1079,7 @@
       "tenPctAffected": 25.900000000000002,
       "pctPrep": null,
       "dateClassified": "May 15, 2026",
-      "dateDecision": null,
+      "dateDecision": "May 15, 2026",
       "dateMSNAStart": null,
       "dateMSNA": null,
       "datePlanSub": null,
@@ -1101,7 +1101,7 @@
       "sapEndTriggered": "",
       "sap": {
         "plan": "Pending",
-        "learning": "Pending",
+        "learning": "Not Applicable",
         "feedback": "Pending",
         "feedbackTime": "Pending",
         "safeguarding": "Pending",
