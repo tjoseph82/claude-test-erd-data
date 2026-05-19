@@ -1,16 +1,16 @@
 {
-  "lastUpdated": "2026-05-19T02:01:43Z",
+  "lastUpdated": "2026-05-19T06:37:38Z",
   "fiscalYear": 2026,
   "averages": {
     "decision": 16,
     "msna": 32,
     "planSub": 34,
     "planApproval": 42,
-    "client": 33
+    "client": 28
   },
   "eoCounts": {
     "*Emergency Basic Needs and Food Security": 5,
-    "*Focused MHPSS Interventions": 3,
+    "*Focused MHPSS Interventions": 4,
     "*Emergency PHC": 4,
     "Community WASH": 3,
     "*MISP for SRH": 1,
@@ -941,7 +941,7 @@
       "crf": 350000.0,
       "appeal": null,
       "reached": 12.72,
-      "daysClient": 52,
+      "daysClient": 6,
       "daysDecision": 13,
       "daysMSNA": null,
       "daysMSNAStart": null,
@@ -976,7 +976,7 @@
       "pctFunded": null,
       "link": "https://rescue.app.box.com/s/mt3wmipcnt3jii88yvhnygge5iiy7tvr",
       "firstServiceType": [
-        "recPph5Z5vlTl5mlR"
+        "recLJ6kixUP5DVKw5"
       ],
       "newOrExisting": "",
       "sapStartTriggered": true,
@@ -1043,6 +1043,11 @@
           "t": 1317
         },
         {
+          "n": "*MISP for SRH",
+          "r": 0,
+          "t": null
+        },
+        {
           "n": "*Emergency PHC",
           "r": 18530,
           "t": 47878
@@ -1053,9 +1058,20 @@
           "o": "*MISP for SRH",
           "d": "Mar 20, 2026",
           "type": "Antenatal Care (ANC) consultations"
+        },
+        {
+          "o": "*Focused MHPSS Interventions",
+          "d": "Feb 02, 2026",
+          "type": "Focused PSS sessions"
         }
       ],
-      "or": [],
+      "or": [
+        {
+          "o": "*MISP for SRH",
+          "q": "Planned Offering Pending Implementation",
+          "d": ""
+        }
+      ],
       "pd": [],
       "qi": []
     },
