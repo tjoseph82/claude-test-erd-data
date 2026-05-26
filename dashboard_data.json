@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-26T06:35:29Z",
+  "lastUpdated": "2026-05-26T14:33:52Z",
   "fiscalYear": 2026,
   "averages": {
     "decision": 16,
@@ -11,11 +11,11 @@
   "eoCounts": {
     "*Emergency Basic Needs and Food Security": 5,
     "*Focused MHPSS Interventions": 4,
-    "*Emergency PHC": 4,
-    "Community WASH": 3,
+    "*Emergency PHC": 5,
+    "Community WASH": 4,
     "*MISP for SRH": 1,
     "*Community Management of Acute Malnutrition": 2,
-    "*Social Work in Emergencies": 1
+    "*Social Work in Emergencies": 2
   },
   "emergencies": [
     {
@@ -1498,6 +1498,16 @@
       ],
       "fs": [
         {
+          "o": "*Social Work in Emergencies",
+          "d": "Apr 02, 2026",
+          "type": "Individual Psychosocial Support (PSS)"
+        },
+        {
+          "o": "Community WASH",
+          "d": "Jan 21, 2026",
+          "type": "Rehabilitation of borehole"
+        },
+        {
           "o": "*Community Management of Acute Malnutrition",
           "d": "Dec 22, 2025",
           "type": "Uncomplicated SAM"
@@ -1516,6 +1526,11 @@
           "o": "*Emergency Basic Needs and Food Security",
           "d": "Dec 24, 2025",
           "type": "Multipurpose Cash Assistance "
+        },
+        {
+          "o": "*Emergency PHC",
+          "d": "Apr 11, 2026",
+          "type": "Outpatient consultations"
         }
       ],
       "or": [
@@ -1525,7 +1540,22 @@
           "d": ""
         },
         {
+          "o": "*Social Work in Emergencies",
+          "q": "Planned Offering Pending Implementation",
+          "d": ""
+        },
+        {
+          "o": "*Social Work in Emergencies",
+          "q": "Planned Offering Pending Implementation",
+          "d": ""
+        },
+        {
           "o": "*Infant and young child feeding",
+          "q": "Planned Offering Pending Implementation",
+          "d": ""
+        },
+        {
+          "o": "Community WASH",
           "q": "Planned Offering Pending Implementation",
           "d": ""
         },
