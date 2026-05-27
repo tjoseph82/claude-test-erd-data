@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-27T06:52:10Z",
+  "lastUpdated": "2026-05-27T17:49:18Z",
   "fiscalYear": 2026,
   "averages": {
     "decision": 16,
@@ -9,10 +9,10 @@
     "client": 28
   },
   "eoCounts": {
-    "*Emergency Basic Needs and Food Security": 5,
+    "*Emergency Basic Needs and Food Security": 6,
     "*Focused MHPSS Interventions": 4,
     "*Emergency PHC": 5,
-    "Community WASH": 4,
+    "Community WASH": 3,
     "*MISP for SRH": 1,
     "*Community Management of Acute Malnutrition": 2,
     "*Social Work in Emergencies": 2
@@ -814,7 +814,7 @@
       ],
       "fs": [
         {
-          "o": "Community WASH",
+          "o": "*Emergency Basic Needs and Food Security",
           "d": "Apr 29, 2026",
           "type": "Multipurpose Cash Assistance "
         },
