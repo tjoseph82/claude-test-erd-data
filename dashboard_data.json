@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-03T02:34:23Z",
+  "lastUpdated": "2026-06-03T07:28:59Z",
   "fiscalYear": 2026,
   "averages": {
     "decision": 16,
@@ -183,7 +183,7 @@
       ],
       "newOrExisting": "",
       "sapStartTriggered": true,
-      "sapMidTriggered": "",
+      "sapMidTriggered": true,
       "sapEndTriggered": "",
       "sap": {
         "plan": "Yes",
@@ -320,7 +320,7 @@
       "firstServiceType": "",
       "newOrExisting": "",
       "sapStartTriggered": true,
-      "sapMidTriggered": "",
+      "sapMidTriggered": true,
       "sapEndTriggered": "",
       "sap": {
         "plan": "Pending",
