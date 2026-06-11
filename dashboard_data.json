@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-11T12:35:35Z",
+  "lastUpdated": "2026-06-11T17:59:25Z",
   "fiscalYear": 2026,
   "averages": {
     "decision": 16,
@@ -33,7 +33,7 @@
       "gap": 1000000.0,
       "crf": 1000000.0,
       "appeal": null,
-      "reached": 0.19,
+      "reached": 0.39,
       "daysClient": 53,
       "daysDecision": 3,
       "daysMSNA": 7,
@@ -44,12 +44,12 @@
       "avgSigToReceipt": null,
       "fundingSecured": 1200000.0,
       "target": 61150,
-      "totalReach": 9073,
+      "totalReach": 18181,
       "totalInOpArea": 602060,
-      "reach6moClass": 9073,
-      "reach6moSvc": 9073,
+      "reach6moClass": 18181,
+      "reach6moSvc": 18181,
       "pct10Target6mo": null,
-      "pctReachOpArea": 1.51,
+      "pctReachOpArea": 3.02,
       "tenPctAffected": 466400.0,
       "pctPrep": null,
       "dateClassified": "Dec 19, 2025",
@@ -62,7 +62,7 @@
       "dateFirstCash": "Feb 10, 2026",
       "date6moMark": "Jun 18, 2026",
       "date3moMark": "Mar 18, 2026",
-      "dateLastReach": "Apr 07, 2026",
+      "dateLastReach": "Jun 11, 2026",
       "decision": "Direct Implementation",
       "ermtDecision": "Direct Implementation",
       "type": "Food insecurity",
@@ -81,13 +81,18 @@
         "feedback": "Yes",
         "feedbackTime": "Yes",
         "safeguarding": "Pending",
-        "partners": "Pending",
+        "partners": "Not Applicable",
         "indicators80": "Pending",
         "sequenced": "",
         "msnaCompleted": "Yes - Includes primary data collection",
         "localSystems": ""
       },
       "rbm": [
+        {
+          "m": "May 2026",
+          "i": 9108,
+          "p": 0
+        },
         {
           "m": "Feb 2026",
           "i": 7719,
@@ -107,7 +112,7 @@
       "rbo": [
         {
           "n": "*Emergency Basic Needs and Food Security",
-          "r": 9073,
+          "r": 18181,
           "t": 23310
         }
       ],
@@ -352,7 +357,7 @@
         "The Africa Centers for Disease Control and Prevention (CDC) confirmed a new Ebola outbreak in Ituri province in the northeast of the DRC on 15 May. The outbreak is focused in and around Ituri's capital Bunia as well as the more remote, mining area of Mongbwalu. As of 19 May, there are at least 513 suspected cases and 131 deaths, suggesting the disease may have been spreading for some time before the outbreak was confirmed. Adding to concerns about this outbreak, Ituri is a highly conflict-affected province and it sits on DRC's borders with South Sudan and Uganda, raising the prospect of cross-border spread if this outbreak is not rapidly controlled. All evidence suggests that currently available data does not fully reflect the severity of this outbreak and therefore CRRD leadership has decided to upgrade this emergency classification to the Red response stance."
       ],
       "affected": 259,
-      "budget": null,
+      "budget": 2000000.0,
       "gap": null,
       "crf": null,
       "appeal": null,
@@ -515,10 +520,10 @@
       "avgSigToReceipt": null,
       "fundingSecured": 1300000.0,
       "target": 130170,
-      "totalReach": 135277,
+      "totalReach": 143639,
       "totalInOpArea": 671023,
       "reach6moClass": 135277,
-      "reach6moSvc": 135277,
+      "reach6moSvc": 143639,
       "pct10Target6mo": null,
       "pctReachOpArea": 20.16,
       "tenPctAffected": 189500.0,
@@ -552,7 +557,7 @@
         "feedback": "Yes",
         "feedbackTime": "Yes",
         "safeguarding": "Pending",
-        "partners": "Pending",
+        "partners": "Yes",
         "indicators80": "Not Applicable",
         "sequenced": "No",
         "msnaCompleted": "Yes - Includes primary data collection",
@@ -859,7 +864,7 @@
       "gap": 3563000.0,
       "crf": 437000.0,
       "appeal": null,
-      "reached": 6.75,
+      "reached": 16.82,
       "daysClient": 48,
       "daysDecision": 1,
       "daysMSNA": 10,
@@ -870,12 +875,12 @@
       "avgSigToReceipt": null,
       "fundingSecured": 437000.0,
       "target": 43320,
-      "totalReach": 27762,
+      "totalReach": 69193,
       "totalInOpArea": 56074,
-      "reach6moClass": 27762,
-      "reach6moSvc": 27762,
+      "reach6moClass": 69193,
+      "reach6moSvc": 69193,
       "pct10Target6mo": null,
-      "pctReachOpArea": 49.51,
+      "pctReachOpArea": 123.4,
       "tenPctAffected": 41135.5,
       "pctPrep": null,
       "dateClassified": "Dec 09, 2025",
@@ -888,7 +893,7 @@
       "dateFirstCash": null,
       "date6moMark": "Jun 08, 2026",
       "date3moMark": "Mar 08, 2026",
-      "dateLastReach": "May 18, 2026",
+      "dateLastReach": "Jun 11, 2026",
       "decision": "Direct and Partner Implementation",
       "ermtDecision": "Direct and Partner Implementation",
       "type": "Conflict",
@@ -916,12 +921,17 @@
       "rbm": [
         {
           "m": "Mar 2026",
-          "i": 21233,
+          "i": 19228,
           "p": 348
         },
         {
+          "m": "May 2026",
+          "i": 47006,
+          "p": 0
+        },
+        {
           "m": "Apr 2026",
-          "i": 9389,
+          "i": 11419,
           "p": 55
         },
         {
@@ -938,8 +948,13 @@
       "rbo": [
         {
           "n": "Community WASH",
-          "r": 20809,
+          "r": 65882,
           "t": 23280
+        },
+        {
+          "n": "Community Risk Mitigation and Access",
+          "r": 23701,
+          "t": 22430
         },
         {
           "n": "*Safe Play and Learning Spaces",
@@ -947,13 +962,8 @@
           "t": 2140
         },
         {
-          "n": "Community Risk Mitigation and Access",
-          "r": 21874,
-          "t": 22430
-        },
-        {
           "n": "*Focused MHPSS Interventions",
-          "r": 364,
+          "r": 495,
           "t": 290
         }
       ],
@@ -1009,12 +1019,12 @@
       "details": [
         "Renewed fighting between the South Sudanese military (SSPDF) and their main opposition group, the Sudan's Peoples Liberation Army in Opposition (SPLA-iO), has displaced over 290,000 people in South Sudan's Jonglei, Upper Nile, and Unity states. Further clashes are expected as the SSPDF has ordered civilians and NGOs to evacuate opposition held territory as they prepare to retake the area."
       ],
-      "affected": 230000,
+      "affected": 294415,
       "budget": 2000000.0,
       "gap": 1650000.0,
       "crf": 350000.0,
       "appeal": null,
-      "reached": 18.67,
+      "reached": 14.58,
       "daysClient": 6,
       "daysDecision": 13,
       "daysMSNA": null,
@@ -1026,12 +1036,12 @@
       "fundingSecured": 350000.0,
       "target": 184000,
       "totalReach": 42940,
-      "totalInOpArea": null,
+      "totalInOpArea": 294415,
       "reach6moClass": 42940,
       "reach6moSvc": 42940,
       "pct10Target6mo": null,
-      "pctReachOpArea": null,
-      "tenPctAffected": 23000.0,
+      "pctReachOpArea": 14.58,
+      "tenPctAffected": 29441.5,
       "pctPrep": null,
       "dateClassified": "Jan 27, 2026",
       "dateDecision": "Feb 09, 2026",
@@ -1059,8 +1069,8 @@
       "sap": {
         "plan": "Yes",
         "learning": "Not Applicable",
-        "feedback": "Pending",
-        "feedbackTime": "Pending",
+        "feedback": "Yes",
+        "feedbackTime": "Yes",
         "safeguarding": "Pending",
         "partners": "Not Applicable",
         "indicators80": "Pending",
@@ -1070,60 +1080,55 @@
       },
       "rbm": [
         {
+          "m": "May 2026",
+          "i": 0,
+          "p": 18807
+        },
+        {
           "m": "Mar 2026",
           "i": 0,
-          "p": 11385
+          "p": 11429
         },
         {
           "m": "Feb 2026",
           "i": 0,
-          "p": 6714
+          "p": 6906
         },
         {
           "m": "Apr 2026",
           "i": 0,
-          "p": 15681
-        },
-        {
-          "m": "May 2026",
-          "i": 0,
-          "p": 2826
+          "p": 15344
         }
       ],
       "rbo": [
         {
           "n": "Community Risk Mitigation and Access",
-          "r": 10325,
-          "t": 9000
+          "r": 12368,
+          "t": 11000
         },
         {
           "n": "*Focused MHPSS Interventions",
-          "r": 179,
-          "t": 600
+          "r": 982,
+          "t": 1850
         },
         {
           "n": "*Social Work in Emergencies",
-          "r": 300,
-          "t": 3970
+          "r": 377,
+          "t": 2708
         },
         {
           "n": "Responsive Information Services",
-          "r": 7058,
+          "r": 8177,
           "t": 4500
         },
         {
           "n": "*Community Management of Acute Malnutrition",
-          "r": 214,
+          "r": 1209,
           "t": 1317
         },
         {
-          "n": "*MISP for SRH",
-          "r": 0,
-          "t": null
-        },
-        {
           "n": "*Emergency PHC",
-          "r": 18530,
+          "r": 29373,
           "t": 47878
         }
       ],
@@ -1388,7 +1393,7 @@
       "gap": 62500.0,
       "crf": 900000.0,
       "appeal": null,
-      "reached": 9.2,
+      "reached": 11.68,
       "daysClient": 41,
       "daysDecision": 10,
       "daysMSNA": 23,
@@ -1399,12 +1404,12 @@
       "avgSigToReceipt": null,
       "fundingSecured": 2000000.0,
       "target": 200000,
-      "totalReach": 84792,
+      "totalReach": 107617,
       "totalInOpArea": 585000,
-      "reach6moClass": 84792,
-      "reach6moSvc": 84792,
+      "reach6moClass": 107617,
+      "reach6moSvc": 107617,
       "pct10Target6mo": null,
-      "pctReachOpArea": 14.49,
+      "pctReachOpArea": 18.4,
       "tenPctAffected": 92116.8,
       "pctPrep": null,
       "dateClassified": "Nov 11, 2025",
@@ -1417,7 +1422,7 @@
       "dateFirstCash": "Dec 24, 2025",
       "date6moMark": "May 10, 2026",
       "date3moMark": "Feb 10, 2026",
-      "dateLastReach": "May 12, 2026",
+      "dateLastReach": "Jun 11, 2026",
       "decision": "Direct and Partner Implementation",
       "ermtDecision": "Direct and Partner Implementation",
       "type": "Food insecurity",
@@ -1445,44 +1450,49 @@
       "rbm": [
         {
           "m": "Mar 2026",
-          "i": 19994,
+          "i": 19486,
           "p": 0
         },
         {
           "m": "Feb 2026",
-          "i": 28291,
+          "i": 27960,
           "p": 0
         },
         {
           "m": "Apr 2026",
-          "i": 10458,
-          "p": 4471
+          "i": 9713,
+          "p": 14805
+        },
+        {
+          "m": "May 2026",
+          "i": 4572,
+          "p": 11449
         },
         {
           "m": "Jan 2026",
-          "i": 15084,
+          "i": 14406,
           "p": 0
         },
         {
           "m": "Dec 2025",
-          "i": 17072,
+          "i": 16363,
           "p": 0
         }
       ],
       "rbo": [
         {
           "n": "*Emergency Basic Needs and Food Security",
-          "r": 33993,
+          "r": 37587,
           "t": 19680
         },
         {
           "n": "*Social Work in Emergencies",
-          "r": 128,
+          "r": 357,
           "t": null
         },
         {
           "n": "*Community Management of Acute Malnutrition",
-          "r": 13437,
+          "r": 17127,
           "t": 4120
         },
         {
@@ -1492,7 +1502,7 @@
         },
         {
           "n": "*Emergency PHC",
-          "r": 2642,
+          "r": 18513,
           "t": null
         }
       ],
@@ -1588,7 +1598,7 @@
       "gap": 700000.0,
       "crf": null,
       "appeal": 300000.0,
-      "reached": 14.99,
+      "reached": 28.04,
       "daysClient": 0,
       "daysDecision": 91,
       "daysMSNA": 106,
@@ -1599,12 +1609,12 @@
       "avgSigToReceipt": null,
       "fundingSecured": 300000.0,
       "target": 89340,
-      "totalReach": 133879,
+      "totalReach": 250482,
       "totalInOpArea": 472000,
-      "reach6moClass": 133879,
-      "reach6moSvc": 133879,
+      "reach6moClass": 250482,
+      "reach6moSvc": 250482,
       "pct10Target6mo": null,
-      "pctReachOpArea": 28.36,
+      "pctReachOpArea": 53.07,
       "tenPctAffected": 89340.3,
       "pctPrep": null,
       "dateClassified": "Oct 30, 2025",
@@ -1614,10 +1624,10 @@
       "datePlanSub": "Feb 17, 2026",
       "datePlanApproval": "Feb 26, 2026",
       "dateFirstClient": null,
-      "dateFirstCash": null,
+      "dateFirstCash": "May 19, 2026",
       "date6moMark": "Jul 12, 2026",
       "date3moMark": "Apr 12, 2026",
-      "dateLastReach": "May 12, 2026",
+      "dateLastReach": "Jun 11, 2026",
       "decision": "Direct Implementation",
       "ermtDecision": "Direct Implementation",
       "type": "Conflict",
@@ -1644,26 +1654,36 @@
       },
       "rbm": [
         {
+          "m": "May 2026",
+          "i": 30692,
+          "p": 0
+        },
+        {
           "m": "Apr 2026",
-          "i": 16425,
+          "i": 101826,
           "p": 0
         },
         {
           "m": "Mar 2026",
-          "i": 120189,
+          "i": 120291,
           "p": 0
         }
       ],
       "rbo": [
         {
-          "n": "*Emergency PHC",
-          "r": 124829,
-          "t": 446702
-        },
-        {
           "n": "Community WASH",
           "r": 9050,
           "t": 19995
+        },
+        {
+          "n": "*Emergency PHC",
+          "r": 230998,
+          "t": 446702
+        },
+        {
+          "n": "*Emergency Basic Needs and Food Security",
+          "r": 9711,
+          "t": 7500
         },
         {
           "n": "*Social Work in Emergencies",
@@ -1672,8 +1692,8 @@
         },
         {
           "n": "*MISP for SRH",
-          "r": 290,
-          "t": 582
+          "r": 605,
+          "t": 773
         }
       ],
       "fs": [
