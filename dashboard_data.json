@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-12T07:10:14Z",
+  "lastUpdated": "2026-06-12T12:09:46Z",
   "fiscalYear": 2026,
   "averages": {
     "decision": 16,
@@ -357,9 +357,9 @@
         "The Africa Centers for Disease Control and Prevention (CDC) confirmed a new Ebola outbreak in Ituri province in the northeast of the DRC on 15 May. The outbreak is focused in and around Ituri's capital Bunia as well as the more remote, mining area of Mongbwalu. As of 19 May, there are at least 513 suspected cases and 131 deaths, suggesting the disease may have been spreading for some time before the outbreak was confirmed. Adding to concerns about this outbreak, Ituri is a highly conflict-affected province and it sits on DRC's borders with South Sudan and Uganda, raising the prospect of cross-border spread if this outbreak is not rapidly controlled. All evidence suggests that currently available data does not fully reflect the severity of this outbreak and therefore CRRD leadership has decided to upgrade this emergency classification to the Red response stance."
       ],
       "affected": 259,
-      "budget": 2000000.0,
-      "gap": null,
-      "crf": null,
+      "budget": 15000000.0,
+      "gap": 13000000.0,
+      "crf": 2000000.0,
       "appeal": null,
       "reached": null,
       "daysClient": null,
@@ -370,7 +370,7 @@
       "daysPlanApproval": 26,
       "avgDisbToSig": null,
       "avgSigToReceipt": null,
-      "fundingSecured": null,
+      "fundingSecured": 2000000.0,
       "target": 480523,
       "totalReach": null,
       "totalInOpArea": null,
@@ -431,7 +431,7 @@
         "Nearly 200,000 people are experience catastrophic, or IPC5, levels of food insecurity across the Darfur and Kordofan states in Sudan, while 2.3 million others are experiencing emergency, or IPC4, levels. Darfur and the Kordofan states are seeing the most intense fighting in the country with many cities partially or fully blockaded, preventing food or supplies from reaching the population. There is credible risk of famine in parts of South Kordofan and North Darfur in particular, as the lean season approaches.  Please note, the current IPC assessment did not include figures for the rest of the country"
       ],
       "affected": 2447330,
-      "budget": 180000.0,
+      "budget": 2000000.0,
       "gap": null,
       "crf": null,
       "appeal": null,
@@ -1165,7 +1165,7 @@
         "The Ugandan Ministry of Health declared an Ebola virus disease outbreak as two cases were confirmed in the Kampala area, with at least one death. Uganda has activated surveillance and screening measures, and those who had come in contact with the cases are being quarantined. This classification will be updated as needed and outbreaks in other countries are being classified separately."
       ],
       "affected": 2,
-      "budget": null,
+      "budget": 5000000.0,
       "gap": null,
       "crf": null,
       "appeal": null,
@@ -1214,7 +1214,7 @@
         "learning": "Pending",
         "feedback": "Pending",
         "feedbackTime": "Pending",
-        "safeguarding": "Pending",
+        "safeguarding": "$5,000,000.00",
         "partners": "Pending",
         "indicators80": "Pending",
         "sequenced": "",
