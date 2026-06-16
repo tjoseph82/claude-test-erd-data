@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-16T08:36:59Z",
+  "lastUpdated": "2026-06-16T13:20:44Z",
   "fiscalYear": 2026,
   "averages": {
     "decision": 16,
@@ -148,7 +148,7 @@
       "gap": -2656118.0,
       "crf": 600000.0,
       "appeal": null,
-      "reached": 3.5,
+      "reached": 3.78,
       "daysClient": 2,
       "daysDecision": 2,
       "daysMSNA": 25,
@@ -159,12 +159,12 @@
       "avgSigToReceipt": null,
       "fundingSecured": 6656118.0,
       "target": 100000,
-      "totalReach": 36778,
+      "totalReach": 39672,
       "totalInOpArea": 1050000,
-      "reach6moClass": 36778,
-      "reach6moSvc": 36778,
+      "reach6moClass": 39672,
+      "reach6moSvc": 39672,
       "pct10Target6mo": null,
-      "pctReachOpArea": 3.5,
+      "pctReachOpArea": 3.78,
       "tenPctAffected": 105000.0,
       "pctPrep": null,
       "dateClassified": "Mar 02, 2026",
@@ -177,7 +177,7 @@
       "dateFirstCash": "Mar 06, 2026",
       "date6moMark": "Sep 03, 2026",
       "date3moMark": "Jun 03, 2026",
-      "dateLastReach": "Jun 11, 2026",
+      "dateLastReach": "Jun 16, 2026",
       "decision": "Direct and Partner Implementation",
       "ermtDecision": "Direct and Partner Implementation",
       "type": "Conflict",
@@ -205,7 +205,7 @@
       "rbm": [
         {
           "m": "May 2026",
-          "i": 5550,
+          "i": 8444,
           "p": 0
         },
         {
@@ -217,6 +217,11 @@
           "m": "Mar 2026",
           "i": 13130,
           "p": 0
+        },
+        {
+          "m": "Jun 2026",
+          "i": 0,
+          "p": 0
         }
       ],
       "rbo": [
@@ -227,13 +232,18 @@
         },
         {
           "n": "*Emergency Basic Needs and Food Security",
-          "r": 28592,
+          "r": 31486,
           "t": 39408
         },
         {
+          "n": "Responsive Information Services",
+          "r": 3749,
+          "t": 5660
+        },
+        {
           "n": "Community Risk Mitigation and Access",
-          "r": 4643,
-          "t": 4270
+          "r": 894,
+          "t": 760
         },
         {
           "n": "*Emergency PHC",
@@ -243,7 +253,7 @@
         {
           "n": "*Focused MHPSS Interventions",
           "r": 1554,
-          "t": 3090
+          "t": 3170
         },
         {
           "n": "*Safe Play and Learning Spaces",
@@ -602,7 +612,7 @@
           "t": 2050
         },
         {
-          "n": "Community Risk Mitigation and Access",
+          "n": "Responsive Information Services",
           "r": 98718,
           "t": 26500
         },
@@ -952,7 +962,7 @@
           "t": 23280
         },
         {
-          "n": "Community Risk Mitigation and Access",
+          "n": "Responsive Information Services",
           "r": 23701,
           "t": 22430
         },
@@ -1102,8 +1112,8 @@
       ],
       "rbo": [
         {
-          "n": "Community Risk Mitigation and Access",
-          "r": 12368,
+          "n": "Responsive Information Services",
+          "r": 20545,
           "t": 11000
         },
         {
@@ -1115,11 +1125,6 @@
           "n": "*Social Work in Emergencies",
           "r": 377,
           "t": 2708
-        },
-        {
-          "n": "Responsive Information Services",
-          "r": 8177,
-          "t": 4500
         },
         {
           "n": "*Community Management of Acute Malnutrition",
