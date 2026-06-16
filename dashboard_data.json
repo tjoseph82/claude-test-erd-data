@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-16T02:34:15Z",
+  "lastUpdated": "2026-06-16T08:36:59Z",
   "fiscalYear": 2026,
   "averages": {
     "decision": 16,
@@ -204,26 +204,36 @@
       },
       "rbm": [
         {
+          "m": "May 2026",
+          "i": 5550,
+          "p": 0
+        },
+        {
           "m": "Apr 2026",
-          "i": 27581,
+          "i": 29057,
           "p": 0
         },
         {
           "m": "Mar 2026",
-          "i": 15425,
-          "p": 0
-        },
-        {
-          "m": "May 2026",
-          "i": 945,
+          "i": 13130,
           "p": 0
         }
       ],
       "rbo": [
         {
+          "n": "*MISP for SRH",
+          "r": 111,
+          "t": 420
+        },
+        {
           "n": "*Emergency Basic Needs and Food Security",
-          "r": 29397,
+          "r": 28592,
           "t": 39408
+        },
+        {
+          "n": "Community Risk Mitigation and Access",
+          "r": 4643,
+          "t": 4270
         },
         {
           "n": "*Emergency PHC",
@@ -231,29 +241,19 @@
           "t": 11180
         },
         {
+          "n": "*Focused MHPSS Interventions",
+          "r": 1554,
+          "t": 3090
+        },
+        {
           "n": "*Safe Play and Learning Spaces",
-          "r": 6371,
+          "r": 9486,
           "t": null
         },
         {
-          "n": "*MISP for SRH",
-          "r": 111,
-          "t": 420
-        },
-        {
           "n": "*Social Work in Emergencies",
-          "r": 18,
+          "r": 24,
           "t": 225
-        },
-        {
-          "n": "Community Risk Mitigation and Access",
-          "r": 3523,
-          "t": 4270
-        },
-        {
-          "n": "*Focused MHPSS Interventions",
-          "r": 1204,
-          "t": 3090
         }
       ],
       "fs": [
