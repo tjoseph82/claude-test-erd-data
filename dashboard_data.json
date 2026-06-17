@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-17T02:31:14Z",
+  "lastUpdated": "2026-06-17T08:19:16Z",
   "fiscalYear": 2026,
   "averages": {
     "decision": 16,
@@ -368,7 +368,7 @@
       ],
       "affected": 259,
       "budget": 15000000.0,
-      "gap": 13000000.0,
+      "gap": 11500000.0,
       "crf": 2000000.0,
       "appeal": null,
       "reached": null,
@@ -380,7 +380,7 @@
       "daysPlanApproval": 26,
       "avgDisbToSig": null,
       "avgSigToReceipt": null,
-      "fundingSecured": 2000000.0,
+      "fundingSecured": 3500000.0,
       "target": 480523,
       "totalReach": null,
       "totalInOpArea": null,
@@ -1293,7 +1293,7 @@
         "learning": "Pending",
         "feedback": "Pending",
         "feedbackTime": "Pending",
-        "safeguarding": "$5,000,000.00",
+        "safeguarding": "Pending",
         "partners": "Pending",
         "indicators80": "Pending",
         "sequenced": "",
