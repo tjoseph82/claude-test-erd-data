@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-18T12:15:21Z",
+  "lastUpdated": "2026-06-18T17:52:31Z",
   "fiscalYear": 2026,
   "averages": {
     "decision": 16,
@@ -364,7 +364,7 @@
       "stance": "Red",
       "severity": 7,
       "details": [
-        "The Africa Centers for Disease Control and Prevention (CDC) confirmed a new Ebola outbreak in Ituri province in the northeast of the DRC on 15 May. The outbreak is focused in and around Ituri's capital Bunia as well as the more remote, mining area of Mongbwalu. As of 19 May, there are at least 513 suspected cases and 131 deaths, suggesting the disease may have been spreading for some time before the outbreak was confirmed. Adding to concerns about this outbreak, Ituri is a highly conflict-affected province and it sits on DRC's borders with South Sudan and Uganda, raising the prospect of cross-border spread if this outbreak is not rapidly controlled. All evidence suggests that currently available data does not fully reflect the severity of this outbreak and therefore CRRD leadership has decided to upgrade this emergency classification to the Red response stance."
+        "The Africa Centers for Disease Control and Prevention (CDC) confirmed a new Ebola outbreak in Ituri province in the northeast of the DRC on 15 May. The outbreak is focused in and around Ituri's capital Bunia as well as the more remote, mining area of Mongbwalu, but has also spread to North and South Kivu. As of 12 June, there are at least 1,072 cases - 837 confirmed and 235 suspected, as well as 250 deaths - 196 confirmed and 54 suspected. The high case load suggests that the diseases had been spreading for some time before it was detected. Adding to concerns about this outbreak, Ituri is a highly conflict-affected province and it sits on DRC's borders with South Sudan and Uganda, raising the prospect of cross-border spread."
       ],
       "affected": 259,
       "budget": 15000000.0,
