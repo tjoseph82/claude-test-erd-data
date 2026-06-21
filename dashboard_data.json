@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-20T21:57:46Z",
+  "lastUpdated": "2026-06-21T02:29:15Z",
   "fiscalYear": 2026,
   "averages": {
     "decision": 16,
@@ -450,7 +450,7 @@
       "daysDecision": 11,
       "daysMSNA": null,
       "daysMSNAStart": null,
-      "daysPlanSub": 14,
+      "daysPlanSub": 17,
       "daysPlanApproval": null,
       "avgDisbToSig": null,
       "avgSigToReceipt": null,
@@ -468,7 +468,7 @@
       "dateDecision": "May 26, 2026",
       "dateMSNAStart": null,
       "dateMSNA": null,
-      "datePlanSub": "May 01, 2026",
+      "datePlanSub": "Jun 01, 2026",
       "datePlanApproval": null,
       "dateFirstClient": null,
       "dateFirstCash": null,
