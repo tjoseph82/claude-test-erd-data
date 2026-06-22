@@ -1,16 +1,17 @@
 {
-  "lastUpdated": "2026-06-22T14:22:26Z",
+  "lastUpdated": "2026-06-22T18:39:01Z",
   "fiscalYear": 2026,
   "averages": {
     "decision": 16,
     "msna": 32,
     "planSub": 29,
     "planApproval": 40,
-    "client": 28
+    "client": 29
   },
   "eoCounts": {
     "*Emergency Basic Needs and Food Security": 6,
     "*Focused MHPSS Interventions": 4,
+    "*Outbreak Prevention and Response": 1,
     "*Emergency PHC": 5,
     "Community WASH": 3,
     "*MISP for SRH": 1,
@@ -372,7 +373,7 @@
       "crf": 2000000.0,
       "appeal": null,
       "reached": null,
-      "daysClient": null,
+      "daysClient": 36,
       "daysDecision": 0,
       "daysMSNA": null,
       "daysMSNAStart": null,
@@ -406,7 +407,9 @@
       "type": "Outbreak",
       "pctFunded": null,
       "link": "https://rescue.app.box.com/s/z474g29iand4zvcgvh21e6poycseyrbc",
-      "firstServiceType": "",
+      "firstServiceType": [
+        "recHNcr52EickL8gU"
+      ],
       "newOrExisting": "",
       "sapStartTriggered": true,
       "sapMidTriggered": "",
@@ -425,7 +428,13 @@
       },
       "rbm": [],
       "rbo": [],
-      "fs": [],
+      "fs": [
+        {
+          "o": "*Outbreak Prevention and Response",
+          "d": "Jun 20, 2026",
+          "type": "IPC training "
+        }
+      ],
       "or": [],
       "pd": [],
       "qi": []
