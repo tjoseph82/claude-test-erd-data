@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-25T11:30:54Z",
+  "lastUpdated": "2026-06-25T13:58:07Z",
   "fiscalYear": 2026,
   "averages": {
     "decision": 16,
@@ -1693,8 +1693,8 @@
       "daysMSNAStart": 94,
       "daysPlanSub": 110,
       "daysPlanApproval": 119,
-      "avgDisbToSig": null,
-      "avgSigToReceipt": null,
+      "avgDisbToSig": -12.0,
+      "avgSigToReceipt": -7.0,
       "fundingSecured": 300000.0,
       "target": 89340,
       "totalReach": 250482,
@@ -1792,7 +1792,19 @@
         }
       ],
       "or": [],
-      "pd": [],
+      "pd": [
+        {
+          "partner": "",
+          "offering": "*Community Management of Acute Malnutrition",
+          "en": "New",
+          "disb": null,
+          "fs": "Jun 15, 2026",
+          "fd": null,
+          "agreement": null,
+          "disbToSig": "",
+          "sigToReceipt": -7
+        }
+      ],
       "qi": []
     }
   ]
