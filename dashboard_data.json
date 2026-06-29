@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-29T07:19:31Z",
+  "lastUpdated": "2026-06-29T12:54:03Z",
   "fiscalYear": 2026,
   "averages": {
     "decision": 16,
@@ -15,7 +15,7 @@
     "*Emergency PHC": 5,
     "Community WASH": 3,
     "*MISP for SRH": 1,
-    "*Community Management of Acute Malnutrition": 2,
+    "*Community Management of Acute Malnutrition (CMAM) + Infant and Young Child Feeding (IYCF)": 2,
     "*Social Work in Emergencies": 2
   },
   "emergencies": [
@@ -821,7 +821,7 @@
           "t": null
         },
         {
-          "n": "*Community Management of Acute Malnutrition",
+          "n": "*Community Management of Acute Malnutrition (CMAM) + Infant and Young Child Feeding (IYCF)",
           "r": 2578,
           "t": null
         },
@@ -1136,7 +1136,7 @@
           "t": 2708
         },
         {
-          "n": "*Community Management of Acute Malnutrition",
+          "n": "*Community Management of Acute Malnutrition (CMAM) + Infant and Young Child Feeding (IYCF)",
           "r": 1209,
           "t": 1317
         },
@@ -1414,7 +1414,7 @@
           "t": 4176
         },
         {
-          "n": "*Community Management of Acute Malnutrition",
+          "n": "*Community Management of Acute Malnutrition (CMAM) + Infant and Young Child Feeding (IYCF)",
           "r": 17690,
           "t": 14000
         },
@@ -1431,7 +1431,7 @@
           "type": "Multipurpose Cash Assistance "
         },
         {
-          "o": "*Community Management of Acute Malnutrition",
+          "o": "*Community Management of Acute Malnutrition (CMAM) + Infant and Young Child Feeding (IYCF)",
           "d": "Dec 08, 2025",
           "type": "Mass screenings for acute malnutrition"
         },
@@ -1443,7 +1443,7 @@
       ],
       "or": [
         {
-          "o": "*Community Management of Acute Malnutrition",
+          "o": "*Community Management of Acute Malnutrition (CMAM) + Infant and Young Child Feeding (IYCF)",
           "q": "Planned Offering Pending Implementation",
           "d": ""
         },
@@ -1579,7 +1579,7 @@
           "t": null
         },
         {
-          "n": "*Community Management of Acute Malnutrition",
+          "n": "*Community Management of Acute Malnutrition (CMAM) + Infant and Young Child Feeding (IYCF)",
           "r": 17127,
           "t": 4120
         },
@@ -1606,7 +1606,7 @@
           "type": "Rehabilitation of borehole"
         },
         {
-          "o": "*Community Management of Acute Malnutrition",
+          "o": "*Community Management of Acute Malnutrition (CMAM) + Infant and Young Child Feeding (IYCF)",
           "d": "Dec 22, 2025",
           "type": "Uncomplicated SAM"
         },
@@ -1633,7 +1633,7 @@
       ],
       "or": [
         {
-          "o": "*Community Management of Acute Malnutrition",
+          "o": "*Community Management of Acute Malnutrition (CMAM) + Infant and Young Child Feeding (IYCF)",
           "q": "Planned Offering Pending Implementation",
           "d": ""
         },
@@ -1648,7 +1648,7 @@
           "d": ""
         },
         {
-          "o": "*Infant and young child feeding",
+          "o": "",
           "q": "Planned Offering Pending Implementation",
           "d": ""
         },
@@ -1795,7 +1795,7 @@
       "pd": [
         {
           "partner": "",
-          "offering": "*Community Management of Acute Malnutrition",
+          "offering": "*Community Management of Acute Malnutrition (CMAM) + Infant and Young Child Feeding (IYCF)",
           "en": "New",
           "disb": null,
           "fs": "Jun 15, 2026",
