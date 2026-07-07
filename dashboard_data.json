@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-07T06:33:57Z",
+  "lastUpdated": "2026-07-07T11:35:28Z",
   "fiscalYear": 2026,
   "averages": {
     "decision": 16,
@@ -11,12 +11,12 @@
   "eoCounts": {
     "*Emergency Basic Needs and Food Security": 6,
     "*Focused MHPSS Interventions": 4,
+    "*Social Work in Emergencies": 3,
     "*Outbreak Prevention and Response": 1,
     "*Emergency PHC": 5,
     "Community WASH": 3,
     "*MISP for SRH": 1,
-    "*Community Management of Acute Malnutrition (CMAM) + Infant and Young Child Feeding (IYCF)": 2,
-    "*Social Work in Emergencies": 2
+    "*Community Management of Acute Malnutrition (CMAM) + Infant and Young Child Feeding (IYCF)": 2
   },
   "emergencies": [
     {
@@ -369,7 +369,7 @@
       ],
       "affected": 259,
       "budget": 15000000.0,
-      "gap": 11500000.0,
+      "gap": 12500000.0,
       "crf": 2000000.0,
       "appeal": null,
       "reached": 41.31,
@@ -381,7 +381,7 @@
       "daysPlanApproval": 26,
       "avgDisbToSig": null,
       "avgSigToReceipt": null,
-      "fundingSecured": 3500000.0,
+      "fundingSecured": 2500000.0,
       "target": 480523,
       "totalReach": 107,
       "totalInOpArea": null,
@@ -408,7 +408,7 @@
       "pctFunded": null,
       "link": "https://rescue.app.box.com/s/z474g29iand4zvcgvh21e6poycseyrbc",
       "firstServiceType": [
-        "recHNcr52EickL8gU"
+        "recQ1Ub9t4pL78Ivo"
       ],
       "newOrExisting": "",
       "sapStartTriggered": true,
@@ -442,12 +442,23 @@
       ],
       "fs": [
         {
+          "o": "*Social Work in Emergencies",
+          "d": "\u2014",
+          "type": ""
+        },
+        {
           "o": "*Outbreak Prevention and Response",
           "d": "Jun 20, 2026",
           "type": "IPC training "
         }
       ],
-      "or": [],
+      "or": [
+        {
+          "o": "*Outbreak Prevention and Response",
+          "q": "Planned Offering Pending Implementation",
+          "d": ""
+        }
+      ],
       "pd": [],
       "qi": []
     },
@@ -1229,7 +1240,7 @@
       "ermtDecision": "Pending",
       "type": "Food insecurity",
       "pctFunded": null,
-      "link": null,
+      "link": "https://intrescue-my.sharepoint.com/:w:/g/personal/bako_bokkosuleiman_rescue_org/IQDS0u8aRGmcSJdXKhy9ZF6EAUx6IGEn8THxbVHztjHlg40?rtime=noGo6gbc3kg",
       "firstServiceType": "",
       "newOrExisting": "",
       "sapStartTriggered": true,
@@ -1303,7 +1314,7 @@
       "ermtDecision": "Pending",
       "type": "Natural",
       "pctFunded": null,
-      "link": null,
+      "link": "https://rescue.app.box.com/s/sozvaoop68jhldkwl4goky19v4nqk8cv",
       "firstServiceType": "",
       "newOrExisting": "",
       "sapStartTriggered": true,
