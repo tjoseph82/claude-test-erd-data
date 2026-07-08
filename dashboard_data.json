@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-08T13:24:27Z",
+  "lastUpdated": "2026-07-08T16:23:39Z",
   "fiscalYear": 2026,
   "averages": {
     "decision": 16,
@@ -34,7 +34,7 @@
       "gap": 1000000.0,
       "crf": 1000000.0,
       "appeal": null,
-      "reached": 0.39,
+      "reached": 0.56,
       "daysClient": 53,
       "daysDecision": 3,
       "daysMSNA": 7,
@@ -45,12 +45,12 @@
       "avgSigToReceipt": null,
       "fundingSecured": 1200000.0,
       "target": 61150,
-      "totalReach": 18181,
+      "totalReach": 25964,
       "totalInOpArea": 602060,
-      "reach6moClass": 18181,
-      "reach6moSvc": 18181,
+      "reach6moClass": 25964,
+      "reach6moSvc": 25964,
       "pct10Target6mo": null,
-      "pctReachOpArea": 3.02,
+      "pctReachOpArea": 4.31,
       "tenPctAffected": 466400.0,
       "pctPrep": null,
       "dateClassified": "Dec 19, 2025",
@@ -63,7 +63,7 @@
       "dateFirstCash": "Feb 10, 2026",
       "date6moMark": "Jun 18, 2026",
       "date3moMark": "Mar 18, 2026",
-      "dateLastReach": "Jun 11, 2026",
+      "dateLastReach": "Jul 08, 2026",
       "decision": "Direct Implementation",
       "ermtDecision": "Direct Implementation",
       "type": "Food insecurity",
@@ -105,6 +105,11 @@
           "p": 0
         },
         {
+          "m": "Jun 2026",
+          "i": 7854,
+          "p": 0
+        },
+        {
           "m": "Apr 2026",
           "i": 0,
           "p": 0
@@ -113,7 +118,7 @@
       "rbo": [
         {
           "n": "*Emergency Basic Needs and Food Security",
-          "r": 18181,
+          "r": 26035,
           "t": 23310
         }
       ],
@@ -962,6 +967,11 @@
       },
       "rbm": [
         {
+          "m": "Jun 2026",
+          "i": 37789,
+          "p": 0
+        },
+        {
           "m": "Mar 2026",
           "i": 19228,
           "p": 348
@@ -990,12 +1000,12 @@
       "rbo": [
         {
           "n": "Community WASH",
-          "r": 65882,
+          "r": 99470,
           "t": 23280
         },
         {
           "n": "Responsive Information Services",
-          "r": 23701,
+          "r": 27902,
           "t": 22430
         },
         {
