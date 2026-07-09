@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-09T01:44:35Z",
+  "lastUpdated": "2026-07-09T11:42:25Z",
   "fiscalYear": 2026,
   "averages": {
     "decision": 16,
@@ -11,12 +11,12 @@
   "eoCounts": {
     "*Emergency Basic Needs and Food Security": 6,
     "*Focused MHPSS Interventions": 4,
-    "*Social Work in Emergencies": 3,
     "*Outbreak Prevention and Response": 1,
     "*Emergency PHC": 5,
     "Community WASH": 3,
     "*MISP for SRH": 1,
-    "*Community Management of Acute Malnutrition (CMAM) + Infant and Young Child Feeding (IYCF)": 2
+    "*Community Management of Acute Malnutrition (CMAM) + Infant and Young Child Feeding (IYCF)": 2,
+    "*Social Work in Emergencies": 2
   },
   "emergencies": [
     {
@@ -413,7 +413,7 @@
       "pctFunded": null,
       "link": "https://rescue.app.box.com/s/z474g29iand4zvcgvh21e6poycseyrbc",
       "firstServiceType": [
-        "recQ1Ub9t4pL78Ivo"
+        "recHNcr52EickL8gU"
       ],
       "newOrExisting": "",
       "sapStartTriggered": true,
@@ -446,11 +446,6 @@
         }
       ],
       "fs": [
-        {
-          "o": "*Social Work in Emergencies",
-          "d": "\u2014",
-          "type": ""
-        },
         {
           "o": "*Outbreak Prevention and Response",
           "d": "Jun 20, 2026",
@@ -1361,7 +1356,7 @@
       ],
       "affected": 2,
       "budget": 5000000.0,
-      "gap": null,
+      "gap": 4700000.0,
       "crf": null,
       "appeal": null,
       "reached": null,
@@ -1373,7 +1368,7 @@
       "daysPlanApproval": null,
       "avgDisbToSig": null,
       "avgSigToReceipt": null,
-      "fundingSecured": null,
+      "fundingSecured": 300000.0,
       "target": 685337,
       "totalReach": null,
       "totalInOpArea": null,
