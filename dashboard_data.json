@@ -1,15 +1,15 @@
 {
-  "lastUpdated": "2026-07-09T19:17:34Z",
+  "lastUpdated": "2026-07-09T22:11:58Z",
   "fiscalYear": 2026,
   "averages": {
     "decision": 16,
     "msna": 32,
     "planSub": 29,
     "planApproval": 40,
-    "client": 29
+    "client": 28
   },
   "eoCounts": {
-    "*Emergency Basic Needs and Food Security": 6,
+    "*Emergency Basic Needs and Food Security": 7,
     "*Focused MHPSS Interventions": 4,
     "*Outbreak Prevention and Response": 1,
     "*Emergency PHC": 5,
@@ -154,7 +154,7 @@
       "gap": -2656118.0,
       "crf": 600000.0,
       "appeal": null,
-      "reached": 3.78,
+      "reached": 4.87,
       "daysClient": 2,
       "daysDecision": 2,
       "daysMSNA": 25,
@@ -165,12 +165,12 @@
       "avgSigToReceipt": null,
       "fundingSecured": 6656118.0,
       "target": 100000,
-      "totalReach": 39672,
+      "totalReach": 51098,
       "totalInOpArea": 1050000,
-      "reach6moClass": 39672,
-      "reach6moSvc": 39672,
+      "reach6moClass": 51098,
+      "reach6moSvc": 51098,
       "pct10Target6mo": null,
-      "pctReachOpArea": 3.78,
+      "pctReachOpArea": 4.87,
       "tenPctAffected": 105000.0,
       "pctPrep": null,
       "dateClassified": "Mar 02, 2026",
@@ -183,7 +183,7 @@
       "dateFirstCash": "Mar 06, 2026",
       "date6moMark": "Sep 03, 2026",
       "date3moMark": "Jun 03, 2026",
-      "dateLastReach": "Jun 16, 2026",
+      "dateLastReach": "Jul 09, 2026",
       "decision": "Direct and Partner Implementation",
       "ermtDecision": "Direct and Partner Implementation",
       "type": "Conflict",
@@ -478,7 +478,7 @@
       "crf": null,
       "appeal": null,
       "reached": 0.24,
-      "daysClient": null,
+      "daysClient": 17,
       "daysDecision": 11,
       "daysMSNA": null,
       "daysMSNAStart": null,
@@ -489,11 +489,11 @@
       "fundingSecured": null,
       "target": 19165,
       "totalReach": 5782,
-      "totalInOpArea": null,
+      "totalInOpArea": 382937,
       "reach6moClass": 5782,
       "reach6moSvc": 5782,
       "pct10Target6mo": null,
-      "pctReachOpArea": null,
+      "pctReachOpArea": 1.51,
       "tenPctAffected": 244733.0,
       "pctPrep": null,
       "dateClassified": "May 15, 2026",
@@ -503,7 +503,7 @@
       "datePlanSub": "Jun 01, 2026",
       "datePlanApproval": null,
       "dateFirstClient": null,
-      "dateFirstCash": null,
+      "dateFirstCash": "Jun 01, 2026",
       "date6moMark": "Nov 14, 2026",
       "date3moMark": "Aug 14, 2026",
       "dateLastReach": "Jul 09, 2026",
@@ -512,7 +512,9 @@
       "type": "Food insecurity",
       "pctFunded": null,
       "link": "https://rescue.app.box.com/s/u6r2i9okbnybb5aroivs101jfe6e407c",
-      "firstServiceType": "",
+      "firstServiceType": [
+        "recrIdLWM9DETcg8p"
+      ],
       "newOrExisting": "",
       "sapStartTriggered": true,
       "sapMidTriggered": "",
@@ -520,8 +522,8 @@
       "sap": {
         "plan": "Yes",
         "learning": "Pending",
-        "feedback": "Pending",
-        "feedbackTime": "Pending",
+        "feedback": "Yes",
+        "feedbackTime": "Yes",
         "safeguarding": "Pending",
         "partners": "Pending",
         "indicators80": "Pending",
@@ -529,9 +531,27 @@
         "msnaCompleted": "Yes - Secondary Data only",
         "localSystems": ""
       },
-      "rbm": [],
-      "rbo": [],
-      "fs": [],
+      "rbm": [
+        {
+          "m": "Jun 2026",
+          "i": 5782,
+          "p": 0
+        }
+      ],
+      "rbo": [
+        {
+          "n": "*Emergency Basic Needs and Food Security",
+          "r": 5782,
+          "t": null
+        }
+      ],
+      "fs": [
+        {
+          "o": "*Emergency Basic Needs and Food Security",
+          "d": "Jun 01, 2026",
+          "type": "Multipurpose Cash Assistance "
+        }
+      ],
       "or": [],
       "pd": [],
       "qi": []
@@ -1788,7 +1808,7 @@
       "gap": 700000.0,
       "crf": null,
       "appeal": 300000.0,
-      "reached": 28.04,
+      "reached": 76.9,
       "daysClient": 0,
       "daysDecision": 91,
       "daysMSNA": 106,
@@ -1799,12 +1819,12 @@
       "avgSigToReceipt": -7.0,
       "fundingSecured": 300000.0,
       "target": 89340,
-      "totalReach": 250482,
+      "totalReach": 687042,
       "totalInOpArea": 472000,
-      "reach6moClass": 250482,
-      "reach6moSvc": 250482,
+      "reach6moClass": 687042,
+      "reach6moSvc": 687042,
       "pct10Target6mo": null,
-      "pctReachOpArea": 53.07,
+      "pctReachOpArea": 145.56,
       "tenPctAffected": 89340.3,
       "pctPrep": null,
       "dateClassified": "Oct 30, 2025",
@@ -1817,7 +1837,7 @@
       "dateFirstCash": "May 19, 2026",
       "date6moMark": "Jul 12, 2026",
       "date3moMark": "Apr 12, 2026",
-      "dateLastReach": "Jun 11, 2026",
+      "dateLastReach": "Jul 09, 2026",
       "decision": "Direct Implementation",
       "ermtDecision": "Direct Implementation",
       "type": "Conflict",
