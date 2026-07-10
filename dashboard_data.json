@@ -1,15 +1,15 @@
 {
-  "lastUpdated": "2026-07-10T06:30:53Z",
+  "lastUpdated": "2026-07-10T11:40:28Z",
   "fiscalYear": 2026,
   "averages": {
-    "decision": 16,
+    "decision": 13,
     "msna": 32,
-    "planSub": 29,
+    "planSub": 26,
     "planApproval": 40,
     "client": 28
   },
   "eoCounts": {
-    "*Emergency Basic Needs and Food Security": 7,
+    "*Emergency Basic Needs and Food Security": 8,
     "*Focused MHPSS Interventions": 4,
     "*Outbreak Prevention and Response": 1,
     "*Emergency PHC": 5,
@@ -154,7 +154,7 @@
       "gap": -2656118.0,
       "crf": 600000.0,
       "appeal": null,
-      "reached": 4.87,
+      "reached": 3.92,
       "daysClient": 2,
       "daysDecision": 2,
       "daysMSNA": 25,
@@ -165,12 +165,12 @@
       "avgSigToReceipt": null,
       "fundingSecured": 6656118.0,
       "target": 100000,
-      "totalReach": 51098,
+      "totalReach": 41210,
       "totalInOpArea": 1050000,
-      "reach6moClass": 51098,
-      "reach6moSvc": 51098,
+      "reach6moClass": 41210,
+      "reach6moSvc": 41210,
       "pct10Target6mo": null,
-      "pctReachOpArea": 4.87,
+      "pctReachOpArea": 3.92,
       "tenPctAffected": 105000.0,
       "pctPrep": null,
       "dateClassified": "Mar 02, 2026",
@@ -183,7 +183,7 @@
       "dateFirstCash": "Mar 06, 2026",
       "date6moMark": "Sep 03, 2026",
       "date3moMark": "Jun 03, 2026",
-      "dateLastReach": "Jul 09, 2026",
+      "dateLastReach": "Jul 10, 2026",
       "decision": "Direct and Partner Implementation",
       "ermtDecision": "Direct and Partner Implementation",
       "type": "Conflict",
@@ -1091,7 +1091,7 @@
       "gap": 1650000.0,
       "crf": 350000.0,
       "appeal": null,
-      "reached": 14.58,
+      "reached": 28.8,
       "daysClient": 6,
       "daysDecision": 13,
       "daysMSNA": null,
@@ -1102,12 +1102,12 @@
       "avgSigToReceipt": null,
       "fundingSecured": 350000.0,
       "target": 184000,
-      "totalReach": 42940,
+      "totalReach": 84800,
       "totalInOpArea": 294415,
-      "reach6moClass": 42940,
-      "reach6moSvc": 42940,
+      "reach6moClass": 84800,
+      "reach6moSvc": 84800,
       "pct10Target6mo": null,
-      "pctReachOpArea": 14.58,
+      "pctReachOpArea": 28.8,
       "tenPctAffected": 29441.5,
       "pctPrep": null,
       "dateClassified": "Jan 27, 2026",
@@ -1120,7 +1120,7 @@
       "dateFirstCash": null,
       "date6moMark": "Jul 26, 2026",
       "date3moMark": "Apr 26, 2026",
-      "dateLastReach": "Jun 11, 2026",
+      "dateLastReach": "Jul 10, 2026",
       "decision": "Direct and Partner Implementation",
       "ermtDecision": "Direct and Partner Implementation",
       "type": "Conflict",
@@ -1149,49 +1149,64 @@
         {
           "m": "May 2026",
           "i": 0,
-          "p": 18807
+          "p": 25424
         },
         {
           "m": "Mar 2026",
           "i": 0,
-          "p": 11429
+          "p": 14491
         },
         {
           "m": "Feb 2026",
           "i": 0,
-          "p": 6906
+          "p": 6916
+        },
+        {
+          "m": "Jun 2026",
+          "i": 0,
+          "p": 27069
         },
         {
           "m": "Apr 2026",
           "i": 0,
-          "p": 15344
+          "p": 23454
         }
       ],
       "rbo": [
         {
           "n": "Responsive Information Services",
-          "r": 20545,
-          "t": 11000
+          "r": 29740,
+          "t": 15650
         },
         {
           "n": "*Focused MHPSS Interventions",
-          "r": 982,
-          "t": 1850
+          "r": 2946,
+          "t": 2400
         },
         {
           "n": "*Social Work in Emergencies",
-          "r": 377,
-          "t": 2708
+          "r": 1493,
+          "t": 3920
+        },
+        {
+          "n": "Community Risk Mitigation and Access",
+          "r": 36,
+          "t": 50
         },
         {
           "n": "*Community Management of Acute Malnutrition (CMAM) + Infant and Young Child Feeding (IYCF)",
-          "r": 1209,
-          "t": 1317
+          "r": 25359,
+          "t": 25359
+        },
+        {
+          "n": "*Emergency Basic Needs and Food Security",
+          "r": 553,
+          "t": 3318
         },
         {
           "n": "*Emergency PHC",
-          "r": 29373,
-          "t": 47878
+          "r": 37227,
+          "t": 37227
         }
       ],
       "fs": [
@@ -1204,11 +1219,21 @@
           "o": "*Focused MHPSS Interventions",
           "d": "Feb 02, 2026",
           "type": "Focused PSS sessions"
+        },
+        {
+          "o": "*Emergency Basic Needs and Food Security",
+          "d": "Jun 15, 2026",
+          "type": "Multipurpose Cash Assistance "
         }
       ],
       "or": [
         {
           "o": "*MISP for SRH",
+          "q": "Planned Offering Pending Implementation",
+          "d": ""
+        },
+        {
+          "o": "",
           "q": "Planned Offering Pending Implementation",
           "d": ""
         }
@@ -1233,10 +1258,10 @@
       "appeal": null,
       "reached": null,
       "daysClient": null,
-      "daysDecision": null,
+      "daysDecision": 4,
       "daysMSNA": null,
       "daysMSNAStart": null,
-      "daysPlanSub": null,
+      "daysPlanSub": 10,
       "daysPlanApproval": null,
       "avgDisbToSig": null,
       "avgSigToReceipt": null,
@@ -1251,10 +1276,10 @@
       "tenPctAffected": 64800.200000000004,
       "pctPrep": null,
       "dateClassified": "Jun 12, 2026",
-      "dateDecision": null,
+      "dateDecision": "Jun 16, 2026",
       "dateMSNAStart": null,
       "dateMSNA": null,
-      "datePlanSub": null,
+      "datePlanSub": "Jun 22, 2026",
       "datePlanApproval": null,
       "dateFirstClient": null,
       "dateFirstCash": null,
@@ -1280,7 +1305,7 @@
         "partners": "Pending",
         "indicators80": "Pending",
         "sequenced": "",
-        "msnaCompleted": "Pending",
+        "msnaCompleted": "Yes - Secondary Data only",
         "localSystems": ""
       },
       "rbm": [],
@@ -1307,10 +1332,10 @@
       "appeal": null,
       "reached": null,
       "daysClient": null,
-      "daysDecision": null,
+      "daysDecision": 4,
       "daysMSNA": null,
       "daysMSNAStart": null,
-      "daysPlanSub": null,
+      "daysPlanSub": 11,
       "daysPlanApproval": null,
       "avgDisbToSig": null,
       "avgSigToReceipt": null,
@@ -1325,10 +1350,10 @@
       "tenPctAffected": 1290.0,
       "pctPrep": null,
       "dateClassified": "Jun 25, 2026",
-      "dateDecision": null,
+      "dateDecision": "Jun 29, 2026",
       "dateMSNAStart": null,
       "dateMSNA": null,
-      "datePlanSub": null,
+      "datePlanSub": "Jul 06, 2026",
       "datePlanApproval": null,
       "dateFirstClient": null,
       "dateFirstCash": null,
@@ -1354,7 +1379,7 @@
         "partners": "Pending",
         "indicators80": "Pending",
         "sequenced": "",
-        "msnaCompleted": "Pending",
+        "msnaCompleted": "Yes - Secondary Data only",
         "localSystems": ""
       },
       "rbm": [],
@@ -1381,7 +1406,7 @@
       "appeal": null,
       "reached": null,
       "daysClient": null,
-      "daysDecision": null,
+      "daysDecision": 1,
       "daysMSNA": null,
       "daysMSNAStart": null,
       "daysPlanSub": 23,
@@ -1399,7 +1424,7 @@
       "tenPctAffected": 0.2,
       "pctPrep": null,
       "dateClassified": "May 18, 2026",
-      "dateDecision": null,
+      "dateDecision": "May 19, 2026",
       "dateMSNAStart": null,
       "dateMSNA": null,
       "datePlanSub": "Jun 10, 2026",
@@ -1865,30 +1890,55 @@
       "rbm": [
         {
           "m": "May 2026",
-          "i": 30692,
+          "i": 263455,
           "p": 0
         },
         {
           "m": "Apr 2026",
-          "i": 101826,
+          "i": 279932,
+          "p": 0
+        },
+        {
+          "m": "Jun 2026",
+          "i": 93626,
           "p": 0
         },
         {
           "m": "Mar 2026",
-          "i": 120291,
+          "i": 123776,
+          "p": 0
+        },
+        {
+          "m": "Feb 2026",
+          "i": 18508,
+          "p": 0
+        },
+        {
+          "m": "Jan 2026",
+          "i": 4745,
           "p": 0
         }
       ],
       "rbo": [
         {
           "n": "Community WASH",
-          "r": 9050,
+          "r": 55500,
           "t": 19995
         },
         {
           "n": "*Emergency PHC",
-          "r": 230998,
+          "r": 652313,
           "t": 446702
+        },
+        {
+          "n": "Responsive Information Services",
+          "r": 64493,
+          "t": 41428
+        },
+        {
+          "n": "*MISP for SRH",
+          "r": 1787,
+          "t": 3732
         },
         {
           "n": "*Emergency Basic Needs and Food Security",
@@ -1897,13 +1947,13 @@
         },
         {
           "n": "*Social Work in Emergencies",
-          "r": 2445,
-          "t": 17112
+          "r": 113,
+          "t": 180
         },
         {
-          "n": "*MISP for SRH",
-          "r": 605,
-          "t": 773
+          "n": "Community Risk Mitigation and Access",
+          "r": 125,
+          "t": 112
         }
       ],
       "fs": [
