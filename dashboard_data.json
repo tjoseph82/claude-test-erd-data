@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-10T11:40:28Z",
+  "lastUpdated": "2026-07-10T13:51:39Z",
   "fiscalYear": 2026,
   "averages": {
     "decision": 13,
@@ -11,7 +11,7 @@
   "eoCounts": {
     "*Emergency Basic Needs and Food Security": 8,
     "*Focused MHPSS Interventions": 4,
-    "*Outbreak Prevention and Response": 1,
+    "*Outbreak Prevention and Response": 2,
     "*Emergency PHC": 5,
     "Community WASH": 3,
     "*MISP for SRH": 1,
@@ -154,7 +154,7 @@
       "gap": -2656118.0,
       "crf": 600000.0,
       "appeal": null,
-      "reached": 3.92,
+      "reached": 5.65,
       "daysClient": 2,
       "daysDecision": 2,
       "daysMSNA": 25,
@@ -165,12 +165,12 @@
       "avgSigToReceipt": null,
       "fundingSecured": 6656118.0,
       "target": 100000,
-      "totalReach": 41210,
+      "totalReach": 59339,
       "totalInOpArea": 1050000,
-      "reach6moClass": 41210,
-      "reach6moSvc": 41210,
+      "reach6moClass": 59339,
+      "reach6moSvc": 59339,
       "pct10Target6mo": null,
-      "pctReachOpArea": 3.92,
+      "pctReachOpArea": 5.65,
       "tenPctAffected": 105000.0,
       "pctPrep": null,
       "dateClassified": "Mar 02, 2026",
@@ -210,56 +210,51 @@
       },
       "rbm": [
         {
+          "m": "Jun 2026",
+          "i": 18363,
+          "p": 0
+        },
+        {
           "m": "May 2026",
-          "i": 8444,
+          "i": 14286,
           "p": 0
         },
         {
           "m": "Apr 2026",
-          "i": 29057,
+          "i": 26719,
           "p": 0
         },
         {
           "m": "Mar 2026",
           "i": 13130,
           "p": 0
-        },
-        {
-          "m": "Jun 2026",
-          "i": 0,
-          "p": 0
         }
       ],
       "rbo": [
         {
+          "n": "*Focused MHPSS Interventions",
+          "r": 1977,
+          "t": 3290
+        },
+        {
           "n": "*MISP for SRH",
-          "r": 111,
+          "r": 500,
           "t": 420
         },
         {
-          "n": "*Emergency Basic Needs and Food Security",
-          "r": 31486,
-          "t": 39408
+          "n": "Responsive Information Services",
+          "r": 4696,
+          "t": 5660
         },
         {
-          "n": "Responsive Information Services",
-          "r": 3749,
-          "t": 5660
+          "n": "*Emergency Basic Needs and Food Security",
+          "r": 48591,
+          "t": 42063
         },
         {
           "n": "Community Risk Mitigation and Access",
           "r": 894,
-          "t": 760
-        },
-        {
-          "n": "*Emergency PHC",
-          "r": 3327,
-          "t": 11180
-        },
-        {
-          "n": "*Focused MHPSS Interventions",
-          "r": 1554,
-          "t": 3170
+          "t": 700
         },
         {
           "n": "*Safe Play and Learning Spaces",
@@ -267,8 +262,13 @@
           "t": null
         },
         {
+          "n": "*Emergency PHC",
+          "r": 6315,
+          "t": 11890
+        },
+        {
           "n": "*Social Work in Emergencies",
-          "r": 24,
+          "r": 39,
           "t": 225
         }
       ],
@@ -1323,7 +1323,7 @@
       "stance": "Orange",
       "severity": 4,
       "details": [
-        "At least two powerful earthquakes measuring 7.5 and 7.2 on the Richter scale struck near Mor\u00f3n, around 160km west of the Venezuelan capital Caracas on the evening of 24th June. The damage is reported heaviest in La Guaira state, Caracas is also significantly affected. As of 02 July, at least 2,300 people have been reported killed with over 11,000 injured, although figures are expected to rise as search and rescue operations continue.  Please note, this has been elevated to the Orange stance given the severity of the situation, though data remains limited. GCA team will continue monitoring the situation with colleagues in the region and will issue updated classifications as more data becomes available."
+        "two powerful earthquakes measuring 7.5 and 7.2 on the Richter scale struck near Mor\u00f3n, around 160km west of the Venezuelan capital Caracas on the evening of 24th June. The damage is reported heaviest in La Guaira state, though Caracas is also significantly affected. As of 02 July, at least 3,800 people have been reported killed with over 16,000 injured, although figures are expected to rise as search and rescue operations continue."
       ],
       "affected": 12900,
       "budget": null,
@@ -1401,11 +1401,11 @@
       ],
       "affected": 2,
       "budget": 5000000.0,
-      "gap": 4700000.0,
-      "crf": null,
+      "gap": 3424390.0,
+      "crf": 1000000.0,
       "appeal": null,
-      "reached": null,
-      "daysClient": null,
+      "reached": 118650.0,
+      "daysClient": 34,
       "daysDecision": 1,
       "daysMSNA": null,
       "daysMSNAStart": null,
@@ -1413,12 +1413,12 @@
       "daysPlanApproval": null,
       "avgDisbToSig": null,
       "avgSigToReceipt": null,
-      "fundingSecured": 300000.0,
+      "fundingSecured": 1575610.0,
       "target": 685337,
-      "totalReach": null,
+      "totalReach": 2373,
       "totalInOpArea": null,
-      "reach6moClass": null,
-      "reach6moSvc": null,
+      "reach6moClass": 2373,
+      "reach6moSvc": 2373,
       "pct10Target6mo": null,
       "pctReachOpArea": null,
       "tenPctAffected": 0.2,
@@ -1433,13 +1433,15 @@
       "dateFirstCash": null,
       "date6moMark": "Nov 17, 2026",
       "date3moMark": "Aug 17, 2026",
-      "dateLastReach": "Jun 11, 2026",
+      "dateLastReach": "Jul 10, 2026",
       "decision": "Pending",
       "ermtDecision": "Pending",
       "type": "Outbreak",
       "pctFunded": null,
       "link": "https://rescue.app.box.com/s/zeg148x7aavu7npiveqli2mrraegtq7r",
-      "firstServiceType": "",
+      "firstServiceType": [
+        "recHNcr52EickL8gU"
+      ],
       "newOrExisting": "",
       "sapStartTriggered": true,
       "sapMidTriggered": "",
@@ -1456,9 +1458,27 @@
         "msnaCompleted": "Yes - Secondary Data only",
         "localSystems": ""
       },
-      "rbm": [],
-      "rbo": [],
-      "fs": [],
+      "rbm": [
+        {
+          "m": "Jun 2026",
+          "i": 2373,
+          "p": 0
+        }
+      ],
+      "rbo": [
+        {
+          "n": "*Outbreak Prevention and Response",
+          "r": 2373,
+          "t": null
+        }
+      ],
+      "fs": [
+        {
+          "o": "*Outbreak Prevention and Response",
+          "d": "Jun 21, 2026",
+          "type": "Distribution of PPE and IPC supplies to health facilities"
+        }
+      ],
       "or": [],
       "pd": [],
       "qi": []
