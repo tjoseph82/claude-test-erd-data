@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-15T16:11:46Z",
+  "lastUpdated": "2026-07-15T18:51:17Z",
   "fiscalYear": 2026,
   "averages": {
     "decision": 13,
@@ -462,7 +462,7 @@
       "pd": [],
       "qi": [
         {
-          "o": "CD517-\"PHC.064 % of health facilities\n  scoring 80% or above across ALL indicators using the standard IPC checklist\"-June-2026",
+          "o": "CD517-% of health facilities scoring 80% or above across ALL indicators using the standard IPC checklist-June-2026",
           "v": 44,
           "t": 80,
           "d": "Jun 30, 2026"
@@ -721,32 +721,7 @@
         }
       ],
       "pd": [],
-      "qi": [
-        {
-          "o": "HT479-% of school-aged students enrolled in program whose score increases on a standard SEL assessment-May-2026",
-          "v": "",
-          "t": 70,
-          "d": "May 01, 2026"
-        },
-        {
-          "o": "HT479-\"At least 80% of HH surveyed where the primary caregiver can name\n  at least 3 out of 5 of the critical times for handwashing\"-October-2025",
-          "v": 76,
-          "t": 80,
-          "d": "Oct 01, 2025"
-        },
-        {
-          "o": "HT479-% of teachers/facilitators in formal or non-formal learning settings who attend at least 80% of all in-service training sessions in the period-May-2026",
-          "v": 61,
-          "t": 80,
-          "d": "May 01, 2026"
-        },
-        {
-          "o": "HT479-\"NEW % of patient consultations\n  correctly perscribed antibiotics\u00a0\"-August-2025",
-          "v": 43,
-          "t": 60,
-          "d": "Aug 01, 2025"
-        }
-      ]
+      "qi": []
     },
     {
       "id": "SD480",
