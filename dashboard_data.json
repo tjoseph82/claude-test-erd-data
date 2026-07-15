@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-15T07:46:52Z",
+  "lastUpdated": "2026-07-15T10:40:17Z",
   "fiscalYear": 2026,
   "averages": {
     "decision": 13,
@@ -1325,7 +1325,7 @@
       "details": [
         "two powerful earthquakes measuring 7.5 and 7.2 on the Richter scale struck near Mor\u00f3n, around 160km west of the Venezuelan capital Caracas on the evening of 24th June. The damage is reported heaviest in La Guaira state, though Caracas is also significantly affected. As of 02 July, at least 3,800 people have been reported killed with over 16,000 injured, although figures are expected to rise as search and rescue operations continue."
       ],
-      "affected": 12900,
+      "affected": 1300000,
       "budget": 4033499.0,
       "gap": 3833499.0,
       "crf": 200000.0,
@@ -1347,7 +1347,7 @@
       "reach6moSvc": null,
       "pct10Target6mo": null,
       "pctReachOpArea": null,
-      "tenPctAffected": 1290.0,
+      "tenPctAffected": 130000.0,
       "pctPrep": null,
       "dateClassified": "Jun 25, 2026",
       "dateDecision": "Jun 29, 2026",
