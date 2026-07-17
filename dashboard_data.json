@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-17T07:49:00Z",
+  "lastUpdated": "2026-07-17T10:28:26Z",
   "fiscalYear": 2026,
   "averages": {
     "decision": 13,
@@ -202,7 +202,7 @@
         "feedback": "Yes",
         "feedbackTime": "Yes",
         "safeguarding": "Pending",
-        "partners": "Pending",
+        "partners": "Yes",
         "indicators80": "Pending",
         "sequenced": "",
         "msnaCompleted": "Yes - Includes primary data collection",
@@ -1272,7 +1272,7 @@
       "ermtDecision": "Direct Implementation",
       "type": "Food insecurity",
       "pctFunded": null,
-      "link": "https://intrescue-my.sharepoint.com/:w:/g/personal/bako_bokkosuleiman_rescue_org/IQDS0u8aRGmcSJdXKhy9ZF6EAUx6IGEn8THxbVHztjHlg40?rtime=noGo6gbc3kg",
+      "link": "https://rescue.app.box.com/s/fqk8zvdbdp88jfvlhqmj24rwpazwinin/file/2330511267615",
       "firstServiceType": "",
       "newOrExisting": "",
       "sapStartTriggered": true,
