@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-07-29T13:40:17Z",
+  "lastUpdated": "2026-07-29T16:13:37Z",
   "fiscalYear": 2026,
   "averages": {
     "decision": 13,
     "msna": 32,
     "planSub": 26,
     "planApproval": 39,
-    "client": 27
+    "client": 26
   },
   "eoCounts": {
     "*Emergency Basic Needs and Food Security": 9,
@@ -378,7 +378,7 @@
       "crf": 1000000.0,
       "appeal": null,
       "reached": 41.31,
-      "daysClient": 36,
+      "daysClient": 25,
       "daysDecision": 0,
       "daysMSNA": null,
       "daysMSNAStart": null,
@@ -448,8 +448,8 @@
       "fs": [
         {
           "o": "*Outbreak Prevention and Response",
-          "d": "Jun 20, 2026",
-          "type": "IPC training "
+          "d": "Jun 09, 2026",
+          "type": "Distribution of PPE and IPC supplies to health facilities"
         }
       ],
       "or": [
