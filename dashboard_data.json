@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-05T05:35:09Z",
+  "lastUpdated": "2026-08-05T08:12:08Z",
   "fiscalYear": 2026,
   "averages": {
     "decision": 13,
@@ -462,8 +462,38 @@
       "pd": [],
       "qi": [
         {
+          "o": "CD517-% of health facilities scoring 80% or above across ALL indicators using the standard IPC checklist-July-2026",
+          "v": 48,
+          "t": "",
+          "d": "Jul 31, 2026"
+        },
+        {
+          "o": "CD517- % of clients receiving focused MHPSS services whose score on a basic MHPSS assessment improves-July-2026",
+          "v": 0,
+          "t": 80,
+          "d": "Jul 31, 2026"
+        },
+        {
+          "o": "CD517-% of suspected cases for (outbreak disease) reported to the surveillance system within 24 hours of detection-July-2026",
+          "v": 0,
+          "t": 90,
+          "d": "Jul 31, 2026"
+        },
+        {
+          "o": "CD517-% of participants trained who improved their knowledge of protection and wellbeing topics-July-2026",
+          "v": 0,
+          "t": 80,
+          "d": "Jul 31, 2026"
+        },
+        {
+          "o": "CD517-% of community members surveyed through RCCE channels who correctly recall atleast one key outbreak prevention message-July-2026",
+          "v": 98.8,
+          "t": 80,
+          "d": "Jul 31, 2026"
+        },
+        {
           "o": "CD517-% of health facilities scoring 80% or above across ALL indicators using the standard IPC checklist-June-2026",
-          "v": 44,
+          "v": 46,
           "t": 80,
           "d": "Jun 30, 2026"
         }
