@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-05T11:10:07Z",
+  "lastUpdated": "2026-08-05T13:30:04Z",
   "fiscalYear": 2026,
   "averages": {
     "decision": 13,
@@ -463,7 +463,7 @@
       "qi": [
         {
           "o": "CD517-% of health facilities scoring 80% or above across ALL indicators using the standard IPC checklist-July-2026",
-          "v": 48,
+          "v": 0,
           "t": "",
           "d": "Jul 31, 2026"
         },
@@ -493,7 +493,7 @@
         },
         {
           "o": "CD517-% of health facilities scoring 80% or above across ALL indicators using the standard IPC checklist-June-2026",
-          "v": 46,
+          "v": 0,
           "t": 80,
           "d": "Jun 30, 2026"
         }
