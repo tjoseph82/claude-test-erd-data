@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-06T23:46:13Z",
+  "lastUpdated": "2026-08-07T01:59:35Z",
   "fiscalYear": 2026,
   "averages": {
     "decision": 13,
@@ -129,13 +129,7 @@
           "type": "Multipurpose Cash Assistance "
         }
       ],
-      "or": [
-        {
-          "o": "*Emergency Basic Needs and Food Security",
-          "q": "Planned Offering Pending Implementation",
-          "d": ""
-        }
-      ],
+      "or": [],
       "pd": [],
       "qi": []
     },
@@ -733,23 +727,7 @@
           "type": "Multipurpose Cash Assistance "
         }
       ],
-      "or": [
-        {
-          "o": "Community WASH",
-          "q": "Planned Offering Pending Implementation",
-          "d": ""
-        },
-        {
-          "o": "*Focused MHPSS Interventions",
-          "q": "Planned Offering Pending Implementation",
-          "d": ""
-        },
-        {
-          "o": "*Safe Play and Learning Spaces",
-          "q": "Support Recommended",
-          "d": "May 01, 2026"
-        }
-      ],
+      "or": [],
       "pd": [],
       "qi": []
     },
@@ -917,7 +895,7 @@
         {
           "o": "*Emergency PHC",
           "q": "Support Recommended",
-          "d": ""
+          "d": "Jul 01, 2026"
         }
       ],
       "pd": [],
@@ -1053,38 +1031,7 @@
           "type": "Individual Psychosocial Support (PSS)"
         }
       ],
-      "or": [
-        {
-          "o": "*Emergency Basic Needs and Food Security",
-          "q": "Planned Offering Pending Implementation",
-          "d": ""
-        },
-        {
-          "o": "Responsive Information Services",
-          "q": "Planned Offering Pending Implementation",
-          "d": ""
-        },
-        {
-          "o": "*Social Work in Emergencies",
-          "q": "Planned Offering Pending Implementation",
-          "d": ""
-        },
-        {
-          "o": "*Safe Play and Learning Spaces",
-          "q": "Planned Offering Pending Implementation",
-          "d": ""
-        },
-        {
-          "o": "*Outbreak Prevention and Response",
-          "q": "On Track",
-          "d": ""
-        },
-        {
-          "o": "*Connected Learning in Crisis",
-          "q": "Planned Offering Pending Implementation",
-          "d": ""
-        }
-      ],
+      "or": [],
       "pd": [],
       "qi": []
     },
@@ -1238,18 +1185,7 @@
           "type": "Multipurpose Cash Assistance "
         }
       ],
-      "or": [
-        {
-          "o": "*MISP for SRH",
-          "q": "Planned Offering Pending Implementation",
-          "d": ""
-        },
-        {
-          "o": "",
-          "q": "Planned Offering Pending Implementation",
-          "d": ""
-        }
-      ],
+      "or": [],
       "pd": [
         {
           "partner": "",
@@ -1671,28 +1607,7 @@
           "type": "Outpatient consultations"
         }
       ],
-      "or": [
-        {
-          "o": "*Community Management of Acute Malnutrition (CMAM) + Infant and Young Child Feeding (IYCF)",
-          "q": "Planned Offering Pending Implementation",
-          "d": ""
-        },
-        {
-          "o": "*MISP for SRH",
-          "q": "Implementation Started Pending Data",
-          "d": ""
-        },
-        {
-          "o": "*Emergency Basic Needs and Food Security",
-          "q": "Planned Offering Pending Implementation",
-          "d": ""
-        },
-        {
-          "o": "*Emergency PHC",
-          "q": "Planned Offering Pending Implementation",
-          "d": ""
-        }
-      ],
+      "or": [],
       "pd": [
         {
           "partner": "",
@@ -1873,43 +1788,7 @@
           "type": "Outpatient consultations"
         }
       ],
-      "or": [
-        {
-          "o": "*Community Management of Acute Malnutrition (CMAM) + Infant and Young Child Feeding (IYCF)",
-          "q": "Planned Offering Pending Implementation",
-          "d": ""
-        },
-        {
-          "o": "*Social Work in Emergencies",
-          "q": "Planned Offering Pending Implementation",
-          "d": ""
-        },
-        {
-          "o": "*Social Work in Emergencies",
-          "q": "Planned Offering Pending Implementation",
-          "d": ""
-        },
-        {
-          "o": "",
-          "q": "Planned Offering Pending Implementation",
-          "d": ""
-        },
-        {
-          "o": "Community WASH",
-          "q": "Planned Offering Pending Implementation",
-          "d": ""
-        },
-        {
-          "o": "Community WASH",
-          "q": "Planned Offering Pending Implementation",
-          "d": ""
-        },
-        {
-          "o": "*Emergency Basic Needs and Food Security",
-          "q": "Planned Offering Pending Implementation",
-          "d": ""
-        }
-      ],
+      "or": [],
       "pd": [],
       "qi": []
     },
