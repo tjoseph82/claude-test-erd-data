@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-10T15:46:55Z",
+  "lastUpdated": "2026-08-10T18:39:16Z",
   "fiscalYear": 2026,
   "averages": {
     "decision": 13,
@@ -1293,9 +1293,7 @@
       "type": "Food insecurity",
       "pctFunded": null,
       "link": "https://rescue.app.box.com/s/fqk8zvdbdp88jfvlhqmj24rwpazwinin/file/2330511267615",
-      "firstServiceType": [
-        "recrIdLWM9DETcg8p"
-      ],
+      "firstServiceType": "",
       "newOrExisting": "",
       "sapStartTriggered": true,
       "sapMidTriggered": "",
@@ -1326,6 +1324,11 @@
           "t": 63000
         },
         {
+          "n": "",
+          "r": 0,
+          "t": null
+        },
+        {
           "n": "*Outbreak Prevention and Response",
           "r": 670,
           "t": 5250
@@ -1336,9 +1339,20 @@
           "o": "*Emergency Basic Needs and Food Security",
           "d": "Jul 14, 2026",
           "type": "Multipurpose Cash Assistance "
+        },
+        {
+          "o": "",
+          "d": "\u2014",
+          "type": "hygiene promotion "
         }
       ],
-      "or": [],
+      "or": [
+        {
+          "o": "",
+          "q": "Planned Offering Pending Implementation",
+          "d": ""
+        }
+      ],
       "pd": [],
       "qi": []
     },
