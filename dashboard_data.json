@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-10T12:39:05Z",
+  "lastUpdated": "2026-08-10T15:46:55Z",
   "fiscalYear": 2026,
   "averages": {
     "decision": 13,
@@ -368,12 +368,12 @@
       "details": [
         "The Africa Centers for Disease Control and Prevention (CDC) confirmed a new Ebola outbreak in Ituri province in the northeast of the DRC on 15 May. The outbreak is focused in and around Ituri's capital Bunia as well as the more remote, mining area of Mongbwalu. As of 27 July, there are at least 3,200 cases and 1,405 deaths, making this the fastest spreading Ebola outbreak documented. About 90% of all cases are in Ituri province, but cases are reported in North and South Kivu as well, and have recently spread to Haut-Uele and Tshopo provinces."
       ],
-      "affected": 259,
+      "affected": 10081509,
       "budget": 15000000.0,
       "gap": 12500000.0,
       "crf": 1000000.0,
       "appeal": null,
-      "reached": 500.77,
+      "reached": 0.01,
       "daysClient": 25,
       "daysDecision": 0,
       "daysMSNA": null,
@@ -385,12 +385,12 @@
       "fundingSecured": 2500000.0,
       "target": 480523,
       "totalReach": 1297,
-      "totalInOpArea": null,
+      "totalInOpArea": 1002392,
       "reach6moClass": 1297,
-      "reach6moSvc": 107,
+      "reach6moSvc": 1297,
       "pct10Target6mo": null,
-      "pctReachOpArea": null,
-      "tenPctAffected": 25.900000000000002,
+      "pctReachOpArea": 0.13,
+      "tenPctAffected": 1008150.9,
       "pctPrep": null,
       "dateClassified": "May 15, 2026",
       "dateDecision": "May 15, 2026",
@@ -409,7 +409,7 @@
       "pctFunded": null,
       "link": "https://rescue.app.box.com/s/z474g29iand4zvcgvh21e6poycseyrbc",
       "firstServiceType": [
-        "rec3Z2l3N0TNMxpII"
+        "recHNcr52EickL8gU"
       ],
       "newOrExisting": "",
       "sapStartTriggered": true,
@@ -429,6 +429,11 @@
       },
       "rbm": [
         {
+          "m": "Jul 2026",
+          "i": 1193,
+          "p": 0
+        },
+        {
           "m": "Jun 2026",
           "i": 107,
           "p": 0
@@ -436,31 +441,36 @@
       ],
       "rbo": [
         {
-          "n": "",
-          "r": 0,
+          "n": "Community Risk Mitigation and Access",
+          "r": 81,
           "t": null
         },
         {
           "n": "*Outbreak Prevention and Response",
-          "r": 107,
-          "t": null
+          "r": 1051,
+          "t": 249960
+        },
+        {
+          "n": "Responsive Information Services",
+          "r": 168,
+          "t": 97500
         }
       ],
       "fs": [
         {
           "o": "Responsive Information Services",
-          "d": "\u2014",
-          "type": "RCCE"
+          "d": "Jul 31, 2026",
+          "type": "Responsive information services"
         },
         {
           "o": "*Outbreak Prevention and Response",
           "d": "Jun 09, 2026",
-          "type": "Distribution of PPE and IPC supplies to health facilities"
+          "type": "Infection prevention and control (IPC)"
         },
         {
           "o": "Community Risk Mitigation and Access",
-          "d": "\u2014",
-          "type": "Protection training"
+          "d": "Jul 30, 2026",
+          "type": " Protection mainstreaming training"
         }
       ],
       "or": [
@@ -1077,7 +1087,7 @@
       "gap": 1650000.0,
       "crf": 350000.0,
       "appeal": null,
-      "reached": 28.8,
+      "reached": 36.84,
       "daysClient": 6,
       "daysDecision": 13,
       "daysMSNA": null,
@@ -1088,12 +1098,12 @@
       "avgSigToReceipt": 98.0,
       "fundingSecured": 350000.0,
       "target": 184000,
-      "totalReach": 84800,
+      "totalReach": 108460,
       "totalInOpArea": 294415,
-      "reach6moClass": 84800,
-      "reach6moSvc": 84800,
+      "reach6moClass": 108460,
+      "reach6moSvc": 108460,
       "pct10Target6mo": null,
-      "pctReachOpArea": 28.8,
+      "pctReachOpArea": 36.84,
       "tenPctAffected": 29441.5,
       "pctPrep": null,
       "dateClassified": "Jan 27, 2026",
@@ -1106,7 +1116,7 @@
       "dateFirstCash": null,
       "date6moMark": "Jul 26, 2026",
       "date3moMark": "Apr 26, 2026",
-      "dateLastReach": "Jul 10, 2026",
+      "dateLastReach": "Aug 10, 2026",
       "decision": "Direct and Partner Implementation",
       "ermtDecision": "Direct and Partner Implementation",
       "type": "Conflict",
@@ -1143,14 +1153,19 @@
           "p": 14491
         },
         {
-          "m": "Feb 2026",
-          "i": 0,
-          "p": 6916
+          "m": "Jul 2026",
+          "i": 553,
+          "p": 751
         },
         {
           "m": "Jun 2026",
+          "i": 736,
+          "p": 27267
+        },
+        {
+          "m": "Feb 2026",
           "i": 0,
-          "p": 27069
+          "p": 6916
         },
         {
           "m": "Apr 2026",
@@ -1165,14 +1180,19 @@
           "t": 15650
         },
         {
-          "n": "*Focused MHPSS Interventions",
-          "r": 2946,
-          "t": 2400
-        },
-        {
           "n": "*Social Work in Emergencies",
           "r": 1493,
           "t": 3920
+        },
+        {
+          "n": "*Emergency Basic Needs and Food Security",
+          "r": 2791,
+          "t": 3318
+        },
+        {
+          "n": "*Focused MHPSS Interventions",
+          "r": 2946,
+          "t": 2400
         },
         {
           "n": "Community Risk Mitigation and Access",
@@ -1183,11 +1203,6 @@
           "n": "*Community Management of Acute Malnutrition (CMAM) + Infant and Young Child Feeding (IYCF)",
           "r": 25359,
           "t": 25359
-        },
-        {
-          "n": "*Emergency Basic Needs and Food Security",
-          "r": 553,
-          "t": 3318
         },
         {
           "n": "*Emergency PHC",
@@ -1243,7 +1258,7 @@
       "gap": 652129.0,
       "crf": 700000.0,
       "appeal": null,
-      "reached": 5.31,
+      "reached": 7.05,
       "daysClient": 32,
       "daysDecision": 4,
       "daysMSNA": null,
@@ -1254,10 +1269,10 @@
       "avgSigToReceipt": null,
       "fundingSecured": 700000.0,
       "target": 63294,
-      "totalReach": 34380,
+      "totalReach": 45670,
       "totalInOpArea": null,
-      "reach6moClass": 34380,
-      "reach6moSvc": 34380,
+      "reach6moClass": 45670,
+      "reach6moSvc": 45670,
       "pct10Target6mo": null,
       "pctReachOpArea": null,
       "tenPctAffected": 64800.200000000004,
@@ -1272,7 +1287,7 @@
       "dateFirstCash": "Jul 14, 2026",
       "date6moMark": "Dec 11, 2026",
       "date3moMark": "Sep 11, 2026",
-      "dateLastReach": "Jul 22, 2026",
+      "dateLastReach": "Aug 10, 2026",
       "decision": "Pending",
       "ermtDecision": "Direct Implementation",
       "type": "Food insecurity",
@@ -1297,8 +1312,25 @@
         "msnaCompleted": "Yes - Secondary Data only",
         "localSystems": ""
       },
-      "rbm": [],
-      "rbo": [],
+      "rbm": [
+        {
+          "m": "Jul 2026",
+          "i": 45670,
+          "p": 0
+        }
+      ],
+      "rbo": [
+        {
+          "n": "*Emergency Basic Needs and Food Security",
+          "r": 45000,
+          "t": 63000
+        },
+        {
+          "n": "*Outbreak Prevention and Response",
+          "r": 670,
+          "t": 5250
+        }
+      ],
       "fs": [
         {
           "o": "*Emergency Basic Needs and Food Security",
@@ -1335,7 +1367,7 @@
       "avgDisbToSig": null,
       "avgSigToReceipt": null,
       "fundingSecured": 200000.0,
-      "target": null,
+      "target": 128935,
       "totalReach": null,
       "totalInOpArea": null,
       "reach6moClass": null,
@@ -1425,12 +1457,12 @@
       "details": [
         "Since  the Uganda Ministry of Health declared an Ebola virus outbreak on 15 May, at least 20 cases have been confirmed with 3 deaths. All cases in Uganda are linked to the original cross-border transmission from neighboring DRC. Uganda has activated surveillance and screening measures, and those who had come in contact with the cases are being quarantined."
       ],
-      "affected": 2,
+      "affected": 1845336,
       "budget": 5000000.0,
       "gap": 3424390.0,
       "crf": 425000.0,
       "appeal": null,
-      "reached": 118650.0,
+      "reached": 2.16,
       "daysClient": 34,
       "daysDecision": 1,
       "daysMSNA": null,
@@ -1441,13 +1473,13 @@
       "avgSigToReceipt": null,
       "fundingSecured": 1575610.0,
       "target": 685337,
-      "totalReach": 2373,
+      "totalReach": 39942,
       "totalInOpArea": null,
-      "reach6moClass": 2373,
-      "reach6moSvc": 2373,
+      "reach6moClass": 39942,
+      "reach6moSvc": 39942,
       "pct10Target6mo": null,
       "pctReachOpArea": null,
-      "tenPctAffected": 0.2,
+      "tenPctAffected": 184533.6,
       "pctPrep": null,
       "dateClassified": "May 18, 2026",
       "dateDecision": "May 19, 2026",
@@ -1459,7 +1491,7 @@
       "dateFirstCash": null,
       "date6moMark": "Nov 17, 2026",
       "date3moMark": "Aug 17, 2026",
-      "dateLastReach": "Jul 10, 2026",
+      "dateLastReach": "Aug 10, 2026",
       "decision": "Pending",
       "ermtDecision": "Direct and Partner Implementation",
       "type": "Outbreak",
@@ -1486,6 +1518,11 @@
       },
       "rbm": [
         {
+          "m": "Jul 2026",
+          "i": 37569,
+          "p": 0
+        },
+        {
           "m": "Jun 2026",
           "i": 2373,
           "p": 0
@@ -1493,8 +1530,13 @@
       ],
       "rbo": [
         {
+          "n": "Responsive Information Services",
+          "r": 27483,
+          "t": null
+        },
+        {
           "n": "*Outbreak Prevention and Response",
-          "r": 2373,
+          "r": 12459,
           "t": null
         }
       ],
@@ -1502,7 +1544,7 @@
         {
           "o": "*Outbreak Prevention and Response",
           "d": "Jun 21, 2026",
-          "type": "Distribution of PPE and IPC supplies to health facilities"
+          "type": "Infection prevention and control (IPC)"
         }
       ],
       "or": [],
