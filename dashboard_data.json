@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-11T06:42:59Z",
+  "lastUpdated": "2026-08-11T09:47:44Z",
   "fiscalYear": 2026,
   "averages": {
     "decision": 13,
@@ -1145,7 +1145,7 @@
         {
           "m": "May 2026",
           "i": 0,
-          "p": 25424
+          "p": 25450
         },
         {
           "m": "Mar 2026",
@@ -1154,18 +1154,18 @@
         },
         {
           "m": "Jul 2026",
-          "i": 553,
-          "p": 751
-        },
-        {
-          "m": "Jun 2026",
-          "i": 736,
-          "p": 27267
+          "i": 0,
+          "p": 38815
         },
         {
           "m": "Feb 2026",
           "i": 0,
           "p": 6916
+        },
+        {
+          "m": "Jun 2026",
+          "i": 0,
+          "p": 27092
         },
         {
           "m": "Apr 2026",
@@ -1176,38 +1176,38 @@
       "rbo": [
         {
           "n": "Responsive Information Services",
-          "r": 29740,
+          "r": 38777,
           "t": 15650
         },
         {
           "n": "*Social Work in Emergencies",
-          "r": 1493,
+          "r": 3416,
           "t": 3920
         },
         {
-          "n": "*Emergency Basic Needs and Food Security",
-          "r": 2791,
-          "t": 3318
-        },
-        {
           "n": "*Focused MHPSS Interventions",
-          "r": 2946,
+          "r": 4688,
           "t": 2400
         },
         {
           "n": "Community Risk Mitigation and Access",
-          "r": 36,
+          "r": 48,
           "t": 50
         },
         {
           "n": "*Community Management of Acute Malnutrition (CMAM) + Infant and Young Child Feeding (IYCF)",
-          "r": 25359,
-          "t": 25359
+          "r": 36192,
+          "t": 31753
         },
         {
           "n": "*Emergency PHC",
-          "r": 37227,
-          "t": 37227
+          "r": 51991,
+          "t": 47878
+        },
+        {
+          "n": "*Emergency Basic Needs and Food Security",
+          "r": 1106,
+          "t": 3318
         }
       ],
       "fs": [
@@ -1890,7 +1890,7 @@
       "gap": 700000.0,
       "crf": null,
       "appeal": 300000.0,
-      "reached": 76.9,
+      "reached": 23.76,
       "daysClient": 0,
       "daysDecision": 91,
       "daysMSNA": 106,
@@ -1901,12 +1901,12 @@
       "avgSigToReceipt": -7.0,
       "fundingSecured": 300000.0,
       "target": 89340,
-      "totalReach": 687042,
+      "totalReach": 212234,
       "totalInOpArea": 472000,
-      "reach6moClass": 687042,
-      "reach6moSvc": 687042,
+      "reach6moClass": 212234,
+      "reach6moSvc": 212234,
       "pct10Target6mo": null,
-      "pctReachOpArea": 145.56,
+      "pctReachOpArea": 44.96,
       "tenPctAffected": 89340.3,
       "pctPrep": null,
       "dateClassified": "Oct 30, 2025",
@@ -1919,7 +1919,7 @@
       "dateFirstCash": "May 19, 2026",
       "date6moMark": "Jul 12, 2026",
       "date3moMark": "Apr 12, 2026",
-      "dateLastReach": "Jul 09, 2026",
+      "dateLastReach": "Aug 11, 2026",
       "decision": "Direct Implementation",
       "ermtDecision": "Direct Implementation",
       "type": "Conflict",
@@ -1947,22 +1947,22 @@
       "rbm": [
         {
           "m": "May 2026",
-          "i": 263455,
+          "i": 123302,
           "p": 0
         },
         {
           "m": "Apr 2026",
-          "i": 279932,
+          "i": 114465,
           "p": 0
         },
         {
           "m": "Jun 2026",
-          "i": 93626,
+          "i": 31375,
           "p": 0
         },
         {
           "m": "Mar 2026",
-          "i": 123776,
+          "i": 48261,
           "p": 0
         },
         {
@@ -1974,6 +1974,11 @@
           "m": "Jan 2026",
           "i": 4745,
           "p": 0
+        },
+        {
+          "m": "Jul 2026",
+          "i": 0,
+          "p": 0
         }
       ],
       "rbo": [
@@ -1984,7 +1989,7 @@
         },
         {
           "n": "*Emergency PHC",
-          "r": 652313,
+          "r": 208927,
           "t": 446702
         },
         {
