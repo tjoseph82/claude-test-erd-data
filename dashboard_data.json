@@ -1,18 +1,18 @@
 {
-  "lastUpdated": "2026-08-11T09:47:44Z",
+  "lastUpdated": "2026-08-11T12:36:06Z",
   "fiscalYear": 2026,
   "averages": {
     "decision": 13,
     "msna": 32,
     "planSub": 26,
-    "planApproval": 39,
+    "planApproval": 37,
     "client": 26
   },
   "eoCounts": {
     "*Emergency Basic Needs and Food Security": 9,
     "*Focused MHPSS Interventions": 4,
     "Responsive Information Services": 1,
-    "*Outbreak Prevention and Response": 2,
+    "*Outbreak Prevention and Response": 3,
     "Community Risk Mitigation and Access": 1,
     "*Emergency PHC": 6,
     "Community WASH": 4,
@@ -150,7 +150,7 @@
       "gap": -2656118.0,
       "crf": 2878000.0,
       "appeal": null,
-      "reached": 5.65,
+      "reached": 7.35,
       "daysClient": 2,
       "daysDecision": 2,
       "daysMSNA": 25,
@@ -161,12 +161,12 @@
       "avgSigToReceipt": null,
       "fundingSecured": 6656118.0,
       "target": 100000,
-      "totalReach": 59339,
+      "totalReach": 77153,
       "totalInOpArea": 1050000,
-      "reach6moClass": 59339,
-      "reach6moSvc": 59339,
+      "reach6moClass": 77153,
+      "reach6moSvc": 77153,
       "pct10Target6mo": null,
-      "pctReachOpArea": 5.65,
+      "pctReachOpArea": 7.35,
       "tenPctAffected": 105000.0,
       "pctPrep": null,
       "dateClassified": "Mar 02, 2026",
@@ -179,7 +179,7 @@
       "dateFirstCash": "Mar 06, 2026",
       "date6moMark": "Sep 03, 2026",
       "date3moMark": "Jun 03, 2026",
-      "dateLastReach": "Jul 10, 2026",
+      "dateLastReach": "Aug 11, 2026",
       "decision": "Direct and Partner Implementation",
       "ermtDecision": "Direct and Partner Implementation",
       "type": "Conflict",
@@ -207,64 +207,69 @@
       "rbm": [
         {
           "m": "Jun 2026",
-          "i": 18363,
+          "i": 25773,
           "p": 0
         },
         {
           "m": "May 2026",
-          "i": 14286,
+          "i": 14117,
+          "p": 0
+        },
+        {
+          "m": "Jul 2026",
+          "i": 9290,
           "p": 0
         },
         {
           "m": "Apr 2026",
-          "i": 26719,
+          "i": 27087,
           "p": 0
         },
         {
           "m": "Mar 2026",
-          "i": 13130,
+          "i": 13502,
           "p": 0
         }
       ],
       "rbo": [
         {
           "n": "*Focused MHPSS Interventions",
-          "r": 1977,
+          "r": 3216,
           "t": 3290
         },
         {
           "n": "*MISP for SRH",
-          "r": 500,
+          "r": 570,
           "t": 420
         },
         {
+          "n": "Community Risk Mitigation and Access",
+          "r": 927,
+          "t": 700
+        },
+        {
           "n": "Responsive Information Services",
-          "r": 4696,
+          "r": 5911,
           "t": 5660
         },
         {
           "n": "*Emergency Basic Needs and Food Security",
-          "r": 48591,
+          "r": 60190,
           "t": 42063
         },
         {
-          "n": "Community Risk Mitigation and Access",
-          "r": 894,
-          "t": 700
-        },
-        {
           "n": "*Safe Play and Learning Spaces",
-          "r": 9486,
+          "r": 9563,
           "t": null
         },
         {
           "n": "*Emergency PHC",
-          "r": 6315,
+          "r": 9181,
           "t": 11890
         },
         {
           "n": "*Social Work in Emergencies",
-          "r": 39,
+          "r": 211,
           "t": 225
         }
       ],
@@ -1098,10 +1103,10 @@
       "avgSigToReceipt": 98.0,
       "fundingSecured": 350000.0,
       "target": 184000,
-      "totalReach": 108460,
+      "totalReach": 108456,
       "totalInOpArea": 294415,
-      "reach6moClass": 108460,
-      "reach6moSvc": 108460,
+      "reach6moClass": 108456,
+      "reach6moSvc": 108456,
       "pct10Target6mo": null,
       "pctReachOpArea": 36.84,
       "tenPctAffected": 29441.5,
@@ -1116,7 +1121,7 @@
       "dateFirstCash": null,
       "date6moMark": "Jul 26, 2026",
       "date3moMark": "Apr 26, 2026",
-      "dateLastReach": "Aug 10, 2026",
+      "dateLastReach": "Aug 11, 2026",
       "decision": "Direct and Partner Implementation",
       "ermtDecision": "Direct and Partner Implementation",
       "type": "Conflict",
@@ -1165,7 +1170,7 @@
         {
           "m": "Jun 2026",
           "i": 0,
-          "p": 27092
+          "p": 26722
         },
         {
           "m": "Apr 2026",
@@ -1206,7 +1211,7 @@
         },
         {
           "n": "*Emergency Basic Needs and Food Security",
-          "r": 1106,
+          "r": 736,
           "t": 3318
         }
       ],
@@ -1255,9 +1260,9 @@
       ],
       "affected": 648002,
       "budget": 1352129.0,
-      "gap": 652129.0,
+      "gap": -1466579.0,
       "crf": 700000.0,
-      "appeal": null,
+      "appeal": 1868800.0,
       "reached": 7.05,
       "daysClient": 32,
       "daysDecision": 4,
@@ -1267,7 +1272,7 @@
       "daysPlanApproval": 27,
       "avgDisbToSig": null,
       "avgSigToReceipt": null,
-      "fundingSecured": 700000.0,
+      "fundingSecured": 2818708.0,
       "target": 63294,
       "totalReach": 45670,
       "totalInOpArea": null,
@@ -1293,7 +1298,9 @@
       "type": "Food insecurity",
       "pctFunded": null,
       "link": "https://rescue.app.box.com/s/fqk8zvdbdp88jfvlhqmj24rwpazwinin/file/2330511267615",
-      "firstServiceType": "",
+      "firstServiceType": [
+        "recrIdLWM9DETcg8p"
+      ],
       "newOrExisting": "",
       "sapStartTriggered": true,
       "sapMidTriggered": "",
@@ -1341,9 +1348,9 @@
           "type": "Multipurpose Cash Assistance "
         },
         {
-          "o": "",
-          "d": "\u2014",
-          "type": "hygiene promotion "
+          "o": "*Outbreak Prevention and Response",
+          "d": "Jul 14, 2026",
+          "type": "Cholera Rapid Response (CATI)"
         }
       ],
       "or": [
@@ -1367,9 +1374,9 @@
         "two powerful earthquakes measuring 7.5 and 7.2 on the Richter scale struck near Mor\u00f3n, around 160km west of the Venezuelan capital Caracas on the evening of 24th June. The damage is reported heaviest in La Guaira state, though Caracas is also significantly affected. As of 02 July, at least 3,800 people have been reported killed with over 16,000 injured, although figures are expected to rise as search and rescue operations continue."
       ],
       "affected": 1300000,
-      "budget": 4033499.0,
-      "gap": 3833499.0,
-      "crf": 200000.0,
+      "budget": 10000000.0,
+      "gap": 5813992.0,
+      "crf": 1000000.0,
       "appeal": null,
       "reached": null,
       "daysClient": 1,
@@ -1377,10 +1384,10 @@
       "daysMSNA": null,
       "daysMSNAStart": null,
       "daysPlanSub": 11,
-      "daysPlanApproval": null,
+      "daysPlanApproval": 22,
       "avgDisbToSig": null,
       "avgSigToReceipt": null,
-      "fundingSecured": 200000.0,
+      "fundingSecured": 4186008.0,
       "target": 128935,
       "totalReach": null,
       "totalInOpArea": null,
@@ -1395,7 +1402,7 @@
       "dateMSNAStart": null,
       "dateMSNA": null,
       "datePlanSub": "Jul 06, 2026",
-      "datePlanApproval": null,
+      "datePlanApproval": "Jul 17, 2026",
       "dateFirstClient": null,
       "dateFirstCash": null,
       "date6moMark": "Dec 28, 2026",
@@ -1947,54 +1954,54 @@
       "rbm": [
         {
           "m": "May 2026",
-          "i": 123302,
-          "p": 0
-        },
-        {
-          "m": "Apr 2026",
-          "i": 114465,
-          "p": 0
-        },
-        {
-          "m": "Jun 2026",
-          "i": 31375,
-          "p": 0
-        },
-        {
-          "m": "Mar 2026",
-          "i": 48261,
+          "i": 73761,
           "p": 0
         },
         {
           "m": "Feb 2026",
-          "i": 18508,
+          "i": 46099,
           "p": 0
         },
         {
-          "m": "Jan 2026",
-          "i": 4745,
+          "m": "Apr 2026",
+          "i": 71341,
+          "p": 0
+        },
+        {
+          "m": "Jun 2026",
+          "i": 32403,
+          "p": 0
+        },
+        {
+          "m": "Mar 2026",
+          "i": 88316,
           "p": 0
         },
         {
           "m": "Jul 2026",
-          "i": 0,
+          "i": 5318,
+          "p": 0
+        },
+        {
+          "m": "Jan 2026",
+          "i": 20839,
           "p": 0
         }
       ],
       "rbo": [
         {
           "n": "Community WASH",
-          "r": 55500,
+          "r": 88399,
           "t": 19995
         },
         {
           "n": "*Emergency PHC",
-          "r": 208927,
-          "t": 446702
+          "r": 193176,
+          "t": 223351
         },
         {
           "n": "Responsive Information Services",
-          "r": 64493,
+          "r": 45418,
           "t": 41428
         },
         {
@@ -2004,12 +2011,12 @@
         },
         {
           "n": "*Emergency Basic Needs and Food Security",
-          "r": 9711,
+          "r": 9040,
           "t": 7500
         },
         {
           "n": "*Social Work in Emergencies",
-          "r": 113,
+          "r": 132,
           "t": 180
         },
         {
