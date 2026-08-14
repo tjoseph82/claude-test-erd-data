@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-14T09:49:25Z",
+  "lastUpdated": "2026-08-14T12:35:45Z",
   "fiscalYear": 2026,
   "averages": {
     "decision": 13,
@@ -207,7 +207,7 @@
       "rbm": [
         {
           "m": "Jun 2026",
-          "i": 27870,
+          "i": 28905,
           "p": 0
         },
         {
@@ -217,7 +217,7 @@
         },
         {
           "m": "Jul 2026",
-          "i": 12864,
+          "i": 13003,
           "p": 0
         },
         {
@@ -234,8 +234,8 @@
       "rbo": [
         {
           "n": "*Focused MHPSS Interventions",
-          "r": 3216,
-          "t": 3290
+          "r": 3280,
+          "t": 3952
         },
         {
           "n": "*MISP for SRH",
@@ -244,12 +244,12 @@
         },
         {
           "n": "Community Risk Mitigation and Access",
-          "r": 927,
-          "t": 700
+          "r": 946,
+          "t": 760
         },
         {
           "n": "Responsive Information Services",
-          "r": 5911,
+          "r": 6985,
           "t": 5660
         },
         {
@@ -269,7 +269,7 @@
         },
         {
           "n": "*Social Work in Emergencies",
-          "r": 211,
+          "r": 228,
           "t": 225
         }
       ],
