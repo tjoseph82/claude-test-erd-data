@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-14T07:03:52Z",
+  "lastUpdated": "2026-08-14T09:49:25Z",
   "fiscalYear": 2026,
   "averages": {
     "decision": 13,
@@ -150,7 +150,7 @@
       "gap": -2656118.0,
       "crf": 2878000.0,
       "appeal": null,
-      "reached": 7.35,
+      "reached": 7.98,
       "daysClient": 2,
       "daysDecision": 2,
       "daysMSNA": 25,
@@ -161,12 +161,12 @@
       "avgSigToReceipt": null,
       "fundingSecured": 6656118.0,
       "target": 100000,
-      "totalReach": 77153,
+      "totalReach": 83808,
       "totalInOpArea": 1050000,
-      "reach6moClass": 77153,
-      "reach6moSvc": 77153,
+      "reach6moClass": 83808,
+      "reach6moSvc": 83808,
       "pct10Target6mo": null,
-      "pctReachOpArea": 7.35,
+      "pctReachOpArea": 7.98,
       "tenPctAffected": 105000.0,
       "pctPrep": null,
       "dateClassified": "Mar 02, 2026",
@@ -179,7 +179,7 @@
       "dateFirstCash": "Mar 06, 2026",
       "date6moMark": "Sep 03, 2026",
       "date3moMark": "Jun 03, 2026",
-      "dateLastReach": "Aug 11, 2026",
+      "dateLastReach": "Aug 14, 2026",
       "decision": "Direct and Partner Implementation",
       "ermtDecision": "Direct and Partner Implementation",
       "type": "Conflict",
@@ -207,27 +207,27 @@
       "rbm": [
         {
           "m": "Jun 2026",
-          "i": 25773,
+          "i": 27870,
           "p": 0
         },
         {
           "m": "May 2026",
-          "i": 14117,
+          "i": 14191,
           "p": 0
         },
         {
           "m": "Jul 2026",
-          "i": 9290,
+          "i": 12864,
           "p": 0
         },
         {
           "m": "Apr 2026",
-          "i": 27087,
+          "i": 27138,
           "p": 0
         },
         {
           "m": "Mar 2026",
-          "i": 13502,
+          "i": 13501,
           "p": 0
         }
       ],
@@ -239,7 +239,7 @@
         },
         {
           "n": "*MISP for SRH",
-          "r": 570,
+          "r": 700,
           "t": 420
         },
         {
@@ -264,8 +264,8 @@
         },
         {
           "n": "*Emergency PHC",
-          "r": 9181,
-          "t": 11890
+          "r": 14846,
+          "t": 20120
         },
         {
           "n": "*Social Work in Emergencies",
