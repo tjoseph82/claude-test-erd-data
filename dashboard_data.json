@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-18T09:19:53Z",
+  "lastUpdated": "2026-08-18T12:19:22Z",
   "fiscalYear": 2026,
   "averages": {
     "decision": 13,
@@ -1496,7 +1496,7 @@
       "daysPlanSub": 23,
       "daysPlanApproval": null,
       "avgDisbToSig": null,
-      "avgSigToReceipt": null,
+      "avgSigToReceipt": -4.0,
       "fundingSecured": 1575610.0,
       "target": 685337,
       "totalReach": 39942,
@@ -1574,7 +1574,30 @@
         }
       ],
       "or": [],
-      "pd": [],
+      "pd": [
+        {
+          "partner": "",
+          "offering": "Community Risk Mitigation and Access",
+          "en": "Existing",
+          "disb": null,
+          "fs": null,
+          "fd": null,
+          "agreement": null,
+          "disbToSig": "",
+          "sigToReceipt": 10
+        },
+        {
+          "partner": "",
+          "offering": "*Outbreak Prevention and Response",
+          "en": "Existing",
+          "disb": null,
+          "fs": null,
+          "fd": null,
+          "agreement": null,
+          "disbToSig": "",
+          "sigToReceipt": -18
+        }
+      ],
       "qi": []
     },
     {
