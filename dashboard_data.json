@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-26T06:25:29Z",
+  "lastUpdated": "2026-08-26T09:28:21Z",
   "fiscalYear": 2026,
   "averages": {
     "decision": 13,
@@ -1105,7 +1105,7 @@
       "daysPlanSub": 43,
       "daysPlanApproval": 43,
       "avgDisbToSig": null,
-      "avgSigToReceipt": 98.0,
+      "avgSigToReceipt": 24.7,
       "fundingSecured": 350000.0,
       "target": 184000,
       "totalReach": 108456,
@@ -1242,6 +1242,17 @@
         {
           "partner": "",
           "offering": "*Emergency PHC",
+          "en": "New",
+          "disb": null,
+          "fs": "Mar 17, 2026",
+          "fd": null,
+          "agreement": null,
+          "disbToSig": "",
+          "sigToReceipt": -12
+        },
+        {
+          "partner": "",
+          "offering": "*Emergency PHC",
           "en": "Existing",
           "disb": null,
           "fs": "Mar 17, 2026",
@@ -1249,6 +1260,17 @@
           "agreement": null,
           "disbToSig": "",
           "sigToReceipt": 98
+        },
+        {
+          "partner": "",
+          "offering": "*Emergency PHC",
+          "en": "Existing",
+          "disb": null,
+          "fs": "Mar 30, 2026",
+          "fd": null,
+          "agreement": null,
+          "disbToSig": "",
+          "sigToReceipt": -12
         }
       ],
       "qi": []
