@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-03T01:47:20Z",
+  "lastUpdated": "2026-09-03T07:26:08Z",
   "fiscalYear": 2026,
   "averages": {
     "decision": 13,
@@ -265,7 +265,7 @@
       "newOrExisting": "",
       "sapStartTriggered": true,
       "sapMidTriggered": true,
-      "sapEndTriggered": "",
+      "sapEndTriggered": true,
       "sap": {
         "plan": "Yes",
         "learning": "In progress",
@@ -417,7 +417,7 @@
       "newOrExisting": "",
       "sapStartTriggered": true,
       "sapMidTriggered": true,
-      "sapEndTriggered": "",
+      "sapEndTriggered": true,
       "sap": {
         "plan": "Not applicable",
         "learning": "Not Applicable",
