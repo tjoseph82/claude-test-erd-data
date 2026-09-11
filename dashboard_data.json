@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-09-11T07:32:36Z",
+  "lastUpdated": "2026-09-11T13:04:21Z",
   "fiscalYear": 2026,
   "averages": {
     "decision": 12,
     "msna": 32,
     "planSub": 26,
     "planApproval": 37,
-    "client": 26
+    "client": 24
   },
   "eoCounts": {
     "*Emergency Basic Needs and Food Security": 9,
@@ -14,7 +14,7 @@
     "Responsive Information Services": 1,
     "*Outbreak Prevention and Response": 3,
     "Community Risk Mitigation and Access": 1,
-    "*Emergency PHC": 6,
+    "*Emergency PHC": 7,
     "Community WASH": 4,
     "*MISP for SRH": 1,
     "*Community Management of Acute Malnutrition (CMAM) + Infant and Young Child Feeding (IYCF)": 2,
@@ -32,7 +32,7 @@
         "In Ansar Allah (AA, the Houthis) controlled areas of Yemen, food insecurity is extremely severe, particularly in Al Hudaydah, Hajjah, and Ta'izz governorates. Internally displaced households are particularly vulnerable, and reports indicate that some may be facing catastrophic levels of food insecurity. Food insecurity is driven by economic deterioration, recent flooding, and little to no humanitarian assistance in AA controlled areas."
       ],
       "affected": 2772799,
-      "budget": null,
+      "budget": 1859467.0,
       "gap": null,
       "crf": null,
       "appeal": null,
@@ -224,7 +224,7 @@
       "gap": -2656118.0,
       "crf": 2878000.0,
       "appeal": null,
-      "reached": 7.98,
+      "reached": 8.77,
       "daysClient": 2,
       "daysDecision": 2,
       "daysMSNA": 25,
@@ -235,12 +235,12 @@
       "avgSigToReceipt": null,
       "fundingSecured": 6656118.0,
       "target": 100000,
-      "totalReach": 83808,
+      "totalReach": 92092,
       "totalInOpArea": 1050000,
-      "reach6moClass": 83808,
-      "reach6moSvc": 83808,
+      "reach6moClass": 92092,
+      "reach6moSvc": 92092,
       "pct10Target6mo": null,
-      "pctReachOpArea": 7.98,
+      "pctReachOpArea": 8.77,
       "tenPctAffected": 105000.0,
       "pctPrep": null,
       "dateClassified": "Mar 02, 2026",
@@ -253,7 +253,7 @@
       "dateFirstCash": "Mar 06, 2026",
       "date6moMark": "Sep 03, 2026",
       "date3moMark": "Jun 03, 2026",
-      "dateLastReach": "Aug 14, 2026",
+      "dateLastReach": "Sep 11, 2026",
       "decision": "Direct and Partner Implementation",
       "ermtDecision": "Direct and Partner Implementation",
       "type": "Conflict",
@@ -281,22 +281,27 @@
       "rbm": [
         {
           "m": "Jun 2026",
-          "i": 28905,
+          "i": 29376,
           "p": 0
         },
         {
           "m": "May 2026",
-          "i": 14191,
+          "i": 15473,
+          "p": 0
+        },
+        {
+          "m": "Aug 2026",
+          "i": 0,
           "p": 0
         },
         {
           "m": "Jul 2026",
-          "i": 13003,
+          "i": 18869,
           "p": 0
         },
         {
           "m": "Apr 2026",
-          "i": 27138,
+          "i": 27064,
           "p": 0
         },
         {
@@ -308,13 +313,18 @@
       "rbo": [
         {
           "n": "*Focused MHPSS Interventions",
-          "r": 3280,
+          "r": 3621,
           "t": 3952
         },
         {
           "n": "*MISP for SRH",
           "r": 700,
           "t": 420
+        },
+        {
+          "n": "*Emergency Basic Needs and Food Security",
+          "r": 69633,
+          "t": 42063
         },
         {
           "n": "Community Risk Mitigation and Access",
@@ -327,19 +337,14 @@
           "t": 5660
         },
         {
-          "n": "*Emergency Basic Needs and Food Security",
-          "r": 60190,
-          "t": 42063
-        },
-        {
           "n": "*Safe Play and Learning Spaces",
           "r": 9563,
           "t": null
         },
         {
           "n": "*Emergency PHC",
-          "r": 14846,
-          "t": 20120
+          "r": 12607,
+          "t": 19420
         },
         {
           "n": "*Social Work in Emergencies",
@@ -452,7 +457,7 @@
       "gap": 12500000.0,
       "crf": 1000000.0,
       "appeal": null,
-      "reached": 0.04,
+      "reached": 0.12,
       "daysClient": 25,
       "daysDecision": 0,
       "daysMSNA": null,
@@ -463,12 +468,12 @@
       "avgSigToReceipt": null,
       "fundingSecured": 2500000.0,
       "target": 480523,
-      "totalReach": 4207,
+      "totalReach": 11739,
       "totalInOpArea": 1002392,
-      "reach6moClass": 4207,
-      "reach6moSvc": 4207,
+      "reach6moClass": 11739,
+      "reach6moSvc": 11739,
       "pct10Target6mo": null,
-      "pctReachOpArea": 0.42,
+      "pctReachOpArea": 1.17,
       "tenPctAffected": 1008150.9,
       "pctPrep": null,
       "dateClassified": "May 15, 2026",
@@ -481,7 +486,7 @@
       "dateFirstCash": null,
       "date6moMark": "Nov 14, 2026",
       "date3moMark": "Aug 14, 2026",
-      "dateLastReach": "Aug 12, 2026",
+      "dateLastReach": "Sep 11, 2026",
       "decision": "Direct and Partner Implementation",
       "ermtDecision": "Direct Implementation",
       "type": "Outbreak",
@@ -508,36 +513,46 @@
       },
       "rbm": [
         {
+          "m": "Aug 2026",
+          "i": 10951,
+          "p": 638
+        },
+        {
+          "m": "Sep 2026",
+          "i": 482,
+          "p": 0
+        },
+        {
           "m": "Jul 2026",
-          "i": 4075,
-          "p": 28
+          "i": 4610,
+          "p": 56
         },
         {
           "m": "Jun 2026",
-          "i": 107,
+          "i": 278,
           "p": 0
         }
       ],
       "rbo": [
         {
-          "n": "Community WASH",
-          "r": 28,
-          "t": null
-        },
-        {
           "n": "Community Risk Mitigation and Access",
-          "r": 81,
-          "t": null
-        },
-        {
-          "n": "*Outbreak Prevention and Response",
-          "r": 3873,
-          "t": 249960
+          "r": 669,
+          "t": 650
         },
         {
           "n": "Responsive Information Services",
-          "r": 228,
+          "r": 5915,
           "t": 97500
+        },
+        {
+          "n": "Community WASH",
+          "r": 694,
+          "t": 20188
+        },
+        {
+          "n": "*Outbreak Prevention and Response",
+          "r": 9737,
+          "t": 192082
         }
       ],
       "fs": [
@@ -1033,12 +1048,12 @@
         "Over 1.6 million people are experiencing emergency or IPC4 levels of food insecurity in areas of Yemen controlled by the internationally recognized government (IRG). Food insecurity in IRG-controlled areas is driven by economic contraction amid an increase in global prices for fuel, fertilizer, and other basic goods, as well as recent flooding which disrupted the agricultural process."
       ],
       "affected": 1637340,
-      "budget": null,
-      "gap": null,
+      "budget": 7751167.0,
+      "gap": 3795519.0,
       "crf": null,
       "appeal": null,
       "reached": null,
-      "daysClient": null,
+      "daysClient": 0,
       "daysDecision": 1,
       "daysMSNA": null,
       "daysMSNAStart": null,
@@ -1046,7 +1061,7 @@
       "daysPlanApproval": null,
       "avgDisbToSig": null,
       "avgSigToReceipt": null,
-      "fundingSecured": null,
+      "fundingSecured": 3955648.0,
       "target": null,
       "totalReach": null,
       "totalInOpArea": null,
@@ -1072,7 +1087,9 @@
       "type": "Food insecurity",
       "pctFunded": null,
       "link": null,
-      "firstServiceType": "",
+      "firstServiceType": [
+        "rec2i4vMqr8LTBZUT"
+      ],
       "newOrExisting": "",
       "sapStartTriggered": true,
       "sapMidTriggered": "",
@@ -1091,7 +1108,13 @@
       },
       "rbm": [],
       "rbo": [],
-      "fs": [],
+      "fs": [
+        {
+          "o": "*Emergency PHC",
+          "d": "Aug 28, 2026",
+          "type": "Outpatient consultations"
+        }
+      ],
       "or": [],
       "pd": [],
       "qi": []
@@ -1438,7 +1461,7 @@
       "gap": -1466579.0,
       "crf": 700000.0,
       "appeal": 1868800.0,
-      "reached": 7.05,
+      "reached": 9.2,
       "daysClient": 32,
       "daysDecision": 4,
       "daysMSNA": null,
@@ -1449,10 +1472,10 @@
       "avgSigToReceipt": null,
       "fundingSecured": 2818708.0,
       "target": 63294,
-      "totalReach": 45670,
+      "totalReach": 59599,
       "totalInOpArea": null,
-      "reach6moClass": 45670,
-      "reach6moSvc": 45670,
+      "reach6moClass": 59599,
+      "reach6moSvc": 59599,
       "pct10Target6mo": null,
       "pctReachOpArea": null,
       "tenPctAffected": 64800.200000000004,
@@ -1467,7 +1490,7 @@
       "dateFirstCash": "Jul 14, 2026",
       "date6moMark": "Dec 11, 2026",
       "date3moMark": "Sep 11, 2026",
-      "dateLastReach": "Aug 10, 2026",
+      "dateLastReach": "Sep 11, 2026",
       "decision": "Pending",
       "ermtDecision": "Direct Implementation",
       "type": "Food insecurity",
@@ -1494,25 +1517,30 @@
       },
       "rbm": [
         {
+          "m": "Aug 2026",
+          "i": 18199,
+          "p": 12
+        },
+        {
           "m": "Jul 2026",
-          "i": 45670,
+          "i": 41400,
           "p": 0
         }
       ],
       "rbo": [
         {
           "n": "*Emergency Basic Needs and Food Security",
-          "r": 45000,
+          "r": 58470,
           "t": 63000
         },
         {
-          "n": "",
-          "r": 0,
-          "t": null
+          "n": "Community Risk Mitigation and Access",
+          "r": 12,
+          "t": 705
         },
         {
           "n": "*Outbreak Prevention and Response",
-          "r": 670,
+          "r": 1129,
           "t": 5250
         }
       ],
@@ -1553,7 +1581,7 @@
       "gap": 5813992.0,
       "crf": 1000000.0,
       "appeal": null,
-      "reached": null,
+      "reached": 0.22,
       "daysClient": 1,
       "daysDecision": 4,
       "daysMSNA": null,
@@ -1564,10 +1592,10 @@
       "avgSigToReceipt": null,
       "fundingSecured": 4186008.0,
       "target": 128935,
-      "totalReach": null,
+      "totalReach": 2825,
       "totalInOpArea": null,
-      "reach6moClass": null,
-      "reach6moSvc": null,
+      "reach6moClass": 2825,
+      "reach6moSvc": 2825,
       "pct10Target6mo": null,
       "pctReachOpArea": null,
       "tenPctAffected": 130000.0,
@@ -1582,7 +1610,7 @@
       "dateFirstCash": null,
       "date6moMark": "Dec 28, 2026",
       "date3moMark": "Sep 28, 2026",
-      "dateLastReach": null,
+      "dateLastReach": "Sep 11, 2026",
       "decision": "Pending",
       "ermtDecision": "Direct and Partner Implementation",
       "type": "Natural",
@@ -1609,16 +1637,46 @@
       },
       "rbm": [
         {
+          "m": "Aug 2026",
+          "i": 0,
+          "p": 1104
+        },
+        {
+          "m": "Sep 2026",
+          "i": 0,
+          "p": 175
+        },
+        {
           "m": "Jul 2026",
           "i": 0,
-          "p": 0
+          "p": 1546
         }
       ],
       "rbo": [
         {
+          "n": "*Focused MHPSS Interventions",
+          "r": 123,
+          "t": 7862
+        },
+        {
           "n": "Community WASH",
-          "r": 0,
-          "t": null
+          "r": 173,
+          "t": 53290
+        },
+        {
+          "n": "*Social Work in Emergencies",
+          "r": 17,
+          "t": 6193
+        },
+        {
+          "n": "Responsive Information Services",
+          "r": 455,
+          "t": 36080
+        },
+        {
+          "n": "*Emergency PHC",
+          "r": 2057,
+          "t": 81605
         }
       ],
       "fs": [
