@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-11T13:04:21Z",
+  "lastUpdated": "2026-09-11T17:57:47Z",
   "fiscalYear": 2026,
   "averages": {
     "decision": 12,
@@ -32,9 +32,9 @@
         "In Ansar Allah (AA, the Houthis) controlled areas of Yemen, food insecurity is extremely severe, particularly in Al Hudaydah, Hajjah, and Ta'izz governorates. Internally displaced households are particularly vulnerable, and reports indicate that some may be facing catastrophic levels of food insecurity. Food insecurity is driven by economic deterioration, recent flooding, and little to no humanitarian assistance in AA controlled areas."
       ],
       "affected": 2772799,
-      "budget": 1859467.0,
-      "gap": null,
-      "crf": null,
+      "budget": 3180869.0,
+      "gap": 2636017.0,
+      "crf": 544852.0,
       "appeal": null,
       "reached": null,
       "daysClient": null,
@@ -45,7 +45,7 @@
       "daysPlanApproval": null,
       "avgDisbToSig": null,
       "avgSigToReceipt": null,
-      "fundingSecured": null,
+      "fundingSecured": 544852.0,
       "target": null,
       "totalReach": null,
       "totalInOpArea": null,
@@ -268,7 +268,7 @@
       "sapEndTriggered": true,
       "sap": {
         "plan": "Yes",
-        "learning": "In progress",
+        "learning": "Yes",
         "feedback": "Yes",
         "feedbackTime": "Yes",
         "safeguarding": "Pending",
@@ -281,7 +281,7 @@
       "rbm": [
         {
           "m": "Jun 2026",
-          "i": 29376,
+          "i": 28514,
           "p": 0
         },
         {
@@ -296,7 +296,7 @@
         },
         {
           "m": "Jul 2026",
-          "i": 18869,
+          "i": 20113,
           "p": 0
         },
         {
@@ -333,7 +333,7 @@
         },
         {
           "n": "Responsive Information Services",
-          "r": 6985,
+          "r": 7345,
           "t": 5660
         },
         {
@@ -348,7 +348,7 @@
         },
         {
           "n": "*Social Work in Emergencies",
-          "r": 228,
+          "r": 250,
           "t": 225
         }
       ],
@@ -782,7 +782,7 @@
       "sapEndTriggered": true,
       "sap": {
         "plan": "Yes",
-        "learning": "In progress",
+        "learning": "Yes",
         "feedback": "Yes",
         "feedbackTime": "Yes",
         "safeguarding": "Pending",
@@ -1716,7 +1716,7 @@
       "gap": 3424390.0,
       "crf": 425000.0,
       "appeal": null,
-      "reached": 2.16,
+      "reached": 15.71,
       "daysClient": 34,
       "daysDecision": 1,
       "daysMSNA": null,
@@ -1727,10 +1727,10 @@
       "avgSigToReceipt": -4.0,
       "fundingSecured": 1575610.0,
       "target": 685337,
-      "totalReach": 39942,
+      "totalReach": 289856,
       "totalInOpArea": null,
-      "reach6moClass": 39942,
-      "reach6moSvc": 39942,
+      "reach6moClass": 289856,
+      "reach6moSvc": 289856,
       "pct10Target6mo": null,
       "pctReachOpArea": null,
       "tenPctAffected": 184533.6,
@@ -1745,7 +1745,7 @@
       "dateFirstCash": null,
       "date6moMark": "Nov 17, 2026",
       "date3moMark": "Aug 17, 2026",
-      "dateLastReach": "Aug 10, 2026",
+      "dateLastReach": "Sep 11, 2026",
       "decision": "Pending",
       "ermtDecision": "Direct and Partner Implementation",
       "type": "Outbreak",
@@ -1772,25 +1772,30 @@
       },
       "rbm": [
         {
-          "m": "Jul 2026",
-          "i": 37569,
+          "m": "Jun 2026",
+          "i": 169531,
           "p": 0
         },
         {
-          "m": "Jun 2026",
-          "i": 2373,
+          "m": "Jul 2026",
+          "i": 37389,
+          "p": 0
+        },
+        {
+          "m": "Aug 2026",
+          "i": 82936,
           "p": 0
         }
       ],
       "rbo": [
         {
           "n": "Responsive Information Services",
-          "r": 27483,
+          "r": 232234,
           "t": null
         },
         {
           "n": "*Outbreak Prevention and Response",
-          "r": 12459,
+          "r": 57622,
           "t": null
         }
       ],
