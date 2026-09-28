@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-28T09:02:11Z",
+  "lastUpdated": "2026-09-28T18:51:13Z",
   "fiscalYear": 2026,
   "averages": {
     "decision": 12,
@@ -450,7 +450,7 @@
       "stance": "Red",
       "severity": 9,
       "details": [
-        "The Africa Centers for Disease Control and Prevention (CDC) confirmed a new Ebola outbreak in Ituri province in the northeast of the DRC on 15 May. The outbreak is focused in and around Ituri's capital Bunia as well as the more remote, mining area of Mongbwalu. As of 27 July, there are at least 3,200 cases and 1,405 deaths, making this the fastest spreading Ebola outbreak documented. About 90% of all cases are in Ituri province, but cases are reported in North and South Kivu as well, and have recently spread to Haut-Uele and Tshopo provinces."
+        "The Africa Centers for Disease Control and Prevention (CDC) confirmed a new Ebola outbreak in Ituri province in the northeast of the DRC on 15 May. The outbreak is focused in and around Ituri's capital Bunia as well as the more remote, mining area of Mongbwalu. In the past 90 days, more than 6,700  cases have been reported with over 3,500 deaths - and more than 8,000 cases and nearly 4,000 deaths since the outbreak began, making this the fastest spreading Ebola outbreak documented. About 76% of all cases are in Ituri province, but cases are also reported in North Kivu, South Kivu, Haut-U\u00e9l\u00e9, Tshopo, and Bas-U\u00e9l\u00e9 provinces."
       ],
       "affected": 10081509,
       "budget": 15000000.0,
