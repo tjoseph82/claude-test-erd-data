@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-29T00:41:31Z",
+  "lastUpdated": "2026-09-29T09:10:37Z",
   "fiscalYear": 2026,
   "averages": {
     "decision": 12,
@@ -1032,6 +1032,11 @@
           "o": "*Emergency PHC",
           "q": "Support Recommended",
           "d": "Jul 01, 2026"
+        },
+        {
+          "o": "",
+          "q": "Planned Offering Pending Implementation",
+          "d": ""
         }
       ],
       "pd": [],
