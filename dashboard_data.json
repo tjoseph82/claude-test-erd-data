@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-29T09:10:37Z",
+  "lastUpdated": "2026-09-29T17:08:39Z",
   "fiscalYear": 2026,
   "averages": {
     "decision": 12,
@@ -1721,7 +1721,7 @@
       "gap": 3424390.0,
       "crf": 425000.0,
       "appeal": null,
-      "reached": 15.71,
+      "reached": 10.84,
       "daysClient": 34,
       "daysDecision": 1,
       "daysMSNA": null,
@@ -1732,10 +1732,10 @@
       "avgSigToReceipt": -4.0,
       "fundingSecured": 1575610.0,
       "target": 685337,
-      "totalReach": 289856,
+      "totalReach": 200089,
       "totalInOpArea": null,
-      "reach6moClass": 289856,
-      "reach6moSvc": 289856,
+      "reach6moClass": 200089,
+      "reach6moSvc": 200089,
       "pct10Target6mo": null,
       "pctReachOpArea": null,
       "tenPctAffected": 184533.6,
@@ -1750,7 +1750,7 @@
       "dateFirstCash": null,
       "date6moMark": "Nov 17, 2026",
       "date3moMark": "Aug 17, 2026",
-      "dateLastReach": "Sep 11, 2026",
+      "dateLastReach": "Sep 29, 2026",
       "decision": "Pending",
       "ermtDecision": "Direct and Partner Implementation",
       "type": "Outbreak",
@@ -1778,7 +1778,7 @@
       "rbm": [
         {
           "m": "Jun 2026",
-          "i": 169531,
+          "i": 79764,
           "p": 0
         },
         {
@@ -1795,7 +1795,7 @@
       "rbo": [
         {
           "n": "Responsive Information Services",
-          "r": 232234,
+          "r": 142467,
           "t": null
         },
         {
@@ -1994,7 +1994,7 @@
       "gap": 62500.0,
       "crf": 900000.0,
       "appeal": null,
-      "reached": 11.68,
+      "reached": 6.54,
       "daysClient": 41,
       "daysDecision": 10,
       "daysMSNA": 23,
@@ -2005,12 +2005,12 @@
       "avgSigToReceipt": null,
       "fundingSecured": 2000000.0,
       "target": 200000,
-      "totalReach": 107617,
+      "totalReach": 60237,
       "totalInOpArea": 585000,
-      "reach6moClass": 107617,
-      "reach6moSvc": 107617,
+      "reach6moClass": 60237,
+      "reach6moSvc": 60237,
       "pct10Target6mo": null,
-      "pctReachOpArea": 18.4,
+      "pctReachOpArea": 10.3,
       "tenPctAffected": 92116.8,
       "pctPrep": null,
       "dateClassified": "Nov 11, 2025",
@@ -2023,7 +2023,7 @@
       "dateFirstCash": "Dec 24, 2025",
       "date6moMark": "May 10, 2026",
       "date3moMark": "Feb 10, 2026",
-      "dateLastReach": "Jun 11, 2026",
+      "dateLastReach": "Sep 29, 2026",
       "decision": "Direct and Partner Implementation",
       "ermtDecision": "Direct and Partner Implementation",
       "type": "Food insecurity",
