@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-01T09:31:36Z",
+  "lastUpdated": "2026-10-01T17:36:44Z",
   "fiscalYear": 2026,
   "averages": {
     "decision": 12,
@@ -224,7 +224,7 @@
       "gap": -2656118.0,
       "crf": 2878000.0,
       "appeal": null,
-      "reached": 8.77,
+      "reached": 9.36,
       "daysClient": 2,
       "daysDecision": 2,
       "daysMSNA": 25,
@@ -235,12 +235,12 @@
       "avgSigToReceipt": null,
       "fundingSecured": 6656118.0,
       "target": 100000,
-      "totalReach": 92092,
+      "totalReach": 98252,
       "totalInOpArea": 1050000,
-      "reach6moClass": 92092,
-      "reach6moSvc": 92092,
+      "reach6moClass": 98252,
+      "reach6moSvc": 98252,
       "pct10Target6mo": null,
-      "pctReachOpArea": 8.77,
+      "pctReachOpArea": 9.36,
       "tenPctAffected": 105000.0,
       "pctPrep": null,
       "dateClassified": "Mar 02, 2026",
@@ -253,7 +253,7 @@
       "dateFirstCash": "Mar 06, 2026",
       "date6moMark": "Sep 03, 2026",
       "date3moMark": "Jun 03, 2026",
-      "dateLastReach": "Sep 11, 2026",
+      "dateLastReach": "Oct 01, 2026",
       "decision": "Direct and Partner Implementation",
       "ermtDecision": "Direct and Partner Implementation",
       "type": "Conflict",
@@ -281,7 +281,7 @@
       "rbm": [
         {
           "m": "Jun 2026",
-          "i": 28514,
+          "i": 27478,
           "p": 0
         },
         {
@@ -291,17 +291,17 @@
         },
         {
           "m": "Aug 2026",
-          "i": 0,
+          "i": 7956,
           "p": 0
         },
         {
           "m": "Jul 2026",
-          "i": 20113,
+          "i": 13983,
           "p": 0
         },
         {
           "m": "Apr 2026",
-          "i": 27064,
+          "i": 27411,
           "p": 0
         },
         {
@@ -313,28 +313,28 @@
       "rbo": [
         {
           "n": "*Focused MHPSS Interventions",
-          "r": 3621,
-          "t": 3952
+          "r": 4088,
+          "t": 4384
         },
         {
           "n": "*MISP for SRH",
-          "r": 700,
+          "r": 822,
           "t": 420
         },
         {
           "n": "*Emergency Basic Needs and Food Security",
-          "r": 69633,
-          "t": 42063
+          "r": 66968,
+          "t": 47663
         },
         {
           "n": "Community Risk Mitigation and Access",
-          "r": 946,
+          "r": 960,
           "t": 760
         },
         {
           "n": "Responsive Information Services",
-          "r": 7345,
-          "t": 5660
+          "r": 5780,
+          "t": 3160
         },
         {
           "n": "*Safe Play and Learning Spaces",
@@ -343,12 +343,12 @@
         },
         {
           "n": "*Emergency PHC",
-          "r": 12607,
+          "r": 17128,
           "t": 19420
         },
         {
           "n": "*Social Work in Emergencies",
-          "r": 250,
+          "r": 493,
           "t": 225
         }
       ],
@@ -2051,59 +2051,59 @@
       "rbm": [
         {
           "m": "Mar 2026",
-          "i": 19486,
+          "i": 20557,
           "p": 0
         },
         {
           "m": "Feb 2026",
-          "i": 27960,
+          "i": 13817,
           "p": 0
         },
         {
           "m": "Apr 2026",
-          "i": 9713,
-          "p": 14805
+          "i": 13895,
+          "p": 2924
         },
         {
           "m": "May 2026",
-          "i": 4572,
-          "p": 11449
+          "i": 4637,
+          "p": 4000
         },
         {
           "m": "Jan 2026",
-          "i": 14406,
+          "i": 2022,
           "p": 0
         },
         {
           "m": "Dec 2025",
-          "i": 16363,
+          "i": 8774,
           "p": 0
         }
       ],
       "rbo": [
         {
           "n": "*Emergency Basic Needs and Food Security",
-          "r": 37587,
+          "r": 18317,
           "t": 19680
         },
         {
           "n": "*Social Work in Emergencies",
-          "r": 357,
+          "r": 366,
           "t": null
         },
         {
           "n": "*Community Management of Acute Malnutrition (CMAM) + Infant and Young Child Feeding (IYCF)",
-          "r": 17127,
+          "r": 15275,
           "t": 4120
         },
         {
           "n": "Community WASH",
-          "r": 45170,
+          "r": 30000,
           "t": 40000
         },
         {
           "n": "*Emergency PHC",
-          "r": 18513,
+          "r": 6668,
           "t": null
         }
       ],
