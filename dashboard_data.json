@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-12T02:57:43Z",
+  "lastUpdated": "2026-10-12T10:06:04Z",
   "fiscalYear": 2026,
   "averages": {
     "decision": 12,
@@ -1495,7 +1495,7 @@
       "dateFirstCash": "Jul 14, 2026",
       "date6moMark": "Dec 11, 2026",
       "date3moMark": "Sep 11, 2026",
-      "dateLastReach": "Sep 11, 2026",
+      "dateLastReach": "Oct 12, 2026",
       "decision": "Direct Implementation",
       "ermtDecision": "Direct Implementation",
       "type": "Food insecurity",
@@ -1586,7 +1586,7 @@
       "gap": 5813992.0,
       "crf": 1000000.0,
       "appeal": null,
-      "reached": 0.22,
+      "reached": 0.53,
       "daysClient": 1,
       "daysDecision": 4,
       "daysMSNA": null,
@@ -1597,10 +1597,10 @@
       "avgSigToReceipt": null,
       "fundingSecured": 4186008.0,
       "target": 128935,
-      "totalReach": 2825,
+      "totalReach": 6950,
       "totalInOpArea": null,
-      "reach6moClass": 2825,
-      "reach6moSvc": 2825,
+      "reach6moClass": 6950,
+      "reach6moSvc": 6950,
       "pct10Target6mo": null,
       "pctReachOpArea": null,
       "tenPctAffected": 130000.0,
@@ -1615,7 +1615,7 @@
       "dateFirstCash": null,
       "date6moMark": "Dec 28, 2026",
       "date3moMark": "Sep 28, 2026",
-      "dateLastReach": "Sep 11, 2026",
+      "dateLastReach": "Oct 12, 2026",
       "decision": "Direct and Partner Implementation",
       "ermtDecision": "Direct and Partner Implementation",
       "type": "Natural",
@@ -1644,43 +1644,48 @@
         {
           "m": "Aug 2026",
           "i": 0,
-          "p": 1104
+          "p": 1392
+        },
+        {
+          "m": "Oct 2026",
+          "i": 0,
+          "p": 814
         },
         {
           "m": "Sep 2026",
           "i": 0,
-          "p": 175
+          "p": 4612
         },
         {
           "m": "Jul 2026",
           "i": 0,
-          "p": 1546
+          "p": 132
         }
       ],
       "rbo": [
         {
           "n": "*Focused MHPSS Interventions",
-          "r": 123,
+          "r": 742,
           "t": 7862
         },
         {
+          "n": "Responsive Information Services",
+          "r": 2920,
+          "t": 36080
+        },
+        {
           "n": "Community WASH",
-          "r": 173,
+          "r": 819,
           "t": 53290
         },
         {
           "n": "*Social Work in Emergencies",
-          "r": 17,
+          "r": 232,
           "t": 6193
         },
         {
-          "n": "Responsive Information Services",
-          "r": 455,
-          "t": 36080
-        },
-        {
           "n": "*Emergency PHC",
-          "r": 2057,
+          "r": 2237,
           "t": 81605
         }
       ],
