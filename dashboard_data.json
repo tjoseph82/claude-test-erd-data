@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-13T09:49:05Z",
+  "lastUpdated": "2026-10-13T18:35:14Z",
   "fiscalYear": 2026,
   "averages": {
     "decision": 12,
@@ -479,8 +479,8 @@
       ],
       "affected": 10081509,
       "budget": 15000000.0,
-      "gap": 12500000.0,
-      "crf": 1000000.0,
+      "gap": 10681619.0,
+      "crf": 2000000.0,
       "appeal": null,
       "reached": 0.91,
       "daysClient": 25,
@@ -491,7 +491,7 @@
       "daysPlanApproval": 26,
       "avgDisbToSig": null,
       "avgSigToReceipt": null,
-      "fundingSecured": 2500000.0,
+      "fundingSecured": 4318381.0,
       "target": 480523,
       "totalReach": 91392,
       "totalInOpArea": 1002392,
@@ -604,12 +604,12 @@
       ],
       "or": [
         {
-          "o": "",
+          "o": "Responsive Information Services",
           "q": "Planned Offering Pending Implementation",
           "d": ""
         },
         {
-          "o": "",
+          "o": "Community Risk Mitigation and Access",
           "q": "Planned Offering Pending Implementation",
           "d": ""
         },
@@ -1125,7 +1125,7 @@
           "d": "Jul 01, 2026"
         },
         {
-          "o": "",
+          "o": "*Emergency Basic Needs and Food Security",
           "q": "Planned Offering Pending Implementation",
           "d": ""
         }
@@ -1732,7 +1732,7 @@
       ],
       "or": [
         {
-          "o": "",
+          "o": "*Outbreak Prevention and Response",
           "q": "Planned Offering Pending Implementation",
           "d": ""
         }
