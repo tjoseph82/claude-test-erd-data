@@ -1,11 +1,11 @@
 {
-  "lastUpdated": "2026-10-13T02:17:31Z",
+  "lastUpdated": "2026-10-13T09:49:05Z",
   "fiscalYear": 2026,
   "averages": {
     "decision": 12,
     "msna": 32,
     "planSub": 26,
-    "planApproval": 37,
+    "planApproval": 33,
     "client": 27
   },
   "eoCounts": {
@@ -42,7 +42,7 @@
       "daysMSNA": null,
       "daysMSNAStart": null,
       "daysPlanSub": null,
-      "daysPlanApproval": null,
+      "daysPlanApproval": 14,
       "avgDisbToSig": null,
       "avgSigToReceipt": null,
       "fundingSecured": 544852.0,
@@ -60,7 +60,7 @@
       "dateMSNAStart": null,
       "dateMSNA": null,
       "datePlanSub": null,
-      "datePlanApproval": null,
+      "datePlanApproval": "Sep 10, 2026",
       "dateFirstClient": null,
       "dateFirstCash": null,
       "date6moMark": "Feb 27, 2027",
@@ -366,7 +366,32 @@
       ],
       "or": [],
       "pd": [],
-      "qi": []
+      "qi": [
+        {
+          "o": "LB504-% of beneficiary households that report they were able to Meet their Basic Needs at endline-June-2026",
+          "v": 83,
+          "t": "",
+          "d": "Jun 30, 2026"
+        },
+        {
+          "o": "LB504-% of beneficiary households that report they were able to Meet their Basic Needs at endline-May-2026",
+          "v": 79,
+          "t": 50,
+          "d": "May 31, 2026"
+        },
+        {
+          "o": "LB504-% of beneficiary households that report they were able to Meet their Basic Needs at endline-August-2026",
+          "v": 62,
+          "t": "",
+          "d": "Aug 31, 2026"
+        },
+        {
+          "o": "LB504-% of beneficiary households that report they were able to Meet their Basic Needs at endline-July-2026",
+          "v": 82,
+          "t": "",
+          "d": "Jul 31, 2026"
+        }
+      ]
     },
     {
       "id": "IR507",
@@ -597,40 +622,76 @@
       "pd": [],
       "qi": [
         {
-          "o": "CD517-% of health facilities scoring 80% or above across ALL indicators using the standard IPC checklist-July-2026",
-          "v": 4,
+          "o": "CD517-% of training participants in IPC training scoring 80% or higher on post-training assessment-August-2026",
+          "v": 77,
+          "t": 70,
+          "d": "Aug 31, 2026"
+        },
+        {
+          "o": "CD517-% of health facilities scoring 80% or above across ALL indicators using the standard IPC checklist-September-2026",
+          "v": 20,
           "t": "",
-          "d": "Jul 31, 2026"
+          "d": "Sep 30, 2026"
         },
         {
           "o": "CD517- % of clients receiving focused MHPSS services whose score on a basic MHPSS assessment improves-July-2026",
-          "v": 0,
+          "v": 40.4,
           "t": 80,
           "d": "Jul 31, 2026"
         },
         {
           "o": "CD517-% of suspected cases for (outbreak disease) reported to the surveillance system within 24 hours of detection-July-2026",
-          "v": 0,
+          "v": 100,
           "t": 90,
           "d": "Jul 31, 2026"
         },
         {
           "o": "CD517-% of participants trained who improved their knowledge of protection and wellbeing topics-July-2026",
-          "v": 0,
+          "v": 68,
           "t": 80,
           "d": "Jul 31, 2026"
         },
         {
+          "o": "CD517-% of community members surveyed through RCCE channels who correctly recall atleast one key outbreak prevention message-September-2026",
+          "v": 100,
+          "t": "",
+          "d": "Sep 30, 2026"
+        },
+        {
           "o": "CD517-% of community members surveyed through RCCE channels who correctly recall atleast one key outbreak prevention message-July-2026",
-          "v": 98.8,
+          "v": 64.2,
           "t": 80,
           "d": "Jul 31, 2026"
+        },
+        {
+          "o": "CD517-% of training participants in IPC training scoring 80% or higher on post-training assessment-September-2026",
+          "v": "",
+          "t": "",
+          "d": "Sep 30, 2026"
+        },
+        {
+          "o": "CD517-% of suspected cases for (outbreak disease) reported to the surveillance system within 24 hours of detection-September-2026",
+          "v": 82,
+          "t": "",
+          "d": "Sep 30, 2026"
         },
         {
           "o": "CD517-% of health facilities scoring 80% or above across ALL indicators using the standard IPC checklist-June-2026",
           "v": 0,
           "t": 80,
           "d": "Jun 30, 2026"
+        },
+        {
+          "o": "CD517- % of clients receiving focused MHPSS services whose score on a basic MHPSS assessment improves-September-2026",
+          "v": "",
+          "t": "",
+          "d": "Sep 30, 2026"
+        },
+        {
+          "o": "CD517-% of participants trained who improved their knowledge of protection and wellbeing topics-September-2026",
+          "v": "",
+          "t": "",
+          "d": "Sep 30, 2026"
         }
       ]
     },
@@ -1085,7 +1146,7 @@
       "affected": 1637340,
       "budget": 7751167.0,
       "gap": 3795519.0,
-      "crf": null,
+      "crf": 812000.0,
       "appeal": null,
       "reached": 0.08,
       "daysClient": 38,
@@ -1093,7 +1154,7 @@
       "daysMSNA": null,
       "daysMSNAStart": null,
       "daysPlanSub": null,
-      "daysPlanApproval": null,
+      "daysPlanApproval": 13,
       "avgDisbToSig": null,
       "avgSigToReceipt": null,
       "fundingSecured": 3955648.0,
@@ -1111,7 +1172,7 @@
       "dateMSNAStart": null,
       "dateMSNA": null,
       "datePlanSub": null,
-      "datePlanApproval": null,
+      "datePlanApproval": "Sep 09, 2026",
       "dateFirstClient": null,
       "dateFirstCash": null,
       "date6moMark": "Feb 27, 2027",
@@ -1680,7 +1741,7 @@
       "qi": [
         {
           "o": "NG525-\"% of surveyed beneficiary households with \"\"acceptable\"\" Food Consumption scores (FCS)\"-July-2026",
-          "v": "",
+          "v": 21,
           "t": 70,
           "d": "Jul 31, 2026"
         },
@@ -1698,13 +1759,13 @@
         },
         {
           "o": "NG525-% of beneficiary households that report they were able to Meet their Basic Needs at endline-July-2026",
-          "v": "",
+          "v": 15,
           "t": 65,
           "d": "Jul 31, 2026"
         },
         {
           "o": "NG525-\"% of surveyed beneficiary households with  \"\"Food Secure\"\" Reduced Coping Strategies Index (rCSI) scores\"-July-2026",
-          "v": "",
+          "v": 0.4,
           "t": 70,
           "d": "Jul 31, 2026"
         },
@@ -1854,7 +1915,20 @@
         }
       ],
       "pd": [],
-      "qi": []
+      "qi": [
+        {
+          "o": "VE526-% of participants trained who improved their knowledge of protection and wellbeing topics-September-2026",
+          "v": "",
+          "t": "",
+          "d": "Sep 30, 2026"
+        },
+        {
+          "o": "VE526- # of clients treated for sexually transmitted infections (STIs)-September-2026",
+          "v": "",
+          "t": "",
+          "d": "Sep 30, 2026"
+        }
+      ]
     },
     {
       "id": "UG518",
@@ -2500,10 +2574,10 @@
       "avgSigToReceipt": null,
       "fundingSecured": null,
       "target": null,
-      "totalReach": null,
+      "totalReach": 0,
       "totalInOpArea": null,
-      "reach6moClass": null,
-      "reach6moSvc": null,
+      "reach6moClass": 0,
+      "reach6moSvc": 0,
       "pct10Target6mo": null,
       "pctReachOpArea": null,
       "tenPctAffected": 15080.0,
@@ -2518,7 +2592,7 @@
       "dateFirstCash": null,
       "date6moMark": "Apr 06, 2027",
       "date3moMark": "Jan 06, 2027",
-      "dateLastReach": null,
+      "dateLastReach": "Oct 13, 2026",
       "decision": "Direct and Partner Implementation",
       "ermtDecision": "Direct and Partner Implementation",
       "type": "Conflict",
