@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-19T08:10:53Z",
+  "lastUpdated": "2026-10-19T15:57:00Z",
   "fiscalYear": 2026,
   "averages": {
     "decision": 12,
@@ -720,13 +720,13 @@
       "avgDisbToSig": null,
       "avgSigToReceipt": null,
       "fundingSecured": 1149908.0,
-      "target": 19165,
+      "target": 165294,
       "totalReach": 91791,
-      "totalInOpArea": 382937,
+      "totalInOpArea": 2447330,
       "reach6moClass": 91791,
       "reach6moSvc": 91791,
       "pct10Target6mo": null,
-      "pctReachOpArea": 23.97,
+      "pctReachOpArea": 3.75,
       "tenPctAffected": 244733.0,
       "pctPrep": null,
       "dateClassified": "May 15, 2026",
