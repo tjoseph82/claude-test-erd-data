@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-10-22T02:10:46Z",
+  "lastUpdated": "2026-10-22T08:01:36Z",
   "fiscalYear": 2026,
   "averages": {
     "decision": 12,
     "msna": 32,
-    "planSub": 26,
+    "planSub": 27,
     "planApproval": 33,
     "client": 27
   },
@@ -2568,7 +2568,7 @@
       "daysDecision": 13,
       "daysMSNA": null,
       "daysMSNAStart": null,
-      "daysPlanSub": null,
+      "daysPlanSub": 28,
       "daysPlanApproval": null,
       "avgDisbToSig": null,
       "avgSigToReceipt": null,
@@ -2586,7 +2586,7 @@
       "dateDecision": "Oct 07, 2026",
       "dateMSNAStart": null,
       "dateMSNA": null,
-      "datePlanSub": null,
+      "datePlanSub": "Oct 22, 2026",
       "datePlanApproval": null,
       "dateFirstClient": null,
       "dateFirstCash": null,
