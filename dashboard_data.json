@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-02T03:00:07Z",
+  "lastUpdated": "2026-11-02T10:38:30Z",
   "fiscalYear": 2026,
   "averages": {
     "decision": 12,
@@ -647,13 +647,13 @@
         },
         {
           "o": "CD517-% of participants trained who improved their knowledge of protection and wellbeing topics-July-2026",
-          "v": 68,
+          "v": 37,
           "t": 80,
           "d": "Jul 31, 2026"
         },
         {
           "o": "CD517-% of community members surveyed through RCCE channels who correctly recall atleast one key outbreak prevention message-September-2026",
-          "v": 100,
+          "v": 83,
           "t": "",
           "d": "Sep 30, 2026"
         },
@@ -671,7 +671,7 @@
         },
         {
           "o": "CD517-% of suspected cases for (outbreak disease) reported to the surveillance system within 24 hours of detection-September-2026",
-          "v": 82,
+          "v": 100,
           "t": "",
           "d": "Sep 30, 2026"
         },
@@ -689,7 +689,7 @@
         },
         {
           "o": "CD517-% of participants trained who improved their knowledge of protection and wellbeing topics-September-2026",
-          "v": "",
+          "v": 81,
           "t": "",
           "d": "Sep 30, 2026"
         }
