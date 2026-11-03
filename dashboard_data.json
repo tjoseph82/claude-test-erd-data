@@ -1,16 +1,16 @@
 {
-  "lastUpdated": "2026-11-03T10:12:08Z",
+  "lastUpdated": "2026-11-03T18:44:27Z",
   "fiscalYear": 2026,
   "averages": {
     "decision": 12,
     "msna": 32,
     "planSub": 24,
     "planApproval": 34,
-    "client": 27
+    "client": 24
   },
   "eoCounts": {
     "*Emergency Basic Needs and Food Security": 9,
-    "*Focused MHPSS Interventions": 4,
+    "*Focused MHPSS Interventions": 5,
     "Responsive Information Services": 1,
     "*Outbreak Prevention and Response": 3,
     "Community Risk Mitigation and Access": 1,
@@ -830,7 +830,7 @@
       "crf": 800000.0,
       "appeal": null,
       "reached": 7.14,
-      "daysClient": 78,
+      "daysClient": 35,
       "daysDecision": 52,
       "daysMSNA": 51,
       "daysMSNAStart": 42,
@@ -945,6 +945,11 @@
         },
         {
           "o": "*Focused MHPSS Interventions",
+          "d": "Dec 01, 2025",
+          "type": "WPE community awareness"
+        },
+        {
+          "o": "*Focused MHPSS Interventions",
           "d": "Jan 13, 2026",
           "type": "Individual Psychosocial Support (PSS)"
         },
@@ -954,7 +959,13 @@
           "type": "Multipurpose Cash Assistance "
         }
       ],
-      "or": [],
+      "or": [
+        {
+          "o": "*Focused MHPSS Interventions",
+          "q": "Planned Offering Pending Implementation",
+          "d": ""
+        }
+      ],
       "pd": [],
       "qi": []
     },
@@ -1204,7 +1215,7 @@
       },
       "rbm": [
         {
-          "m": "Sep 2026",
+          "m": "Oct 2026",
           "i": 0,
           "p": 1281
         }
