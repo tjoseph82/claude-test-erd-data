@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-03T18:44:27Z",
+  "lastUpdated": "2026-11-04T00:57:14Z",
   "fiscalYear": 2026,
   "averages": {
     "decision": 12,
@@ -10,8 +10,8 @@
   },
   "eoCounts": {
     "*Emergency Basic Needs and Food Security": 9,
-    "*Focused MHPSS Interventions": 5,
-    "Responsive Information Services": 1,
+    "*Focused MHPSS Interventions": 4,
+    "Responsive Information Services": 2,
     "*Outbreak Prevention and Response": 3,
     "Community Risk Mitigation and Access": 1,
     "*Emergency PHC": 7,
@@ -865,7 +865,7 @@
       "pctFunded": null,
       "link": "https://rescue.box.com/s/vvzocn1hspjbga5lod1oefdzb01enkyv",
       "firstServiceType": [
-        "recLJ6kixUP5DVKw5"
+        "rec3Z2l3N0TNMxpII"
       ],
       "newOrExisting": "",
       "sapStartTriggered": true,
@@ -944,7 +944,7 @@
           "type": "Outpatient consultations"
         },
         {
-          "o": "*Focused MHPSS Interventions",
+          "o": "Responsive Information Services",
           "d": "Dec 01, 2025",
           "type": "WPE community awareness"
         },
