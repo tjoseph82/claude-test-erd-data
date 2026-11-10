@@ -1,22 +1,22 @@
 {
-  "lastUpdated": "2026-11-10T04:58:01Z",
+  "lastUpdated": "2026-11-10T13:52:29Z",
   "fiscalYear": 2026,
   "averages": {
     "decision": 12,
     "msna": 32,
     "planSub": 24,
     "planApproval": 34,
-    "client": 24
+    "client": 25
   },
   "eoCounts": {
+    "*Emergency PHC": 8,
+    "*Community Management of Acute Malnutrition (CMAM) + Infant and Young Child Feeding (IYCF)": 4,
     "*Emergency Basic Needs and Food Security": 9,
     "*Focused MHPSS Interventions": 4,
     "Responsive Information Services": 2,
     "*Outbreak Prevention and Response": 3,
     "Community Risk Mitigation and Access": 1,
-    "*Emergency PHC": 7,
     "Community WASH": 5,
-    "*Community Management of Acute Malnutrition (CMAM) + Infant and Young Child Feeding (IYCF)": 3,
     "*MISP for SRH": 1,
     "*Social Work in Emergencies": 2
   },
@@ -36,8 +36,8 @@
       "gap": 2636017.0,
       "crf": 544852.0,
       "appeal": null,
-      "reached": null,
-      "daysClient": null,
+      "reached": 0.07,
+      "daysClient": 38,
       "daysDecision": 1,
       "daysMSNA": null,
       "daysMSNAStart": null,
@@ -46,11 +46,11 @@
       "avgDisbToSig": null,
       "avgSigToReceipt": null,
       "fundingSecured": 544852.0,
-      "target": null,
-      "totalReach": 0,
+      "target": 277280,
+      "totalReach": 1867,
       "totalInOpArea": null,
-      "reach6moClass": 0,
-      "reach6moSvc": null,
+      "reach6moClass": 1867,
+      "reach6moSvc": 1867,
       "pct10Target6mo": null,
       "pctReachOpArea": null,
       "tenPctAffected": 277279.9,
@@ -65,13 +65,15 @@
       "dateFirstCash": null,
       "date6moMark": "Feb 27, 2027",
       "date3moMark": "Nov 27, 2026",
-      "dateLastReach": "Sep 15, 2026",
+      "dateLastReach": "Nov 10, 2026",
       "decision": "Direct and Partner Implementation",
       "ermtDecision": "Direct and Partner Implementation",
       "type": "Food insecurity",
       "pctFunded": null,
       "link": null,
-      "firstServiceType": "",
+      "firstServiceType": [
+        "rec2i4vMqr8LTBZUT"
+      ],
       "newOrExisting": "",
       "sapStartTriggered": true,
       "sapMidTriggered": "",
@@ -88,10 +90,59 @@
         "msnaCompleted": "Pending",
         "localSystems": ""
       },
-      "rbm": [],
-      "rbo": [],
-      "fs": [],
-      "or": [],
+      "rbm": [
+        {
+          "m": "Oct 2026",
+          "i": 0,
+          "p": 1867
+        }
+      ],
+      "rbo": [
+        {
+          "n": "*MISP for SRH",
+          "r": 75,
+          "t": 390
+        },
+        {
+          "n": "*Emergency PHC",
+          "r": 1530,
+          "t": 22100
+        },
+        {
+          "n": "*Community Management of Acute Malnutrition (CMAM) + Infant and Young Child Feeding (IYCF)",
+          "r": 262,
+          "t": 34441
+        }
+      ],
+      "fs": [
+        {
+          "o": "*Emergency PHC",
+          "d": "Oct 05, 2026",
+          "type": "Outpatient consultations"
+        },
+        {
+          "o": "*Community Management of Acute Malnutrition (CMAM) + Infant and Young Child Feeding (IYCF)",
+          "d": "Oct 05, 2026",
+          "type": "Mass screenings for acute malnutrition"
+        }
+      ],
+      "or": [
+        {
+          "o": "*Emergency PHC",
+          "q": "Planned Offering Pending Implementation",
+          "d": ""
+        },
+        {
+          "o": "*Emergency PHC",
+          "q": "Planned Offering Pending Implementation",
+          "d": ""
+        },
+        {
+          "o": "",
+          "q": "Planned Offering Pending Implementation",
+          "d": ""
+        }
+      ],
       "pd": [],
       "qi": []
     },
@@ -1169,7 +1220,7 @@
       "avgDisbToSig": null,
       "avgSigToReceipt": null,
       "fundingSecured": 3955648.0,
-      "target": null,
+      "target": 163734,
       "totalReach": 1281,
       "totalInOpArea": null,
       "reach6moClass": 1281,
@@ -1194,9 +1245,7 @@
       "type": "Food insecurity",
       "pctFunded": null,
       "link": null,
-      "firstServiceType": [
-        "rec2i4vMqr8LTBZUT"
-      ],
+      "firstServiceType": "",
       "newOrExisting": "",
       "sapStartTriggered": true,
       "sapMidTriggered": "",
@@ -1217,52 +1266,57 @@
         {
           "m": "Oct 2026",
           "i": 0,
-          "p": 1281
+          "p": 38943
         }
       ],
       "rbo": [
         {
           "n": "Community WASH",
-          "r": 1001,
+          "r": 8281,
           "t": 29530
         },
         {
           "n": "*Social Work in Emergencies",
-          "r": 0,
+          "r": 33,
           "t": 2990
         },
         {
           "n": "*Community Management of Acute Malnutrition (CMAM) + Infant and Young Child Feeding (IYCF)",
-          "r": 67,
+          "r": 539,
           "t": 3582
         },
         {
           "n": "*Emergency Basic Needs and Food Security",
-          "r": 0,
-          "t": 2530
+          "r": 7892,
+          "t": 17710
         },
         {
           "n": "*MISP for SRH",
-          "r": 0,
+          "r": 116,
           "t": 102
         },
         {
           "n": "*Emergency PHC",
-          "r": 213,
+          "r": 1399,
           "t": 46870
         },
         {
           "n": "*Focused MHPSS Interventions",
-          "r": 0,
+          "r": 2008,
           "t": 4260
         },
         {
           "n": "Community Risk Mitigation and Access",
-          "r": 0,
+          "r": 18675,
           "t": 58860
         }
       ],
       "fs": [
+        {
+          "o": "",
+          "d": "\u2014",
+          "type": ""
+        },
         {
           "o": "Community WASH",
           "d": "Oct 05, 2026",
@@ -1287,6 +1341,16 @@
         },
         {
           "o": "*Emergency PHC",
+          "q": "Planned Offering Pending Implementation",
+          "d": ""
+        },
+        {
+          "o": "",
+          "q": "Planned Offering Pending Implementation",
+          "d": ""
+        },
+        {
+          "o": "",
           "q": "Planned Offering Pending Implementation",
           "d": ""
         },
@@ -1861,48 +1925,53 @@
         {
           "m": "Aug 2026",
           "i": 0,
-          "p": 1392
-        },
-        {
-          "m": "Oct 2026",
-          "i": 0,
-          "p": 814
-        },
-        {
-          "m": "Sep 2026",
-          "i": 0,
-          "p": 4612
+          "p": 1393
         },
         {
           "m": "Jul 2026",
           "i": 0,
-          "p": 132
+          "p": 142
+        },
+        {
+          "m": "Oct 2026",
+          "i": 0,
+          "p": 4700
+        },
+        {
+          "m": "Sep 2026",
+          "i": 0,
+          "p": 4819
+        },
+        {
+          "m": "Nov 2026",
+          "i": 0,
+          "p": 243
         }
       ],
       "rbo": [
         {
           "n": "*Focused MHPSS Interventions",
-          "r": 742,
+          "r": 1490,
           "t": 7862
         },
         {
           "n": "Responsive Information Services",
-          "r": 2920,
+          "r": 5239,
           "t": 36080
         },
         {
           "n": "Community WASH",
-          "r": 819,
+          "r": 818,
           "t": 53290
         },
         {
           "n": "*Social Work in Emergencies",
-          "r": 232,
+          "r": 733,
           "t": 6193
         },
         {
           "n": "*Emergency PHC",
-          "r": 2237,
+          "r": 3017,
           "t": 81605
         }
       ],
@@ -2585,10 +2654,10 @@
       "avgSigToReceipt": null,
       "fundingSecured": null,
       "target": null,
-      "totalReach": null,
+      "totalReach": 0,
       "totalInOpArea": null,
-      "reach6moClass": null,
-      "reach6moSvc": null,
+      "reach6moClass": 0,
+      "reach6moSvc": 0,
       "pct10Target6mo": null,
       "pctReachOpArea": null,
       "tenPctAffected": 107726.40000000001,
@@ -2603,7 +2672,7 @@
       "dateFirstCash": null,
       "date6moMark": "Apr 28, 2027",
       "date3moMark": "Jan 28, 2027",
-      "dateLastReach": null,
+      "dateLastReach": "Nov 10, 2026",
       "decision": "Pending",
       "ermtDecision": "Pending",
       "type": "Conflict",
@@ -2689,7 +2758,7 @@
       "sapMidTriggered": "",
       "sapEndTriggered": "",
       "sap": {
-        "plan": "Pending",
+        "plan": "Yes",
         "learning": "Not Applicable",
         "feedback": "Pending",
         "feedbackTime": "Pending",
