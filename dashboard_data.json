@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-11-12T04:38:57Z",
+  "lastUpdated": "2026-11-12T14:06:57Z",
   "fiscalYear": 2026,
   "averages": {
-    "decision": 12,
+    "decision": 13,
     "msna": 32,
     "planSub": 24,
     "planApproval": 34,
@@ -533,7 +533,7 @@
       "gap": 10681619.0,
       "crf": 2000000.0,
       "appeal": null,
-      "reached": 0.91,
+      "reached": 1.16,
       "daysClient": 25,
       "daysDecision": 0,
       "daysMSNA": null,
@@ -544,12 +544,12 @@
       "avgSigToReceipt": null,
       "fundingSecured": 4318381.0,
       "target": 480523,
-      "totalReach": 91392,
+      "totalReach": 117372,
       "totalInOpArea": 1002392,
-      "reach6moClass": 91392,
-      "reach6moSvc": 91392,
+      "reach6moClass": 117372,
+      "reach6moSvc": 117372,
       "pct10Target6mo": null,
-      "pctReachOpArea": 9.12,
+      "pctReachOpArea": 11.71,
       "tenPctAffected": 1008150.9,
       "pctPrep": null,
       "dateClassified": "May 15, 2026",
@@ -562,7 +562,7 @@
       "dateFirstCash": null,
       "date6moMark": "Nov 14, 2026",
       "date3moMark": "Aug 14, 2026",
-      "dateLastReach": "Oct 12, 2026",
+      "dateLastReach": "Nov 12, 2026",
       "decision": "Direct and Partner Implementation",
       "ermtDecision": "Direct Implementation",
       "type": "Outbreak",
@@ -589,50 +589,60 @@
       },
       "rbm": [
         {
-          "m": "Aug 2026",
-          "i": 33628,
+          "m": "Sep 2026",
+          "i": 40457,
           "p": 0
         },
         {
-          "m": "Sep 2026",
-          "i": 40414,
+          "m": "Nov 2026",
+          "i": 128,
           "p": 0
         },
         {
           "m": "Jul 2026",
-          "i": 6833,
+          "i": 6751,
+          "p": 0
+        },
+        {
+          "m": "Aug 2026",
+          "i": 33911,
           "p": 0
         },
         {
           "m": "Jun 2026",
-          "i": 6654,
+          "i": 6561,
+          "p": 0
+        },
+        {
+          "m": "Oct 2026",
+          "i": 30267,
           "p": 0
         }
       ],
       "rbo": [
         {
           "n": "Community Risk Mitigation and Access",
-          "r": 881,
+          "r": 800,
           "t": 650
         },
         {
+          "n": "*Social Work in Emergencies",
+          "r": 1072,
+          "t": 225
+        },
+        {
           "n": "Responsive Information Services",
-          "r": 59125,
+          "r": 78845,
           "t": 97500
         },
         {
           "n": "*Focused MHPSS Interventions",
-          "r": 556,
-          "t": null
-        },
-        {
-          "n": "*Social Work in Emergencies",
-          "r": 478,
+          "r": 1124,
           "t": null
         },
         {
           "n": "*Outbreak Prevention and Response",
-          "r": 26489,
+          "r": 36234,
           "t": 192082
         }
       ],
@@ -761,7 +771,7 @@
       "gap": 850092.0,
       "crf": 500000.0,
       "appeal": 649908.0,
-      "reached": 4.32,
+      "reached": 7.03,
       "daysClient": 17,
       "daysDecision": 11,
       "daysMSNA": null,
@@ -772,12 +782,12 @@
       "avgSigToReceipt": null,
       "fundingSecured": 1149908.0,
       "target": 165294,
-      "totalReach": 105822,
+      "totalReach": 172090,
       "totalInOpArea": 2447330,
-      "reach6moClass": 105822,
-      "reach6moSvc": 105822,
+      "reach6moClass": 172090,
+      "reach6moSvc": 172090,
       "pct10Target6mo": null,
-      "pctReachOpArea": 4.32,
+      "pctReachOpArea": 7.03,
       "tenPctAffected": 244733.0,
       "pctPrep": null,
       "dateClassified": "May 15, 2026",
@@ -790,7 +800,7 @@
       "dateFirstCash": "Jun 01, 2026",
       "date6moMark": "Nov 14, 2026",
       "date3moMark": "Aug 14, 2026",
-      "dateLastReach": "Nov 10, 2026",
+      "dateLastReach": "Nov 12, 2026",
       "decision": "Direct and Partner Implementation",
       "ermtDecision": "Direct Implementation",
       "type": "Food insecurity",
@@ -818,7 +828,7 @@
       "rbm": [
         {
           "m": "Oct 2026",
-          "i": 4228,
+          "i": 67043,
           "p": 0
         },
         {
@@ -838,19 +848,19 @@
         },
         {
           "m": "Sep 2026",
-          "i": 12676,
+          "i": 14556,
           "p": 0
         }
       ],
       "rbo": [
         {
           "n": "Community WASH",
-          "r": 1500,
+          "r": 66170,
           "t": 35000
         },
         {
           "n": "*Community Management of Acute Malnutrition (CMAM) + Infant and Young Child Feeding (IYCF)",
-          "r": 84636,
+          "r": 84661,
           "t": 30450
         },
         {
@@ -1250,7 +1260,9 @@
       "type": "Food insecurity",
       "pctFunded": null,
       "link": null,
-      "firstServiceType": "",
+      "firstServiceType": [
+        "rec2i4vMqr8LTBZUT"
+      ],
       "newOrExisting": "",
       "sapStartTriggered": true,
       "sapMidTriggered": "",
@@ -1317,11 +1329,6 @@
         }
       ],
       "fs": [
-        {
-          "o": "",
-          "d": "\u2014",
-          "type": ""
-        },
         {
           "o": "Community WASH",
           "d": "Oct 05, 2026",
@@ -2660,7 +2667,7 @@
       "appeal": null,
       "reached": null,
       "daysClient": null,
-      "daysDecision": null,
+      "daysDecision": 42,
       "daysMSNA": null,
       "daysMSNAStart": null,
       "daysPlanSub": null,
@@ -2678,7 +2685,7 @@
       "tenPctAffected": 107726.40000000001,
       "pctPrep": null,
       "dateClassified": "Sep 17, 2026",
-      "dateDecision": null,
+      "dateDecision": "Oct 29, 2026",
       "dateMSNAStart": null,
       "dateMSNA": null,
       "datePlanSub": null,
@@ -2699,7 +2706,7 @@
       "sapMidTriggered": "",
       "sapEndTriggered": "",
       "sap": {
-        "plan": "Pending",
+        "plan": "Yes",
         "learning": "Pending",
         "feedback": "Pending",
         "feedbackTime": "Pending",
