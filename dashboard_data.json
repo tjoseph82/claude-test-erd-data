@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-17T05:29:06Z",
+  "lastUpdated": "2026-11-17T15:01:09Z",
   "fiscalYear": 2026,
   "averages": {
     "decision": 13,
@@ -2083,7 +2083,7 @@
       "newOrExisting": "",
       "sapStartTriggered": true,
       "sapMidTriggered": true,
-      "sapEndTriggered": "",
+      "sapEndTriggered": true,
       "sap": {
         "plan": "Yes",
         "learning": "Not Applicable",
@@ -2696,7 +2696,7 @@
       "date3moMark": "Jan 28, 2027",
       "dateLastReach": "Nov 10, 2026",
       "decision": "Pending",
-      "ermtDecision": "Pending",
+      "ermtDecision": "Direct and Partner Implementation",
       "type": "Conflict",
       "pctFunded": null,
       "link": null,
